@@ -23,10 +23,6 @@
       {
         "url": "/case-studies/",
         "label": "Case Studies"
-      },
-      {
-        "url": "/ki-einsatz/",
-        "label": "KI-Einsatz"
       }
     ],
     "cta": {
@@ -147,10 +143,6 @@
       {
         "url": "/en/case-studies/",
         "label": "Case Studies"
-      },
-      {
-        "url": "/en/use-of-ai/",
-        "label": "Use of AI"
       }
     ],
     "cta": {
