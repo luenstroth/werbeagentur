@@ -6,6 +6,7 @@
   </video>
   <button type="button" class="video-sound" aria-pressed="false">{{ "Sound on" if lang == "en" else "Ton an" }}</button>
 </div>
+<script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "VideoObject", "name": video.label, "description": video.description or description, "thumbnailUrl": "https://luenstroth-werbeagentur.de" + video.poster, "contentUrl": "https://luenstroth-werbeagentur.de" + video.src, "uploadDate": video.uploadDate or page.date.toISOString(), "inLanguage": lang, "publisher": {"@id": "https://luenstroth-werbeagentur.de/#organisation"} } | dump | safe }}</script>
 <script>
 (function () {
   if (window.__videoAuto) return; window.__videoAuto = true;

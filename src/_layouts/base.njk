@@ -9,6 +9,8 @@
   <meta name="description" content="{{ description }}">
   {%- if robots %}
   <meta name="robots" content="{{ robots }}">
+  {%- else %}
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   {%- endif %}
   <link rel="canonical" href="https://luenstroth-werbeagentur.de{{ page.url }}">
   {#- hreflang: beide Sprachfassungen verweisen gegenseitig aufeinander.
@@ -22,7 +24,7 @@
   <link rel="apple-touch-icon" href="/img/apple-touch-icon.jpg">
   <link rel="stylesheet" href="/css/main.css">
 
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="{{ 'article' if (tags and ('caseStudy' in tags or 'caseStudyEn' in tags)) else 'website' }}">
   <meta property="og:locale" content="{{ t.locale }}">
   <meta property="og:locale:alternate" content="{{ i18n['de' if lang == 'en' else 'en'].locale }}">
   <meta property="og:url" content="https://luenstroth-werbeagentur.de{{ page.url }}">
