@@ -930,3 +930,13 @@ img { display: block; max-width: 100%; }
 .video-sound:hover,.video-sound:focus-visible{background:rgba(0,0,0,.8)}
 .video-auto video[controls]~.video-sound{bottom:3.5rem}
 
+
+/* Fragen und Antworten */
+.faq-item{border-top:1px solid var(--line, rgba(0,0,0,.15))}
+.faq-item:last-of-type{border-bottom:1px solid var(--line, rgba(0,0,0,.15))}
+.faq-item summary{cursor:pointer;list-style:none;padding:1.1rem 2rem 1.1rem 0;position:relative;font-weight:600;line-height:1.4}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";position:absolute;right:.25rem;top:1rem;font-weight:400;font-size:1.25rem;color:var(--accent)}
+.faq-item[open] summary::after{content:"–"}
+.faq-answer{padding:0 0 1.25rem;line-height:1.75}
+.faq-answer a{color:inherit;text-decoration:underline;text-underline-offset:3px}

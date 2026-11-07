@@ -1,0 +1,15 @@
+{#- Fragen und Antworten mit FAQPage-Auszeichnung. Aufruf:
+    {% set faq = [{q: "…", a: "… (HTML erlaubt)"}] %}{% include "faq.njk" %} -#}
+<section class="container measure section-block faq">
+  <p class="label reveal">{{ "Questions" if lang == "en" else "Fragen" }}</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.5rem;">{{ "What clients ask before they commission us" if lang == "en" else "Was Kunden fragen, bevor sie beauftragen" }}</h2>
+  {%- for item in faq %}
+  <details class="faq-item reveal">
+    <summary>{{ item.q }}</summary>
+    <div class="faq-answer"><p>{{ item.a | safe }}</p></div>
+  </details>
+  {%- endfor %}
+</section>
+{%- set faqSchema = [] %}
+{%- for item in faq %}{% set _n = faqSchema.push({"@type": "Question", "name": item.q, "acceptedAnswer": {"@type": "Answer", "text": item.a | plaintext} }) %}{% endfor %}
+<script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": lang, "mainEntity": faqSchema } | dump | safe }}</script>
