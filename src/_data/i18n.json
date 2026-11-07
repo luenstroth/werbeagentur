@@ -9,20 +9,20 @@
     "siteName": "Lünstroth Werbeagentur",
     "nav": [
       {
-        "url": "/vorgehensweise-der-agentur/",
-        "label": "Arbeitsweise"
-      },
-      {
-        "url": "/agentur/",
-        "label": "Agentur"
-      },
-      {
         "url": "/leistungen/",
         "label": "Leistungen"
       },
       {
         "url": "/case-studies/",
         "label": "Case Studies"
+      },
+      {
+        "url": "/vorgehensweise-der-agentur/",
+        "label": "Arbeitsweise"
+      },
+      {
+        "url": "/agentur/",
+        "label": "Agentur"
       }
     ],
     "cta": {
@@ -129,20 +129,20 @@
     "siteName": "Lünstroth Advertising Agency",
     "nav": [
       {
-        "url": "/en/approach/",
-        "label": "Approach"
-      },
-      {
-        "url": "/en/agency/",
-        "label": "Agency"
-      },
-      {
         "url": "/en/services/",
         "label": "Services"
       },
       {
         "url": "/en/case-studies/",
         "label": "Case Studies"
+      },
+      {
+        "url": "/en/approach/",
+        "label": "Approach"
+      },
+      {
+        "url": "/en/agency/",
+        "label": "Agency"
       }
     ],
     "cta": {
