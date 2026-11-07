@@ -1,0 +1,78 @@
+---
+layout: base.njk
+title: "Naming-Agentur: Markennamen, international schützbar"
+description: "Ein Name muss international funktionieren, markenrechtlich verfügbar sein und zur Ausrichtung passen. Naming mit Prüfung der Schutzfähigkeit."
+permalink: /leistungen/markenentwicklung-naming/
+tags: ["leistung"]
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Markenentwicklung & Naming",
+    "provider": {"@type": "Organization", "name": "Lünstroth Werbeagentur"}
+  }
+---
+
+<header style="padding:calc(var(--nav-h) + 4rem) 0 3rem;background:var(--paper-2);">
+  <div class="container">
+    <h1 class="label reveal" style="margin-bottom:1rem;">Markenentwicklung & Naming</h1>
+    <p class="display-lg reveal reveal-delay-1" style="max-width:820px;">Ein guter Name ist zuerst rechtssicher, dann originell.</p>
+  </div>
+</header>
+
+<section class="container" style="padding-block:4rem 2rem;max-width:760px;">
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">Ein neuer Name — für ein Unternehmen, ein Produkt, eine Technologie oder eine Marktlinie — wird oft zuerst kreativ entwickelt und erst danach rechtlich geprüft. Das kehrt die eigentliche Reihenfolge um: Ein Name, der markenrechtlich nicht verfügbar ist oder in einem Zielmarkt unerwartete Bedeutungen trägt, verursacht später deutlich höhere Kosten als eine frühzeitige Prüfung.</p>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">Lünstroth entwickelt Namen für Unternehmen, Sortimente, Produkte und Technologien mit Blick auf internationale Rechtssicherheit von Anfang an — nicht als nachträgliche Prüfung eines bereits favorisierten Vorschlags.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 4rem;max-width:1100px;">
+  <h2 class="display-md reveal" style="margin-bottom:.5rem;">Ausgewählte Markennamen</h2>
+  <p class="body-lg reveal" style="margin-bottom:2rem;max-width:760px;">Ein Ausschnitt aus der Bandbreite: Unternehmensmarken, Technologiemarken, Produktmarken und Sortimentsmarken.</p>
+  <div class="naming-grid reveal reveal-delay-1">
+    {%- for item in [
+      {img:"naming-vialog.webp", name:"Vialog", cat:"Unternehmensmarke · Dialogmarketing"},
+      {img:"naming-intellibeam.webp", name:"Intellibeam", cat:"Technologiemarke · Automotive"},
+      {img:"naming-dynaview.webp", name:"DynaView", cat:"Produktmarke · Automotive"},
+      {img:"naming-powerflex.webp", name:"Powerflex", cat:"Sortimentsmarke · Kfz-Zubehör"},
+      {img:"naming-server-os.webp", name:"Dachmarke Server-OS", cat:"Produktfamilienmarke · Enterprise Software"},
+      {img:"naming-private-label-vertraulich.webp", name:"Private-Label-Dachmarke (vertraulich)", cat:"Private Label · Nordamerika"},
+      {img:"naming-automotive-technologiemarke-vertraulich.webp", name:"Technologiemarke (vertraulich)", cat:"Produktmarke · Automotive"},
+      {img:"naming-feinkost-dips.webp", name:"Sortimentsmarke Feinkost-Dips", cat:"FMCG · Lebensmitteleinzelhandel"},
+      {img:"naming-fmcg-vertraulich.webp", name:"FMCG-Sortimentsmarke (vertraulich)", cat:"Lebensmitteleinzelhandel"},
+      {img:"naming-timefit.webp", name:"TimeFit", cat:"Aftermarket-Sortimentsmarke · Automotive"}
+    ] %}
+    <div class="naming-tile">
+      <div class="naming-tile-img"><img src="/img/{{ item.img }}" alt="{{ item.name }} — Markenname, Umsetzung durch die Lünstroth Werbeagentur"></div>
+      <p class="naming-tile-name">{{ item.name }}</p>
+      <p class="naming-tile-cat">{{ item.cat }}</p>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="container" style="padding-block:1rem 3rem;max-width:760px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Was das konkret umfasst</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "Namensentwicklung für Unternehmen, Produkte, Technologien und Sortimente",
+      "Internationale Verfügbarkeitsprüfung vor kreativer Fixierung auf einen Favoriten",
+      "Markenarchitektur bei mehreren, koexistierenden Marken im Portfolio",
+      "Begleitung bis zur markenrechtlichen Anmeldung"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<section class="container" style="padding-block:0 5rem;max-width:760px;text-align:center;">
+  <a href="/case-studies/meisterhaft-zdb/" class="btn-arrow">Beispiel: Meisterhaft (ZDB) →</a>
+  <div style="margin-top:1.25rem;">
+    <a href="/leistungen/marken-wettbewerbsrecht/" class="btn-arrow">Vertiefung: Marken- und Wettbewerbsrecht →</a>
+  </div>
+  <div style="margin-top:2rem;">
+    <a href="/kontakt/" class="btn-fill">Projekt anfragen</a>
+  </div>
+</section>

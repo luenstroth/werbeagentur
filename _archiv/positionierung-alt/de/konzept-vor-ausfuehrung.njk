@@ -1,0 +1,104 @@
+---
+layout: base.njk
+title: "Konzept vor Ausführung: warum das Denken die Leistung ist"
+description: "Gestaltung, Text und Code sind billig geworden. Bezahlbar bleibt die begründete Entscheidung darüber, was getan und was gelassen wird — Diagnose und Konzept als eigenständige Leistung."
+permalink: /positionierung/konzept-vor-ausfuehrung/
+tags: ["positionierung"]
+heroImage: "img/Konzept-Hero.jpg"
+heroAlt: "Werkzeug einer CNC-Maschine am Bauteil – der Schnitt ist im Programm entschieden, bevor sich das Werkzeug bewegt"
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Konzept vor Ausführung: warum das Denken die Leistung ist",
+    "description": "Gestaltung, Text und Code sind billig geworden. Bezahlbar bleibt die begründete Entscheidung darüber, was getan und was gelassen wird.",
+    "author": {"@type": "Organization", "name": "Lünstroth Werbeagentur"}
+  }
+---
+
+<header class="hero ken-burns">
+  {% respImage "img/Konzept-Hero.jpg", "Werkzeug einer CNC-Maschine am Bauteil – der Schnitt ist im Programm entschieden, bevor sich das Werkzeug bewegt", "100vw", {eager: true} %}
+  <div class="hero-overlay"></div>
+  <div class="container hero-inner">
+    <p class="label reveal" style="color:#fff;margin-bottom:1rem;">Positionierung · Leistung</p>
+    <h1 class="display-lg reveal reveal-delay-1" style="color:#fff;max-width:880px;">Konzept vor Ausführung: Entscheidungen sind die Leistung, nicht Entwürfe</h1>
+    <p class="body-lg reveal reveal-delay-2" style="color:rgba(255,255,255,.88);max-width:720px;margin-top:1rem;">Was zu tun ist, ist die schwierige Frage. Wie es aussieht, ist die Folgefrage.</p>
+  </div>
+</header>
+
+<section class="container" style="padding-block:4rem 2rem;max-width:760px;">
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">Ausführung ist keine knappe Ressource mehr. Gestaltung, Text, Bild, Layout, Code — all das ist in den letzten Jahren schnell und billig geworden, und diese Entwicklung wird sich nicht umkehren. Wer sich als Agentur über Ausführung positioniert, positioniert sich gegen einen Wettbewerber, der nicht müde wird und fast nichts kostet.</p>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">Was nicht automatisiert verfügbar ist, ist die Entscheidung darüber, <em>was</em> ausgeführt werden soll — und die Verantwortung für diese Entscheidung. Das ist der Grund, warum bei Lünstroth Diagnose und Konzept am Anfang stehen und nicht als Vorleistung mitlaufen.</p>
+  <p class="pull-quote reveal reveal-delay-2">Diagnose und Konzept sind eigenständige Leistungen mit festgelegtem Umfang — kein unberechneter Vorlauf zu einem Gestaltungsauftrag.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 3rem;max-width:900px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Was ein Konzept ist — und was nicht</h2>
+  <div class="compare-grid reveal reveal-delay-1">
+    <div class="compare-col">
+      <span class="compare-tag">Was oft Konzept genannt wird</span>
+      <p class="compare-text" style="margin-bottom:1rem;">Eine Ideensammlung. Ein Moodboard. Drei Vorschläge zur Auswahl. Eine Präsentation, die Möglichkeiten zeigt und die Entscheidung an den Kunden zurückgibt.</p>
+      <p class="compare-text">Das Kennzeichen: Es gibt keine Ableitung, die man prüfen könnte. Also wird über Geschmack verhandelt — und der Abstimmungskreis entscheidet nach Gefallen.</p>
+    </div>
+    <div class="compare-col">
+      <span class="compare-tag">Was hier Konzept heißt</span>
+      <p class="compare-text" style="margin-bottom:1rem;">Eine begründete Entscheidung darüber, was getan und was gelassen wird, mit einer Ableitung, die von der Entscheidungssituation bis zum Mittel nachvollziehbar ist.</p>
+      <p class="compare-text">Das Kennzeichen: Man kann ihr widersprechen. Nicht, weil einem etwas nicht gefällt, sondern weil eine Annahme falsch ist. Das ist ein produktiver Streit.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container" style="padding-block:1rem 3rem;max-width:760px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Change follows Strategy</h2>
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">Aus dem Vorrang des Konzepts folgt ein zweites Prinzip, das in der Praxis noch häufiger gegen die Erwartung läuft: Geändert wird, was die Strategie verlangt — nicht mehr. Wiedererkennung ist ein wirtschaftlicher Vermögenswert, aufgebaut über Jahre, und wer sie aufgibt, schreibt ihn ab. Das tut man mit Grund oder gar nicht.</p>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">Klassische Gestaltungsstudios denken über ein neues Logo oft schon dann nach, wenn niemand danach gefragt hat — ein Relaunch ist ein sichtbares Ergebnis und leicht zu verkaufen. Die Analyse führt jedoch regelmäßig zu einer anderen Antwort:</p>
+  <ul class="check-list">
+    {%- for item in [
+      "Gneuss: Nicht das Logo war das Problem, sondern ein einzelner Bestandteil. Das Signet entfiel, die Wortmarke blieb unverändert.",
+      "Volksbank PHD: Die übernommene Ortsmarke blieb vollständig erhalten. Ein Endorsement statt einer Fusion — die Auflösung hätte mehr gekostet als gebracht.",
+      "Cobiax: Hier war die Änderung tatsächlich nötig. Und selbst dann blieb die charakteristische Verlängerung des „x“ erhalten.",
+      "Meco: Anpassung an digitale Sehgewohnheiten, ohne die bestehende Logo-Typik zu verlassen."
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+  <p class="body-lg reveal" style="margin-top:1.5rem;">Vier Mandate, vier unterschiedliche Eingriffstiefen — und in drei von vier Fällen blieb der wertvollste Teil der Marke unangetastet. Das ist kein Zufall, sondern das Ergebnis derselben Frage: Trägt die bestehende Form die Strategie noch?</p>
+</section>
+
+<section class="container" style="padding-block:1rem 3rem;max-width:900px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Die vier Stufen — und warum die Reihenfolge nicht verhandelbar ist</h2>
+  <p class="body-lg reveal" style="margin-bottom:2rem;">Jede Stufe ist einzeln beauftragbar. Keine lässt sich überspringen, ohne dass die folgende auf Annahmen statt auf Erkenntnissen aufsetzt.</p>
+  <div class="grid-2 reveal reveal-delay-1" style="gap:clamp(1.5rem,2.5vw,2.5rem);">
+    {%- for s in [
+      {n:"A", t:"Diagnose", d:"Marktposition, Wettbewerbsumfeld, Vertriebswege, Preisargumentation, rechtliche Lage. Ergebnis ist eine Beschreibung des Ist-Zustands, die auch unangenehme Befunde enthält. Fester Umfang, eigenständig beauftragbar."},
+      {n:"B", t:"Konzept", d:"Die begründete Entscheidung: Was ist zu tun, was ist zu lassen, in welcher Reihenfolge, mit welchem erwarteten Effekt. Hier fällt auch die Entscheidung über die Eingriffstiefe in die bestehende Marke."},
+      {n:"C", t:"Umsetzung", d:"Marke und Identität, verkaufsfähige Medien: Verpackung, Vertriebs- und Listungsunterlagen, Website, Video, Fachkommunikation. Jedes Mittel folgt aus dem Konzept und ist daran prüfbar."},
+      {n:"D", t:"Betrieb", d:"Laufende Betreuung des Markensystems, Inhalte und Produktdaten, Markenregeln für die KI-Systeme des Kunden, technischer Betrieb. Eine Marke, die nicht gepflegt wird, zerfällt in ihre Einzelteile."}
+    ] %}
+    <div>
+      <p class="card-num" style="font-size:2.5rem;">{{ s.n }}</p>
+      <h3 class="card-title" style="margin-bottom:.5rem;">{{ s.t }}</h3>
+      <p class="card-desc">{{ s.d }}</p>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="container" style="padding-block:1rem 4rem;max-width:760px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Was das kostet — und was es spart</h2>
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">Eine Konzeptphase zu bezahlen, ohne etwas zu sehen, fällt schwer. Der Einwand ist berechtigt, und die Antwort darauf ist keine Zusicherung, sondern eine Rechnung: Abstimmungsschleifen sind der teuerste Posten in Kommunikationsprojekten. Sie entstehen, wenn über Entwürfe diskutiert wird, für die es keine Begründung gibt — dann tritt an die Stelle des Arguments die Hierarchie, und an die Stelle der Entscheidung der Kompromiss.</p>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">Liegt ein Konzept vor, verschiebt sich die Diskussion um eine Ebene nach vorn: Man streitet über Annahmen, nicht über Geschmack. Dieser Streit ist kürzer, weil er entscheidbar ist — und er findet statt, bevor produziert wurde, nicht danach.</p>
+</section>
+
+<section class="container" style="padding-block:0 5rem;max-width:760px;">
+  <div style="background:var(--paper-2);padding:2rem 2.25rem;border-left:2px solid var(--accent);">
+    <p class="label" style="margin-bottom:.75rem;">Weiter in der Positionierung</p>
+    <p style="font-size:.9375rem;line-height:1.8;">Woraus ein Konzept entsteht: <a href="/positionierung/vom-ende-her-denken/">Vom Ende her denken</a>. Worauf es zielt: <a href="/positionierung/platzierung-im-markt/">Platzierung im Markt</a>.</p>
+  </div>
+  <div style="text-align:center;margin-top:2.5rem;">
+    <a href="/positionierung/" class="btn-arrow">← Zur Übersicht</a>
+  </div>
+</section>

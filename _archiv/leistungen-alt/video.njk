@@ -1,0 +1,53 @@
+---
+layout: base.njk
+title: "Imagevideo und Unternehmensfilm: Drehbuch, Dreh, Schnitt"
+description: "Drehbuch, Regie, Dreh, Ton und Schnitt im eigenen Haus – ohne Umweg über externe Produktionsfirmen. Imagevideos und Produktfilme für Unternehmen."
+permalink: /leistungen/video/
+tags: ["leistung"]
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Videoproduktion",
+    "provider": {"@type": "Organization", "name": "Lünstroth Werbeagentur"}
+  }
+---
+
+<header style="padding:calc(var(--nav-h) + 4rem) 0 3rem;background:var(--paper-2);">
+  <div class="container">
+    <h1 class="label reveal" style="margin-bottom:1rem;">Video-Produktion</h1>
+    <p class="display-lg reveal reveal-delay-1" style="max-width:820px;">Videoproduktion im eigenen Haus. Ohne Umweg.</p>
+  </div>
+</header>
+
+<div class="container" style="padding-top:2.5rem;">
+  <div class="case-img reveal">
+    <img src="/img/placeholder-16x9.svg" alt="Videoproduktion (Platzhalter)">
+  </div>
+</div>
+
+<section class="container" style="padding-block:4rem 2rem;max-width:760px;">
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">Webvideos gehören zu den wirkungsvollsten Formaten im Content Marketing — vorausgesetzt, sie sind markengerecht produziert und wirtschaftlich sinnvoll umsetzbar. Beides hängt eng zusammen: Wer Produktion an Dritte auslagert, zahlt für jede Abstimmungsschleife.</p>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">Lünstroth produziert deshalb im eigenen Haus: Drehbuch, Regie, Dreh, Ton und Schnitt. Das hält Kosten planbar und Entscheidungswege kurz — ohne Qualitätsverlust gegenüber externer Produktion.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 3rem;max-width:760px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Einsatzfelder</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "Imagevideos im Rahmen eines Website-Relaunchs — für Web und Präsentationen gleichermaßen nutzbar",
+      "Employer-Branding-Videos für Personalgewinnung und -bindung",
+      "Konzept- und Erklärvideos für erklärungsbedürftige Produkte und Leistungen",
+      "Kostenoptimierte Produktion durch Inhouse-Fertigung statt externer Beauftragung"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<section class="container" style="padding-block:0 5rem;max-width:760px;text-align:center;">
+  <a href="/kontakt/" class="btn-fill">Projekt anfragen</a>
+</section>

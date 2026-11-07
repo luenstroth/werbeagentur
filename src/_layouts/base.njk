@@ -1,0 +1,86 @@
+{%- set t = i18n[lang] -%}
+{%- set paar = page.url | sprachpaar(collections.sprachpaare) -%}
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  {%- if robots %}
+  <meta name="robots" content="{{ robots }}">
+  {%- endif %}
+  <link rel="canonical" href="https://luenstroth-werbeagentur.de{{ page.url }}">
+  {#- hreflang: beide Sprachfassungen verweisen gegenseitig aufeinander.
+      x-default = Englisch, weil die Zielgruppe international liest. -#}
+  {%- if paar %}
+  <link rel="alternate" hreflang="de" href="https://luenstroth-werbeagentur.de{{ paar.de }}">
+  <link rel="alternate" hreflang="en" href="https://luenstroth-werbeagentur.de{{ paar.en }}">
+  <link rel="alternate" hreflang="x-default" href="https://luenstroth-werbeagentur.de{{ paar.en }}">
+  {%- endif %}
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.jpg">
+  <link rel="stylesheet" href="/css/main.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="{{ t.locale }}">
+  <meta property="og:locale:alternate" content="{{ i18n['de' if lang == 'en' else 'en'].locale }}">
+  <meta property="og:url" content="https://luenstroth-werbeagentur.de{{ page.url }}">
+  <meta property="og:title" content="{{ ogTitle or title }}">
+  <meta property="og:description" content="{{ ogDescription or description }}">
+  {%- set ogSrc = ogImageSrc or heroImage -%}
+  <meta property="og:image" content="{% ogImage ogSrc %}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ heroAlt or title }}">
+  <meta property="og:site_name" content="{{ t.siteName }}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ ogTitle or title }}">
+  <meta name="twitter:description" content="{{ ogDescription or description }}">
+  <meta name="twitter:image" content="{% ogImage ogSrc %}">
+  <meta name="twitter:image:alt" content="{{ heroAlt or title }}">
+
+  {% if tags and ("caseStudy" in tags or "caseStudyEn" in tags) %}
+  <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "Article", "headline": title, "description": description, "inLanguage": lang, "url": "https://luenstroth-werbeagentur.de" + page.url, "mainEntityOfPage": "https://luenstroth-werbeagentur.de" + page.url, "image": "https://luenstroth-werbeagentur.de/" + heroImage, "dateModified": page.date.toISOString(), "author": {"@id": "https://luenstroth-werbeagentur.de/#organisation"}, "publisher": {"@id": "https://luenstroth-werbeagentur.de/#organisation"}, "about": {"@type": "Organization", "name": client } } | dump | safe }}</script>
+  {% endif %}
+  {% if pageSchema %}
+  <script type="application/ld+json">{{ pageSchema | safe }}</script>
+  {% endif %}
+
+  {%- set crumbs %}{% breadcrumbSchema page.url, title, breadcrumbName %}{% endset -%}
+  {% if crumbs %}
+  <script type="application/ld+json">{{ crumbs | safe }}</script>
+  {% endif %}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Organization", "ProfessionalService"],
+    "@id": "https://luenstroth-werbeagentur.de/#organisation",
+    "image": "https://luenstroth-werbeagentur.de/img/hero-endkontrolle.jpg",
+    "name": "Lünstroth Werbeagentur",
+    "alternateName": ["Lünstroth GmbH", "Lünstroth Advertising Agency"],
+    "url": "https://luenstroth-werbeagentur.de",
+    "logo": "https://luenstroth-werbeagentur.de/img/logo.svg",
+    "email": "kontakt@luenstroth-werbeagentur.de",
+    "telephone": "+49 521 448122710",
+    "areaServed": "Worldwide",
+    "knowsLanguage": ["de", "en"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Friedrichstraße 18",
+      "postalCode": "33615",
+      "addressLocality": "Bielefeld",
+      "addressCountry": "DE"
+    }
+  }
+  </script>
+</head>
+<body>
+  {% include "nav.njk" %}
+  {{ content | safe }}
+  {% include "footer.njk" %}
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

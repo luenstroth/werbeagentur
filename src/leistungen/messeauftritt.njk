@@ -1,0 +1,96 @@
+---
+layout: base.njk
+title: "Messeauftritt und Messekommunikation: die Messe steht an"
+description: "Einladung, Stand, Gespräch, Nachfassen: Messekommunikation, die nicht am Gang endet. Für Industrie, Markenartikel und Mode – mit Video und Unterlagen aus einer Hand."
+permalink: /leistungen/messeauftritt/
+tags: ["anlass"]
+anlassOrder: 4
+anlassName: "Die Messe steht an"
+anlassTeaser: "Ein fester Termin, ein knappes Zeitfenster und Besucher, die in drei Sekunden entscheiden, ob sie stehen bleiben."
+ogImageSrc: "img/Messe-steht-an.jpg"
+heroAlt: "Hände reichen ein gefaltetes Programmheft und Unterlagen über einen Tisch"
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Messeauftritt und Messekommunikation",
+    "serviceType": "Messekommunikation, Messeunterlagen",
+    "provider": { "@id": "https://luenstroth-werbeagentur.de/#organisation" },
+    "areaServed": "Worldwide"
+  }
+---
+{%- set hero = {
+  img: "img/Messe-steht-an.jpg",
+  alt: "Hände reichen ein gefaltetes Programmheft und Unterlagen über einen Tisch",
+  label: "Messeauftritt und Messekommunikation",
+  claim: "Die Messe<br>steht an<span class=\"type-dot\">.</span>",
+  sub: "Der Termin steht fest, und er verschiebt sich nicht. Bis dahin muss alles fertig sein — und zusammenpassen.",
+  labelIsH1: true
+} %}
+{% include "hero-foto.njk" %}
+
+<!-- 01 — DIE LAGE -->
+<section class="container measure section-block section-block--tight">
+  <p class="label reveal" style="margin-bottom:1rem;">01 — Die Lage</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Drei Momente, nicht einer</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Eine Messe wird oft auf den Stand reduziert. Tatsächlich entscheidet sie sich in drei Momenten: davor, wenn eingeladen wird und die richtigen Besucher einen Grund zum Kommen brauchen. Am Gang, wo in Sekunden entschieden wird, ob jemand stehen bleibt. Und danach, wenn aus einem Gespräch ein Auftrag werden soll.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Wer nur für den mittleren Moment gestaltet, hat einen schönen Stand und wenig Folgegeschäft.</p>
+  <p class="pull-quote reveal reveal-delay-2">Der Stand ist das sichtbarste Mittel — selten das wirksamste.</p>
+</section>
+
+<!-- 02 — WAS ENTSTEHT -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">02 — Was dafür entsteht</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.5rem;">Vor, auf und nach der Messe</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "Einladungen und Vorab-Kommunikation, die einen konkreten Grund nennen, vorbeizukommen",
+      "Eine Kernaussage für den Stand, die aus dem Gang heraus lesbar ist",
+      "Unterlagen für das Gespräch: Produktblätter, Lookbooks, Präsentationen — knapp genug, um mitgenommen zu werden",
+      "Video für Stand und Präsentation, im eigenen Haus produziert",
+      "Material für das Nachfassen, das an das Gespräch anknüpft statt es zu wiederholen"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<!-- 03 — TERMIN -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">03 — Der feste Termin</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Alles aus einer Hand, damit es rechtzeitig passt</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Bei einer Messe ist der Termin nicht verhandelbar. Jede Abstimmung zwischen Agentur, Filmproduktion und Druckerei kostet Tage, die am Ende fehlen. Konzept, Text, Gestaltung und Video liegen hier im selben Team — die Entscheidungswege bleiben kurz, und die Teile passen zusammen, weil sie aus derselben Aussage entstehen.</p>
+</section>
+
+<!-- 04 — BELEGE -->
+<section class="container section-block" style="max-width:1100px;">
+  <p class="label reveal" style="margin-bottom:1rem;">04 — Belege</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:2rem;max-width:760px;">Messe als Teil der laufenden Kommunikation</h2>
+  <div class="grid-2" style="background:none;gap:clamp(1.5rem,2.5vw,2.5rem);">
+    <a href="/case-studies/eva-mann/" class="card reveal">
+      <div class="card-num">A</div>
+      <h3 class="card-title">Eva Mann</h3>
+      <p class="card-desc">Messekommunikation über viele Saisons: Einladungen zur Kollektionspräsentation, Lookbooks für Presse und Einkäufer, Push-In-Materialien für den Handel.</p>
+    </a>
+    <a href="/case-studies/cobiax/" class="card reveal reveal-delay-1">
+      <div class="card-num">B</div>
+      <h3 class="card-title">Cobiax</h3>
+      <p class="card-desc">Corporate Design auf Vertriebsmaterialien und ein Imagevideo für Präsentationen — alles aus derselben Aussage, für einen internationalen Markt.</p>
+    </a>
+  </div>
+</section>
+
+<!-- 05 — VORGELAGERT -->
+<section class="container measure" style="padding-block:1rem 3rem;">
+  <div style="background:var(--paper-2);padding:2rem 2.25rem;border-left:2px solid var(--accent);">
+    <p class="label" style="margin-bottom:.75rem;">Soll die Messe ein neues Unternehmen zeigen?</p>
+    <p style="font-size:.9375rem;line-height:1.8;">Wenn der Auftritt eine Neuausrichtung erstmals öffentlich machen soll, muss diese Ausrichtung vorher entschieden sein. Das ist Aufgabe der <a href="https://luenstroth.com/de/markenberatung/markenfuehrung/" style="color:var(--accent);">Lünstroth Markenberatung</a>.</p>
+  </div>
+</section>
+
+<section class="container measure" style="padding-block:1rem 7rem;">
+  <a href="/kontakt/" class="btn-fill reveal">Projekt anfragen</a>
+</section>

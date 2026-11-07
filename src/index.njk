@@ -1,0 +1,176 @@
+---
+layout: base.njk
+title: "Werbeagentur für Industrie, Handel und Markenartikler"
+description: "Unverzichtbar statt austauschbar: Lünstroth gibt Industrie und Markenartiklern Argumente gegen den Preisdruck – für Technik, Einkauf, Handel und Endkunden."
+ogImageSrc: "img/og-startseite.jpg"
+heroAlt: "Werbeagentur für Industrie, Handel und Markenartikler."
+permalink: /
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Lünstroth Werbeagentur",
+    "url": "https://luenstroth-werbeagentur.de/",
+    "inLanguage": "de-DE",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Lünstroth Werbeagentur",
+      "url": "https://luenstroth-werbeagentur.de/"
+    }
+  }
+
+---
+
+{#  Foto-Hero mit typografischem Claim. H1 = Suchbegriffs-Zeile,
+    der Claim ist visuell die Überschrift, semantisch ein Absatz
+    (siehe hero-type.njk). Motiv: Endkontrolle — der Moment, in dem
+    entschieden wird, ob etwas taugt. Schwarzweiß, damit links eine
+    ruhige Fläche für den Text entsteht.                              #}
+<header class="hero hero--foto">
+  {% respImage "img/hero-endkontrolle.jpg", "Hände prüfen ein gebogenes Metallteil auf dem Prüftisch und markieren es mit einem Stift.", "100vw", {eager: true} %}
+  <div class="hero-overlay"></div>
+  <div class="container hero-inner">
+    <h1 class="label reveal" style="margin-bottom:1.75rem;">Werbeagentur für Industrie, Handel und Markenartikler</h1>
+    <p class="type-claim">
+      {%- for w in ["Unverzichtbar", "statt", "austauschbar"] %}
+      <span class="type-word" style="animation-delay:{{ (loop.index0 * 0.13 + 0.15) | round(2) }}s;">{{ w }}{% if loop.last %}<span class="type-dot">.</span>{% endif %}</span>{% if not loop.last %} {% endif %}
+      {%- endfor %}
+    </p>
+    <p class="type-sub reveal reveal-delay-2">Für jeden, der mitentscheidet: Technik, Einkauf, Geschäftsführung, Handel, den Kunden am Regal. Manchmal ist es ein anderer, als alle dachten.</p>
+    <div class="type-meta reveal reveal-delay-2">
+      <a href="#felder" class="btn-fill">Zwei Felder, eine Logik</a>
+      <span class="type-rule"></span>
+      <a href="/case-studies/" class="btn-arrow">Dreizehn Mandate ansehen →</a>
+    </div>
+  </div>
+</header>
+
+<!-- 01 — FELDER -->
+<section id="felder" class="container" style="padding-block:7rem 1rem;max-width:1100px;">
+  <p class="label reveal" style="margin-bottom:1rem;">01 — Zwei Felder</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:2.5rem;max-width:720px;">Wer austauschbar wirkt, verhandelt über den Preis.</h2>
+  <div class="grid-2" style="background:none;gap:clamp(2rem,3vw,3rem);">
+    <div class="card reveal">
+      <div class="card-num">A</div>
+      <h3 class="card-title">Industrie und Technologie</h3>
+      <p class="card-desc" style="margin-bottom:1.25rem;">Der Ingenieur prüft die Technik, der Einkauf Preis und Lieferfähigkeit, die Geschäftsführung das Risiko. Gekauft wird eine Technologie – und das Unternehmen, das in zehn Jahren noch dahintersteht.</p>
+      <p class="card-desc"><a href="/case-studies/cobiax/">Cobiax</a> · <a href="/case-studies/hella/">Hella</a> · <a href="/case-studies/gneuss/">Gneuss</a> · <a href="/case-studies/meco/">Meco</a></p>
+    </div>
+    <div class="card reveal reveal-delay-1">
+      <div class="card-num">B</div>
+      <h3 class="card-title">Handel und Markenartikel</h3>
+      <p class="card-desc" style="margin-bottom:1.25rem;">Erst entscheidet der Einkäufer über die Listung, dann der Verbraucher in wenigen Sekunden am Regal. Wer nur den zweiten überzeugt, kommt gar nicht erst ins Regal.</p>
+      <p class="card-desc"><a href="/case-studies/kuehlmann/">Kühlmann</a> · <a href="/case-studies/piasten/">Piasten</a> · <a href="/case-studies/albatros/">Albatros</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- 02 — PRINZIPIEN -->
+<section class="container" style="padding-block:7rem 1rem;max-width:1100px;">
+  <p class="label reveal" style="margin-bottom:1rem;">02 — Prinzipien</p>
+  <div class="grid-3" style="background:none;gap:clamp(2.5rem,4vw,4rem);">
+    <div class="reveal">
+      <div style="width:44px;height:44px;color:var(--accent);margin-bottom:1.5rem;">
+        <img src="/img/icon-home-praezision.svg" alt="" style="width:100%;height:100%;">
+      </div>
+      <h2 class="display-md" style="margin-bottom:.75rem;">Nur ändern, was sich nicht mehr trägt.</h2>
+      <p class="card-desc">Der Regelfall ist Unveränderung. Ein Logo, eine Positionierung, eine Kampagne wird nur angefasst, wenn eine strategische Analyse zeigt, dass sie ihren Zweck nicht mehr erfüllt — nicht, weil eine neue Idee gerade gefällt.</p>
+    </div>
+    <div class="reveal reveal-delay-1">
+      <div style="width:44px;height:44px;color:var(--accent);margin-bottom:1.5rem;">
+        <img src="/img/icon-home-uebersetzung.svg" alt="" style="width:100%;height:100%;">
+      </div>
+      <h2 class="display-md" style="margin-bottom:.75rem;">Technik wird zu Nutzen.</h2>
+      <p class="card-desc">Der eigentliche Unterschied liegt selten in der Gestaltung. Er liegt darin, ein technisches Detail in einen Nutzen zu übersetzen, der für Hersteller, Handel und Endkunden jeweils etwas anderes bedeutet.</p>
+    </div>
+    <div class="reveal reveal-delay-2">
+      <div style="width:44px;height:44px;color:var(--accent);margin-bottom:1.5rem;">
+        <img src="/img/icon-home-rechtssicherheit.svg" alt="" style="width:100%;height:100%;">
+      </div>
+      <h2 class="display-md" style="margin-bottom:.75rem;">International rechtssicher.</h2>
+      <p class="card-desc">Ein Name, ein Zeichen, eine Kampagne muss dort funktionieren, wo sie eingesetzt wird — markenrechtlich, sprachlich, kulturell. Das wird geprüft, bevor eine Idee sich in etwas verliebt, das sich nicht schützen lässt.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 03 — ARBEITSWEISE -->
+<section class="container" style="padding-block:7rem 1rem;max-width:720px;">
+  <p class="label reveal" style="margin-bottom:1rem;">03 — Arbeitsweise</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Der Großteil der Arbeit hat nichts mit Gestaltung zu tun.</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Die Gestaltung ist bei einem Mandat der kleinere Teil der Arbeit. Der größere besteht darin, sich in die Logik von Herstellern, Handel, Vertrieb und Endkunden hineinzudenken – und für jede Stufe den Grund zu finden, der dort zählt.</p>
+  <p class="pull-quote reveal reveal-delay-2">Ein technisches Detail wird erst zum Nutzenversprechen, wenn jemand versteht, was es für den Endverbraucher tatsächlich bedeutet.</p>
+  <a href="/agentur/" class="btn-arrow reveal reveal-delay-2">Die Arbeitsweise →</a>
+</section>
+
+<!-- 04 — BELEG -->
+<section class="container" style="padding-block:7rem 2.5rem;max-width:720px;">
+  <p class="label reveal" style="margin-bottom:1rem;">04 — Beleg</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Dreizehn Mandate, dreizehn unterschiedliche Ausgangslagen.</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Der Beleg für alles oben Gesagte — unternehmensweise, nicht behauptet.</p>
+  <a href="/case-studies/" class="btn-arrow reveal reveal-delay-2">Case Studies ansehen →</a>
+</section>
+
+<section class="container" style="padding-block:0 7rem;max-width:1100px;">
+  <div class="logo-wall reveal reveal-delay-1">
+    {%- set logos = [
+      {f:"Albatros.svg", n:"Albatros", link:"/case-studies/albatros/", d:"Brand Relaunch einer Eigenmarke"},
+      {f:"all-for-one.svg", n:"All for One", d:"Markenarchitektur"},
+      {f:"Anker.svg", n:"Anker", d:"Neuaufstellung nach Konzern-Ausgliederung"},
+      {f:"Apsolut.svg", n:"Apsolut", d:"HR-Unterstützung"},
+      {f:"Auto-Weller.svg", n:"Auto Weller", d:"Abverkaufspromotion Jahresende"},
+      {f:"Bankverein-Werther.svg", n:"Bankverein Werther", link:"/case-studies/volksbank-phd/", d:"Markenintegration in Volksbank"},
+      {f:"Bauverein-Schildhof.svg", n:"Bauverein Schildhof", d:"Website-Relaunch, Corporate Identity"},
+      {f:"Bayrische-Versorgungskammer.svg", n:"Bayrische Versorgungskammer", d:"Markenarchitektur"},
+      {f:"cobiax.svg", n:"Cobiax", link:"/case-studies/cobiax/", d:"Neuaufstellung, Positionierung, Brand Identity"},
+      {f:"DDS-Consulting.svg", n:"DDS Consulting", d:"Website"},
+      {f:"DSC-Arminia-Bielefeld.svg", n:"DSC Arminia Bielefeld", link:"/case-studies/arminia-bielefeld/", d:"Einnahmenmaximierung, Positionierung, Corporate Identity / Design"},
+      {f:"Eva-Luen.svg", n:"Eva Luen", d:"Markenentwicklung, Identity, Website"},
+      {f:"Eva-Mann.svg", n:"Eva Mann", link:"/case-studies/eva-mann/", d:"Markenentwicklung, Brand Identity, Websites, Gesamtbetreuung"},
+      {f:"Forbo.svg", n:"Forbo", d:"Technische Kommunikation, Adaptionen internationaler Kampagnen"},
+      {f:"Forvia-Hella.svg", n:"Forvia", d:"Markenführung internationale Märkte"},
+      {f:"Fresnius-Kabi.svg", n:"Fresenius Kabi", d:"Markenarchitektur, Markenführung"},
+      {f:"Gehrke-Econ.svg", n:"Gehrke Econ", d:"Markenarchitektur u. -führung nach Fusion"},
+      {f:"Gneuss.svg", n:"Gneuss", link:"/case-studies/gneuss/", d:"Brand Relaunch zur Absicherung des Generationswechsels"},
+      {f:"Hella.svg", n:"Hella", link:"/case-studies/hella/", d:"B2C- und B2B-Kommunikation, alle Kanäle und Zielmärkte"},
+      {f:"junited-Autoglas.svg", n:"junited AUTOGLAS", d:"Markenentwicklung, Brand Launch, Brand Identity und Design"},
+      {f:"KNF.svg", n:"KNF", d:"Technische Kommunikation, B2B-Ansprache und Argumentationsstruktur"},
+      {f:"Kuehlmann.svg", n:"Kühlmann", link:"/case-studies/kuehlmann/", d:"Markenentwicklungen LEH, Sell-in-Kommunikation, Packaging"},
+      {f:"langnese.svg", n:"Langnese", d:"Promotions Middle East"},
+      {f:"Leonardo-Hotels.svg", n:"Leonardo Hotels", d:"Positionierung, Brand Identity, interner Markenaufbau/HR"},
+      {f:"Lexus.svg", n:"Lexus", d:"Sell-Out-Promotion"},
+      {f:"Mann+Hummel.svg", n:"Mann+Hummel", link:"https://annual-design.de/case-studies/mannhummel-geschaeftsbericht/", ext:true, d:"Geschäfts- und Nachhaltigkeitsberichte"},
+      {f:"Meco.svg", n:"Meco", link:"/case-studies/meco/", d:"Website, Imagevideos"},
+      {f:"Piasten.svg", n:"Piasten", link:"/case-studies/piasten/", d:"Markenentwicklungen für internationale Märkte, Package Designs diverse Marken"},
+      {f:"Puma.svg", n:"Puma", d:"Kataloge B2C"},
+      {f:"Stadtwerke-Bielefeld.svg", n:"Stadtwerke Bielefeld", link:"/case-studies/stadtwerke-bielefeld/", d:"Markenentwicklungen"},
+      {f:"UniGlas.svg", n:"UniGlas", d:"Markenarchitektur Produktmarken"},
+      {f:"Volksbank.svg", n:"Volksbank PHD", link:"/case-studies/volksbank-phd/", d:"Imagekampagnen, Markenintegration, Geschäftsberichte"},
+      {f:"wernerworks.svg", n:"werner works", link:"/case-studies/werner-works/", d:"Neuaufstellung, Markenentwicklung, Corporate Identity u. Design"},
+      {f:"Zentralverband-des-Deutschen-Baugewerbes.svg", n:"Zentralverband Deutsches Baugewerbe", link:"/case-studies/meisterhaft-zdb/", d:"Entwicklung Gütesiegel und Qualifizierungssystem"}
+    ] -%}
+    {%- for l in logos %}
+    {%- if l.link %}
+    <a href="{{ l.link }}" class="logo-tile logo-tile--linked"{% if l.ext %} target="_blank" rel="noopener"{% endif %}>
+      <img src="/img/Logos-pur/{{ l.f }}" alt="{{ l.n }}" loading="lazy">
+      <div class="logo-tile-cap">
+        <span class="logo-tile-cap-text">{{ l.d }}</span>
+        <span class="logo-tile-cs">Case Study →</span>
+      </div>
+    </a>
+    {%- else %}
+    <div class="logo-tile">
+      <img src="/img/Logos-pur/{{ l.f }}" alt="{{ l.n }}" loading="lazy">
+      <div class="logo-tile-cap">
+        <span class="logo-tile-cap-text">{{ l.d }}</span>
+      </div>
+    </div>
+    {%- endif %}
+    {%- endfor %}
+  </div>
+</section>
+
+<!-- ABSCHLUSS -->
+<section class="container" style="padding-block:1rem 7rem;max-width:720px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Welche Herausforderung bringt Sie zu uns?</h2>
+  <a href="/kontakt/" class="btn-fill reveal reveal-delay-1">Projekt anfragen</a>
+</section>

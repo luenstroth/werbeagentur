@@ -1,0 +1,68 @@
+<style>
+.cd-accordion {
+  display: flex; gap: 4px; height: 420px; margin: 2rem 0 3rem;
+  overflow: hidden;
+}
+.cd-panel {
+  position: relative; flex: 1; background: var(--paper-2);
+  overflow: hidden; cursor: default;
+  transition: flex-grow .55s cubic-bezier(.16,1,.3,1), background .3s;
+}
+.cd-panel:hover { flex-grow: 5; background: var(--ink); }
+.cd-panel-collapsed {
+  position: absolute; inset: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: flex-end; padding-bottom: 1.5rem;
+  opacity: 1; transition: opacity .3s;
+}
+.cd-panel:hover .cd-panel-collapsed { opacity: 0; pointer-events: none; }
+.cd-panel-num {
+  font-size: .8125rem; font-weight: 700; color: var(--accent); margin-bottom: .75rem;
+}
+.cd-panel-label {
+  writing-mode: vertical-rl; transform: rotate(180deg);
+  font-size: .8125rem; font-weight: 600; letter-spacing: .04em;
+  white-space: nowrap; color: var(--ink);
+}
+.cd-panel-expanded {
+  position: absolute; inset: 0; padding: 2rem; display: flex; flex-direction: column;
+  justify-content: flex-end; opacity: 0; transition: opacity .35s .1s;
+  pointer-events: none;
+}
+.cd-panel:hover .cd-panel-expanded { opacity: 1; pointer-events: auto; }
+.cd-panel-icon { width: 52px; height: 52px; color: #fff; margin-bottom: 1.25rem; opacity: .9; }
+.cd-panel-icon img { width: 100%; height: 100%; filter: invert(1); }
+.cd-panel-title { font-size: 1.1rem; font-weight: 600; color: #fff; margin-bottom: .5rem; white-space: nowrap; }
+.cd-panel-desc { font-size: .8125rem; line-height: 1.6; color: rgba(255,255,255,.75); }
+
+@media (max-width: 900px) {
+  .cd-accordion { flex-direction: column; height: auto; }
+  .cd-panel { flex: none !important; background: var(--ink); }
+  .cd-panel-collapsed { display: none; }
+  .cd-panel-expanded { position: static; opacity: 1; pointer-events: auto; padding: 1.5rem; }
+  .cd-panel-icon img { filter: invert(1); }
+}
+</style>
+
+<div class="cd-accordion reveal">
+  {%- set steps = [
+    {n:"01", t:"Markt- und Markenanalyse", icon:"icon-cd-01-analyse.svg", d:"Was transportiert die bestehende Gestaltung tatsächlich — und passt das noch zur Marktposition des Unternehmens?"},
+    {n:"02", t:"Markenstrategie", icon:"icon-cd-02-strategie.svg", d:"Was muss die Identität ausdrücken, um die Strategie zu tragen — bevor irgendeine gestalterische Entscheidung fällt."},
+    {n:"03", t:"Design-System", icon:"icon-cd-03-system.svg", d:"Typografie, Farbe, Bildsprache und Raster — das vollständige System, auf dem eine Marke läuft, nicht ein einzelnes Zeichen."},
+    {n:"04", t:"Logo & Identität", icon:"icon-cd-04-logo.svg", d:"Das sichtbarste Ergebnis des Systems — nur verändert, wo die Strategie es tatsächlich verlangt."},
+    {n:"05", t:"Anwendung", icon:"icon-cd-05-anwendung.svg", d:"Ausrollen auf jeden Berührungspunkt: Digital, Print, Messe, Fahrzeuge, Verpackung."},
+    {n:"06", t:"Guidelines", icon:"icon-cd-06-guidelines.svg", d:"Dokumentation, die das System konsistent hält — auch lange nach Projektabschluss."}
+  ] -%}
+  {%- for s in steps %}
+  <div class="cd-panel">
+    <div class="cd-panel-collapsed">
+      <span class="cd-panel-num">{{ s.n }}</span>
+      <span class="cd-panel-label">{{ s.t }}</span>
+    </div>
+    <div class="cd-panel-expanded">
+      <div class="cd-panel-icon"><img src="/img/{{ s.icon }}" alt=""></div>
+      <p class="cd-panel-title">{{ s.t }}</p>
+      <p class="cd-panel-desc">{{ s.d }}</p>
+    </div>
+  </div>
+  {%- endfor %}
+</div>

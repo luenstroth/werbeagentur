@@ -1,0 +1,98 @@
+---
+layout: base.njk
+title: "Vom Ende her denken – die Arbeitsweise der Agentur"
+description: "Entscheidend ist das Konzept und die Sicherstellung der richtigen Platzierung im Markt, mit maximaler Glaubwürdigkeit und Überzeugungskraft. Vier Seiten zur Arbeitsweise von Lünstroth."
+permalink: /positionierung/
+ogImageSrc: "img/og-startseite.jpg"
+heroAlt: "Vom Ende her denken. Lünstroth Werbeagentur."
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "headline": "Vom Ende her denken – die Arbeitsweise der Agentur",
+    "description": "Entscheidend ist das Konzept und die Sicherstellung der richtigen Platzierung im Markt, mit maximaler Glaubwürdigkeit und Überzeugungskraft.",
+    "author": {"@type": "Organization", "name": "Lünstroth Werbeagentur"}
+  }
+---
+
+{% from "hero-type.njk" import heroType %}
+{{ heroType(
+  "Positionierung und Arbeitsweise der Werbeagentur",
+  ["Entscheidend", "ist", "das", "Konzept"],
+  "Und die Sicherstellung der richtigen Platzierung im Markt — mit maximaler Glaubwürdigkeit und Überzeugungskraft. Vier Seiten dazu, was das in der Arbeit bedeutet."
+) }}
+
+<section class="container" style="padding-block:4rem 2rem;max-width:760px;">
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">Die meisten Kommunikationsprojekte beginnen beim Mittel: eine Kampagne, ein Relaunch, eine Website. Das Werkzeug steht fest, bevor die Aufgabe geklärt ist. Hier ist die Reihenfolge umgekehrt — am Anfang steht die Entscheidung, die am Ende fallen soll, und alles Weitere ergibt sich rückwärts daraus.</p>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">Das ist keine Frage des Stils, sondern eine Reaktion auf eine veränderte Lage: Ausführung — Gestaltung, Text, Bild, Code — ist schnell und billig geworden. Was knapp geblieben ist, ist die begründete Entscheidung darüber, was getan und was gelassen wird, und die Bereitschaft, dafür geradezustehen.</p>
+  <p class="pull-quote reveal reveal-delay-2">Entscheidend ist das Konzept — und die Sicherstellung der richtigen Platzierung im Markt, mit maximaler Glaubwürdigkeit und Überzeugungskraft.</p>
+  <p class="body-lg reveal" style="margin-top:1.5rem;">Dieser Satz enthält vier Aussagen. Jede davon hat eine eigene Seite.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 4rem;max-width:1100px;">
+  <h2 class="display-md reveal" style="margin-bottom:2rem;">Die vier Stärken im Überblick</h2>
+  <div class="grid-2 reveal reveal-delay-1" style="gap:clamp(1.75rem,3vw,3rem);">
+    {%- for s in [
+      {
+        n:"01", t:"Vom Ende her denken", u:"/positionierung/vom-ende-her-denken/",
+        lead:"Die Methode: bei der Entscheidungssituation anfangen, nicht beim Briefing.",
+        d:"Wer entscheidet tatsächlich, an welchem Ort, in welcher Zeit, gegen welche Alternative? Von dort führt ein Weg rückwärts durch Handel, Einkauf und Fachplanung bis zu dem, was zu tun ist. Das Mittel steht am Schluss fest, nicht am Anfang — deshalb ist zu Beginn eines Mandats offen, was am Ende produziert wird.",
+        s:"Cobiax: Die Kaufentscheidung fiel beim Bauherrn, nicht beim Tragwerksplaner — das änderte den Claim."
+      },
+      {
+        n:"02", t:"Konzept vor Ausführung", u:"/positionierung/konzept-vor-ausfuehrung/",
+        lead:"Die Leistung: eine Entscheidung mit prüfbarer Ableitung, kein Vorschlagspaket.",
+        d:"Diagnose und Konzept sind eigenständig beauftragbar, mit festem Umfang — kein unberechneter Vorlauf zu einem Gestaltungsauftrag. Dazu gehört „Change follows Strategy“: Geändert wird, was die Strategie verlangt, nicht mehr. Wiedererkennung ist ein Vermögenswert, den man nicht ohne Grund abschreibt.",
+        s:"Gneuss: Nur das Signet entfiel, die Wortmarke blieb. Volksbank PHD: Die übernommene Ortsmarke blieb ganz erhalten."
+      },
+      {
+        n:"03", t:"Platzierung im Markt", u:"/positionierung/platzierung-im-markt/",
+        lead:"Die Sicherstellung: ein Ort im Wettbewerbsfeld, keine Selbstbeschreibung.",
+        d:"Gegen wen wird verglichen, in welchem Regal, in welcher Ausschreibung, in welcher Suchergebnisliste? Fünf Größen entscheiden: Wettbewerbsabstand, Vertriebsweg, Preisspielraum, markenrechtliche Belastbarkeit und Auffindbarkeit — auch gegenüber generativen Systemen, die Marken empfehlen, ohne sie zu verlinken.",
+        s:"Albatros: zu eigenmarkig für angemessene Preise. Kühlmann: Discountpreis, aber kein Billig-Look."
+      },
+      {
+        n:"04", t:"Glaubwürdigkeit und Überzeugungskraft", u:"/positionierung/glaubwuerdigkeit/",
+        lead:"Das Maß: Plausibilität ist herstellbar geworden, Glaubwürdigkeit nicht.",
+        d:"Sie besteht aus Prüfbarkeit, Konsistenz über Zeit und dem Mut zur Auslassung — Entscheidungen über Inhalte, nicht über Formulierungen. Und Überzeugung ist nicht Gefallen. Das heißt nicht nüchtern: Emotion ist in vielen Märkten das Produkt. Es kommt darauf an, ob sie aus der Sache entsteht oder nur vom Motiv geliehen ist.",
+        s:"Delikato: Der Fettgehalt steht sortenweise auf der Packung — auch dort, wo die Zahl weniger schmeichelhaft ausfällt."
+      }
+    ] %}
+    <div class="reveal reveal-delay-{{ loop.index0 % 3 }}" style="border-top:2px solid var(--accent);padding-top:1.25rem;">
+      <p class="card-num" style="font-size:2.25rem;">{{ s.n }}</p>
+      <h3 class="card-title" style="margin-bottom:.5rem;"><a href="{{ s.u }}">{{ s.t }}</a></h3>
+      <p class="body-lg" style="margin-bottom:.75rem;font-size:1.0625rem;">{{ s.lead }}</p>
+      <p class="card-desc" style="margin-bottom:1rem;">{{ s.d }}</p>
+      <p class="card-desc" style="border-left:2px solid rgba(var(--ink-rgb),.15);padding-left:.9rem;margin-bottom:1rem;"><em>{{ s.s }}</em></p>
+      <a href="{{ s.u }}" class="btn-arrow">Mehr dazu →</a>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="container" style="padding-block:1rem 4rem;max-width:760px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Wie die vier zusammenhängen</h2>
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">Die Reihenfolge ist keine Gliederung, sondern ein Ablauf. <strong>Vom Ende her denken</strong> klärt, worauf gearbeitet wird. <strong>Konzept vor Ausführung</strong> entscheidet, was dafür getan und was gelassen wird. <strong>Platzierung im Markt</strong> bestimmt, wo die Marke dabei stehen soll und ob diese Lage belastbar ist. <strong>Glaubwürdigkeit und Überzeugungskraft</strong> ist das Maß, an dem jedes Ergebnis geprüft wird — und der Grund, warum manches wegfällt, das gut aussah.</p>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">Am Ende steht kein Katalog von Leistungen, sondern eine Kette von Entscheidungen, die man rückwärts nachvollziehen kann. Das ist der Unterschied zu einem Auftritt, der gefällt: Man kann ihm widersprechen — und zwar mit Argumenten, nicht mit Geschmack.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 5rem;max-width:900px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Wo sich das nachlesen lässt</h2>
+  <div class="grid-3 reveal reveal-delay-1">
+    <div>
+      <h3 class="card-title" style="margin-bottom:.5rem;"><a href="/case-studies/">Case Studies</a></h3>
+      <p class="card-desc">Dreizehn Mandate, jedes mit einer anderen Ausgangslage — und jeweils der Frage, was auf dem Spiel stand.</p>
+    </div>
+    <div>
+      <h3 class="card-title" style="margin-bottom:.5rem;"><a href="/leistungen/">Leistungen</a></h3>
+      <p class="card-desc">Diagnose und Konzept, Marke und Identität, verkaufsfähige Medien, laufender Betrieb.</p>
+    </div>
+    <div>
+      <h3 class="card-title" style="margin-bottom:.5rem;"><a href="/vorgehensweise-der-agentur/">Vorgehensweise</a></h3>
+      <p class="card-desc">Wie ein Mandat abläuft — von der Diagnose bis zur Betreuung des Markensystems.</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:3rem;">
+    <a href="/kontakt/" class="btn-fill">Projekt anfragen</a>
+  </div>
+</section>

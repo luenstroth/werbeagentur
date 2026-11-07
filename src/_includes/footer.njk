@@ -1,0 +1,48 @@
+{%- set t = i18n[lang] -%}
+{%- set f = t.footer -%}
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="nav-logo" style="margin-bottom:1rem;">{% include "logo.njk" %}</p>
+      <p class="footer-tagline">{{ f.tagline }}</p>
+    </div>
+
+    <div class="footer-col">
+      <p class="label" style="margin-bottom:1.25rem;">{{ f.navHeading }}</p>
+      <ul class="footer-links">
+        {%- for item in f.nav %}
+        <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+        {%- endfor %}
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <p class="label" style="margin-bottom:1.25rem;">{{ f.servicesHeading }}</p>
+      <ul class="footer-links">
+        {%- for item in f.services %}
+        <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+        {%- endfor %}
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <p class="label" style="margin-bottom:1.25rem;">{{ f.contactHeading }}</p>
+      <address class="footer-address">
+        {{ f.address | safe }}<br>
+        <a href="mailto:kontakt@luenstroth-werbeagentur.de">kontakt@luenstroth-werbeagentur.de</a>
+      </address>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© 2026 Lünstroth GmbH</p>
+    <ul class="footer-legal-links">
+      {%- for item in f.legal %}
+      <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+      {%- endfor %}
+      {%- if not noTranslation %}
+      <li><a href="{{ page.url | gegenstueck(collections.sprachpaare) }}" hreflang="{{ 'de' if lang == 'en' else 'en' }}">{{ t.switchLabel }}</a></li>
+      {%- endif %}
+    </ul>
+  </div>
+</footer>

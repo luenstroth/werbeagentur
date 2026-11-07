@@ -1,0 +1,97 @@
+---
+layout: base.njk
+title: "Produkteinführung: ein Produkt kommt auf den Markt"
+description: "Ein neues Produkt muss Ingenieur, Einkauf, Handel und Endkunden überzeugen – jeden mit einem anderen Grund. Launch-Kommunikation für Industrie und Markenartikel."
+permalink: /leistungen/produkteinfuehrung/
+tags: ["anlass"]
+anlassOrder: 3
+anlassName: "Ein Produkt kommt auf den Markt"
+anlassTeaser: "Ein technischer Vorteil ist noch kein Kaufgrund. Jede Stufe zwischen Hersteller und Endkunde braucht ihren eigenen."
+ogImageSrc: "img/Produkt-kommt-auf-den-Markt.jpg"
+heroAlt: "Hand an einem verschlossenen Versandkarton"
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Kommunikation zur Produkteinführung",
+    "serviceType": "Launch-Kommunikation, Produktkommunikation",
+    "provider": { "@id": "https://luenstroth-werbeagentur.de/#organisation" },
+    "areaServed": "Worldwide"
+  }
+---
+{%- set hero = {
+  img: "img/Produkt-kommt-auf-den-Markt.jpg",
+  alt: "Hand an einem verschlossenen Versandkarton",
+  label: "Kommunikation zur Produkteinführung",
+  claim: "Ein Produkt kommt<br>auf den Markt<span class=\"type-dot\">.</span>",
+  sub: "Die Technik ist fertig. Jetzt muss sie jeder verstehen, der über sie entscheidet — und jeder versteht etwas anderes darunter.",
+  labelIsH1: true
+} %}
+{% include "hero-foto.njk" %}
+
+<!-- 01 — DIE LAGE -->
+<section class="container measure section-block section-block--tight">
+  <p class="label reveal" style="margin-bottom:1rem;">01 — Die Lage</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Ein Vorteil, vier Zuhörer</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Wer ein Produkt entwickelt hat, kennt seine Vorteile genau — in der Sprache der Entwicklung. Zwischen Hersteller und Endkunde stehen aber oft mehrere Stufen: Einkauf, Handel, Werkstatt, Planer. Jede bewertet dasselbe Produkt nach eigenen Kriterien.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Ein Argument, das den Ingenieur überzeugt, kann den Händler kaltlassen. Und ein Vorteil, den der Fachmann sofort versteht, kann für den Endkunden bedeutungslos sein — oder sogar wie ein Nachteil wirken.</p>
+  <p class="pull-quote reveal reveal-delay-2">Ein technisches Detail wird erst zum Kaufgrund, wenn jemand übersetzt, was es für die jeweilige Stufe bedeutet.</p>
+</section>
+
+<!-- 02 — WAS ENTSTEHT -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">02 — Was dafür entsteht</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.5rem;">Für jede Stufe der passende Grund</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "Eine Argumentation pro Stufe: für Technik, Einkauf, Handel und Endkunden — aus derselben Sache, aber nicht mit demselben Satz",
+      "Produktkommunikation für den Endkunden, in der das Produkt die Hauptfigur ist",
+      "Unterlagen und Portale für Händler, Werkstätten und Fachpartner",
+      "Video und Bildwelt aus der eigenen Produktion, auch mehrsprachig",
+      "Verpackung und Verkaufsunterlagen, wenn das Produkt über den Handel geht"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<!-- 03 — BEISPIEL -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">03 — Wie das aussieht</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Dieselbe Tatsache, drei Argumente</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Die Entlüftung einer Hochvolt-Batterie ist ein unscheinbares Bauteil. Mit einem Überdruckventil, das nur im thermischen Störfall öffnet, bleibt die Batterie im Normalbetrieb geschlossen und sauber.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Für den Fahrzeughersteller ist das ein Argument bei den Garantiekosten. Für den Endkunden ein Versprechen zur Lebensdauer. Für den Händler ein Verkaufsargument gegen billigere Alternativen. Dieselbe technische Tatsache — drei verschiedene Gründe, sich dafür zu entscheiden.</p>
+</section>
+
+<!-- 04 — BELEGE -->
+<section class="container section-block" style="max-width:1100px;">
+  <p class="label reveal" style="margin-bottom:1rem;">04 — Belege</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:2rem;max-width:760px;">Mehrstufig und international</h2>
+  <div class="grid-2" style="background:none;gap:clamp(1.5rem,2.5vw,2.5rem);">
+    <a href="/case-studies/hella/" class="card reveal">
+      <div class="card-num">A</div>
+      <h3 class="card-title">Hella</h3>
+      <p class="card-desc">Endkunden, freie Werkstätten, Franchise-Ketten und Kleinserienhersteller: vier Kanäle mit eigener Ansprache — Verbraucherkommunikation, Service-Portale, Unterlagen für Special OE und mehrsprachige Videos.</p>
+    </a>
+    <a href="/case-studies/piasten/" class="card reveal reveal-delay-1">
+      <div class="card-num">B</div>
+      <h3 class="card-title">Warner Hudson für Piasten</h3>
+      <p class="card-desc">Eine Sortimentsmarke, auf internationalen Märkten eingeführt: ein Markenzeichen für mehrere Produktlinien, dreisprachig, für unterschiedliche Preislagen und Saisons.</p>
+    </a>
+  </div>
+</section>
+
+<!-- 05 — VORGELAGERT -->
+<section class="container measure" style="padding-block:1rem 3rem;">
+  <div style="background:var(--paper-2);padding:2rem 2.25rem;border-left:2px solid var(--accent);">
+    <p class="label" style="margin-bottom:.75rem;">Braucht das Produkt einen eigenen Namen?</p>
+    <p style="font-size:.9375rem;line-height:1.8;">Ob ein neues Produkt unter der bestehenden Marke läuft, eine eigene Technologiemarke bekommt oder einen neuen Namen braucht, wird vor dem Launch entschieden — von der <a href="https://luenstroth.com/de/markenberatung/naming/" style="color:var(--accent);">Lünstroth Markenberatung</a>.</p>
+  </div>
+</section>
+
+<section class="container measure" style="padding-block:1rem 7rem;">
+  <a href="/kontakt/" class="btn-fill reveal">Projekt anfragen</a>
+</section>

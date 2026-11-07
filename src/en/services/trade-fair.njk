@@ -1,0 +1,97 @@
+---
+title: "Trade fair presence and communication: the trade fair is coming up"
+description: "Invitation, stand, conversation, follow-up: trade fair communication that does not end at the aisle. For industry, branded goods and fashion – with video and material from one team."
+permalink: /en/services/trade-fair/
+key: /leistungen/messeauftritt/
+tags: ["anlassEn"]
+anlassOrder: 4
+anlassName: "The trade fair is coming up"
+anlassTeaser: "A fixed date, a tight window and visitors who decide in three seconds whether to stop."
+ogImageSrc: "img/Messe-steht-an.jpg"
+heroAlt: "Hands passing a folded programme and documents across a table"
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Trade fair presence and communication",
+    "serviceType": "Trade fair communication, trade fair material",
+    "inLanguage": "en",
+    "provider": { "@id": "https://luenstroth-werbeagentur.de/#organisation" },
+    "areaServed": "Worldwide"
+  }
+---
+{%- set hero = {
+  img: "img/Messe-steht-an.jpg",
+  alt: "Hands passing a folded programme and documents across a table",
+  label: "Trade fair presence and communication",
+  claim: "The trade fair<br>is coming up<span class=\"type-dot\">.</span>",
+  sub: "The date is fixed and it will not move. By then everything has to be ready — and has to fit together.",
+  labelIsH1: true
+} %}
+{% include "hero-foto.njk" %}
+
+<!-- 01 — THE SITUATION -->
+<section class="container measure section-block section-block--tight">
+  <p class="label reveal" style="margin-bottom:1rem;">01 — The situation</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Three moments, not one</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">A trade fair is often reduced to the stand. In fact it is decided in three moments: beforehand, when invitations go out and the right visitors need a reason to come. In the aisle, where it is decided in seconds whether someone stops. And afterwards, when a conversation is meant to become an order.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Design only for the middle moment, and you get a beautiful stand and little follow-up business.</p>
+  <p class="pull-quote reveal reveal-delay-2">The stand is the most visible tool — rarely the most effective.</p>
+</section>
+
+<!-- 02 — WHAT IS CREATED -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">02 — What is created</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.5rem;">Before, at and after the fair</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "Invitations and advance communication that give a concrete reason to come by",
+      "One core message for the stand that can be read from the aisle",
+      "Material for the conversation: product sheets, lookbooks, presentations — short enough to be taken away",
+      "Video for stand and presentation, produced in-house",
+      "Follow-up material that builds on the conversation instead of repeating it"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<!-- 03 — DEADLINE -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">03 — The fixed date</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">One team, so that everything fits in time</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">At a trade fair, the date is not negotiable. Every coordination loop between agency, film production and printer costs days that are missing at the end. Here, concept, copy, design and video sit in the same team — decision paths stay short, and the parts fit together because they come from the same message.</p>
+</section>
+
+<!-- 04 — EVIDENCE -->
+<section class="container section-block" style="max-width:1100px;">
+  <p class="label reveal" style="margin-bottom:1rem;">04 — Evidence</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:2rem;max-width:760px;">The trade fair as part of ongoing communication</h2>
+  <div class="grid-2" style="background:none;gap:clamp(1.5rem,2.5vw,2.5rem);">
+    <a href="/en/case-studies/eva-mann/" class="card reveal">
+      <div class="card-num">A</div>
+      <h3 class="card-title">Eva Mann</h3>
+      <p class="card-desc">Trade fair communication over many seasons: invitations to the collection presentation, lookbooks for press and buyers, push-in material for retail.</p>
+    </a>
+    <a href="/en/case-studies/cobiax/" class="card reveal reveal-delay-1">
+      <div class="card-num">B</div>
+      <h3 class="card-title">Cobiax</h3>
+      <p class="card-desc">Corporate design on sales material and an image film for presentations — all from the same message, for an international market.</p>
+    </a>
+  </div>
+</section>
+
+<!-- 05 — UPSTREAM -->
+<section class="container measure" style="padding-block:1rem 3rem;">
+  <div style="background:var(--paper-2);padding:2rem 2.25rem;border-left:2px solid var(--accent);">
+    <p class="label" style="margin-bottom:.75rem;">Is the fair meant to show a new company?</p>
+    <p style="font-size:.9375rem;line-height:1.8;">If the presence is to make a new direction public for the first time, that direction has to be decided beforehand. That is the task of <a href="https://luenstroth.com/en/brand-consultancy/brand-management/" style="color:var(--accent);">Lünstroth brand consultancy</a>.</p>
+  </div>
+</section>
+
+<section class="container measure" style="padding-block:1rem 7rem;">
+  <a href="/en/contact/" class="btn-fill reveal">Start a project</a>
+</section>

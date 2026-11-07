@@ -1,0 +1,97 @@
+---
+layout: base.njk
+title: "B2B-Website-Relaunch: wenn die Website nicht mehr verkauft"
+description: "Das Geschäft hat sich verändert, die Website erzählt noch das alte. Website-Relaunch für Industrie und Mittelstand – für Ingenieur, Einkauf und KI-Assistenten."
+permalink: /leistungen/website-b2b/
+tags: ["anlass"]
+anlassOrder: 2
+anlassName: "Die Website verkauft nicht mehr"
+anlassTeaser: "Das Geschäft hat sich verändert, die Website erzählt noch das alte. Und wer heute recherchiert, fragt zuerst einen KI-Assistenten."
+ogImageSrc: "img/Website-verkauft-nicht-mehr.jpg"
+heroAlt: "Hand auf dem Trackpad eines Laptops"
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "B2B-Website-Relaunch",
+    "serviceType": "Webdesign, Website-Relaunch, Sichtbarkeit in KI-Assistenten",
+    "provider": { "@id": "https://luenstroth-werbeagentur.de/#organisation" },
+    "areaServed": "Worldwide"
+  }
+---
+{%- set hero = {
+  img: "img/Website-verkauft-nicht-mehr.jpg",
+  alt: "Hand auf dem Trackpad eines Laptops",
+  label: "Website-Relaunch für Industrie und Mittelstand",
+  claim: "Die Website verkauft<br>nicht mehr<span class=\"type-dot\">.</span>",
+  sub: "Meist nicht, weil sie veraltet aussieht, sondern weil sie ein Unternehmen beschreibt, das es so nicht mehr gibt.",
+  labelIsH1: true
+} %}
+{% include "hero-foto.njk" %}
+
+<!-- 01 — DIE LAGE -->
+<section class="container measure section-block section-block--tight">
+  <p class="label reveal" style="margin-bottom:1rem;">01 — Die Lage</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Das Geschäft ist weitergezogen, die Website nicht</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Neue Produkte, neue Märkte, ein anderer Schwerpunkt — und eine Website, die noch das Unternehmen von vor fünf Jahren zeigt. Interessenten merken das, bevor sie anrufen. Manche rufen dann nicht an.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Im B2B-Geschäft besucht nicht eine Person die Website, sondern mehrere, mit verschiedenen Fragen. Der Ingenieur sucht Daten und Belege. Der Einkauf sucht Lieferfähigkeit und einen Ansprechpartner. Die Geschäftsführung will wissen, ob das Unternehmen in zehn Jahren noch dahintersteht.</p>
+  <p class="pull-quote reveal reveal-delay-2">Eine Website, die alle drei gleich anspricht, spricht keinen von ihnen richtig an.</p>
+</section>
+
+<!-- 02 — WAS ENTSTEHT -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">02 — Was dafür entsteht</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.5rem;">Eine Website, die jedem Besucher seinen Grund gibt</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "Eine Struktur nach den Fragen der Besucher, nicht nach dem Organigramm des Unternehmens",
+      "Texte, die technische Vorteile in den Nutzen übersetzen, der für die jeweilige Zielgruppe zählt",
+      "Gestaltung im bestehenden Erscheinungsbild — oder dessen behutsame Anpassung an digitale Sehgewohnheiten",
+      "Imagevideo und Bildwelt aus der eigenen Produktion",
+      "Technik, die schnell lädt und ohne Agentur gepflegt werden kann — und auf Wunsch der laufende Betrieb"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<!-- 03 — KI-ASSISTENTEN -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">03 — Gefunden werden</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Auch für KI-Assistenten lesbar</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Immer mehr Recherchen beginnen nicht mehr in der Suchmaschine, sondern mit einer Frage an einen KI-Assistenten. Der empfiehlt Anbieter, ohne zu verlinken — und nur die, deren Website er eindeutig verstehen kann.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Dafür braucht es keine Tricks, sondern Klarheit: wer das Unternehmen ist, was es anbietet, für wen und mit welchen Belegen — in einer Form, die Maschinen genauso lesen können wie Menschen. Das gehört heute zur Website, nicht zu einem späteren Projekt.</p>
+</section>
+
+<!-- 04 — BELEGE -->
+<section class="container section-block" style="max-width:1100px;">
+  <p class="label reveal" style="margin-bottom:1rem;">04 — Belege</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:2rem;max-width:760px;">Zwei Websites, zwei verschiedene Aufgaben</h2>
+  <div class="grid-2" style="background:none;gap:clamp(1.5rem,2.5vw,2.5rem);">
+    <a href="/case-studies/meco/" class="card reveal">
+      <div class="card-num">A</div>
+      <h3 class="card-title">Meco</h3>
+      <p class="card-desc">Vom Vergaser-Hersteller zum Spezialisten für Flüssigkeitstransport. Die neue Website zeigt das Know-how, das vorher kaum sichtbar war — mit angepasstem Logo und eigenem Imagevideo.</p>
+    </a>
+    <a href="/case-studies/eva-mann/" class="card reveal reveal-delay-1">
+      <div class="card-num">B</div>
+      <h3 class="card-title">Eva Mann</h3>
+      <p class="card-desc">Eine Website als Teil der laufenden Markenbetreuung: Saison für Saison gepflegt, im selben Auftritt wie Lookbook, Fachanzeige und Messe.</p>
+    </a>
+  </div>
+</section>
+
+<!-- 05 — VORGELAGERT -->
+<section class="container measure" style="padding-block:1rem 3rem;">
+  <div style="background:var(--paper-2);padding:2rem 2.25rem;border-left:2px solid var(--accent);">
+    <p class="label" style="margin-bottom:.75rem;">Ist unklar, wofür das Unternehmen heute steht?</p>
+    <p style="font-size:.9375rem;line-height:1.8;">Dann liegt das Problem vor der Website. Wenn erst entschieden werden muss, wie sich das Unternehmen im Wettbewerb aufstellt, ist das eine Frage für die <a href="https://luenstroth.com/de/markenberatung/positionierung/" style="color:var(--accent);">Lünstroth Markenberatung</a>.</p>
+  </div>
+</section>
+
+<section class="container measure" style="padding-block:1rem 7rem;">
+  <a href="/kontakt/" class="btn-fill reveal">Projekt anfragen</a>
+</section>

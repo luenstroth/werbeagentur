@@ -1,0 +1,88 @@
+---
+layout: base.njk
+title: "Meco: vom Vergaser-Hersteller zum Fluidtechnik-Spezialisten"
+description: "Wenn sich das Geschäft wandelt, muss der Auftritt folgen: Web-Relaunch, Logo-Optimierung und Imagevideo für einen Spezialisten für Flüssigkeitstransport."
+heroImage: "img/Meco-Hero.jpg"
+heroAlt: "Gebündelte Metallrohre aus der Fertigung von Meco"
+permalink: /case-studies/meco/
+tags: ["caseStudy"]
+client: "Meco"
+---
+
+<header class="hero ken-burns">
+  {% respImage "img/Meco-Hero.jpg", "Gebündelte Metallrohre aus der Fertigung von Meco", "100vw", {eager: true} %}
+  <div class="hero-overlay"></div>
+  <div class="container hero-inner">
+    <p class="label reveal" style="color:#fff;margin-bottom:1rem;">Case Study · Fluidtechnik</p>
+    <h1 class="display-lg reveal reveal-delay-1" style="color:#fff;max-width:820px;">Meco: vom Vergaser-Hersteller zum Spezialisten für Fluidtechnik</h1>
+  </div>
+</header>
+
+<section class="container" style="padding-block:4rem 2rem;max-width:760px;">
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">Meco war über Jahrzehnte als Vergaser-Produzent erfolgreich. Inzwischen hat sich das Bielefelder Unternehmen auf den sicheren und zuverlässigen Transport von Flüssigkeiten spezialisiert — Klimamittel, Treibstoff, Kühlflüssigkeit — mit einer breiten Palette an kundenindividuellen wie auch Standard-Anschlussarmaturen für den weltweiten Einsatz.</p>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">Das eigentliche Kapital des Unternehmens ist das tiefe technische Know-how im Bereich Flüssigkeitstransport — ein Punkt, der im bisherigen Auftritt kaum erkennbar war.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 4rem;max-width:900px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Logo-Optimierung statt Neuentwicklung</h2>
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">Anders als bei einem vollständigen Relaunch ging es bei Meco um eine gezielte Anpassung: das bestehende Logo an aktuelle Sehgewohnheiten anzupassen, vor allem für digitale Kanäle — ohne die eigentliche Logo-Typik zu verlassen. Parallel dazu wurden Corporate-Design-Farben und Typografie auf einen moderneren Gesamtauftritt abgestimmt.</p>
+  <div class="compare-grid reveal reveal-delay-1">
+    <div class="compare-col">
+      <span class="compare-tag">Bisheriges Logo</span>
+      <div class="case-img case-img--square case-img--logo" style="margin-bottom:1.25rem;">
+        <img src="/img/altes-Meco-Logo.svg" alt="Meco — altes Logo">
+      </div>
+    </div>
+    <div class="compare-col">
+      <span class="compare-tag">Optimiertes Logo</span>
+      <div class="case-img case-img--square case-img--logo" style="margin-bottom:1.25rem;">
+        <img src="/img/MECO-neues-Logo.svg" alt="Meco — optimiertes Logo für digitale Kanäle">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container" style="padding-block:1rem 4rem;max-width:1100px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Web-Relaunch und Imagevideo</h2>
+  <div class="grid-2 reveal reveal-delay-1">
+    <div>
+      <div class="case-img" style="aspect-ratio:3840/2064;background:var(--paper-2);margin-bottom:1rem;">
+        <img src="/img/Meco-Website.jpg" alt="Meco — neue Website" style="object-fit:contain;">
+      </div>
+      <p class="compare-text">Neue Website im angepassten Erscheinungsbild.</p>
+    </div>
+    <div>
+      <div class="case-img" style="margin-bottom:1rem;">
+        {% set video = {src: "/img/Meco-Image-Video.mp4", poster: "/img/Meco-Image-Video-poster.jpg", label: "Meco Imagevideo"} %}{% include "video-auto.njk" %}
+      </div>
+      <p class="compare-text">Imagevideo für Web und Präsentationen, im eigenen Haus produziert.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container" style="padding-block:1rem 3rem;max-width:760px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Was das konkret umfasste</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "Logo-Optimierung für digitale Kanäle, ohne Bruch mit der bestehenden Logo-Typik",
+      "Anpassung von Corporate-Design-Farben und Typografie an einen moderneren Gesamtauftritt",
+      "Web-Relaunch der gesamten Unternehmenswebsite",
+      "Konzeption und Produktion eines Imagevideos für Web und Präsentationen"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<section class="container" style="padding-block:0 5rem;max-width:760px;">
+  <div style="background:var(--paper-2);padding:2rem 2.25rem;border-left:2px solid var(--accent);">
+    <p class="label" style="margin-bottom:.75rem;">Umfang des Mandats</p>
+    <p style="font-size:.9375rem;line-height:1.8;">Logo-Optimierung, Corporate-Design-Anpassung, Web-Relaunch, Imagevideo für einen Spezialisten für Anschlussarmaturen und Flüssigkeitstransport.</p>
+  </div>
+  <div style="text-align:center;margin-top:2.5rem;">
+    <a href="/case-studies/" class="btn-arrow">← Weitere Case Studies</a>
+  </div>
+</section>

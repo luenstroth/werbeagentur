@@ -1,0 +1,107 @@
+---
+title: "Rolling out the new brand presence: implementing corporate design"
+description: "New name, new logo, new order – decided. Now it has to arrive on signs, vehicles, website, forms and presentations. Corporate design rollout for mid-sized companies."
+permalink: /en/services/brand-rollout/
+key: /leistungen/rollout/
+tags: ["anlassEn"]
+anlassOrder: 6
+anlassName: "The decision has been made — the rollout"
+anlassTeaser: "The decision has been made. Now it has to arrive on hundreds of applications — without the old one living on for another year."
+ogImageSrc: "img/Rollout.jpg"
+heroAlt: "Two hands placing geometric paper shapes on a white surface"
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Rolling out the new brand presence",
+    "serviceType": "Corporate design implementation, rollout",
+    "inLanguage": "en",
+    "provider": { "@id": "https://luenstroth-werbeagentur.de/#organisation" },
+    "areaServed": "Worldwide"
+  }
+---
+{%- set hero = {
+  img: "img/Rollout.jpg",
+  alt: "Two hands placing geometric paper shapes on a white surface",
+  label: "Rolling out the new brand presence",
+  claim: "The decision<br>has been made<span class=\"type-dot\">.</span>",
+  sub: "New name, corrected logo, new order. Now it has to arrive where customers see it — everywhere at once.",
+  labelIsH1: true
+} %}
+{% include "hero-foto.njk" %}
+
+<!-- 01 — THE SITUATION -->
+<section class="container measure section-block section-block--tight">
+  <p class="label reveal" style="margin-bottom:1rem;">01 — The situation</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Hundreds of applications, one cut-off date</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">A new brand presence is decided once and applied a thousand times: on signs and vehicles, on products and packaging, in presentations, forms, signatures, on the website and in every video. If this is not rolled out in an orderly way, the old lives on next to the new for a long time.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Customers then see two senders — and wonder which one counts. Exactly what the decision was meant to end.</p>
+  <p class="pull-quote reveal reveal-delay-2">A brand presence that is consistent only in the manual is not consistent.</p>
+</section>
+
+<!-- 02 — WHAT IS CREATED -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">02 — What is created</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.5rem;">From the logo to every application</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "An inventory of all applications and a sequence by visibility — what customers see first is changed first",
+      "A design system with typography, colours, imagery and grids that can be applied without an agency",
+      "Templates for everyday use: presentation, stationery, forms, signatures",
+      "Implementation on website, brochure, packaging, signage and video",
+      "Rules for tone and terminology, documented so that the company's own AI systems can follow them too"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<!-- 03 — ONLY WHAT CHANGES -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">03 — Only what changes</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Recognition is a value you take with you</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Not every rollout is a fresh start. Often most of it stays and only part changes: a symbol goes, a hierarchy is reordered, an addition is made. The skill then lies in making the new visible without losing the familiar — and in not overlooking any application that still shows the old state.</p>
+</section>
+
+<!-- 04 — EVIDENCE -->
+<section class="container section-block" style="max-width:1100px;">
+  <p class="label reveal" style="margin-bottom:1rem;">04 — Evidence</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:2rem;max-width:760px;">Four rollouts, four depths of intervention</h2>
+  <div class="grid-2" style="background:none;gap:clamp(1.5rem,2.5vw,2.5rem);">
+    <a href="/en/case-studies/werner-works/" class="card reveal">
+      <div class="card-num">A</div>
+      <h3 class="card-title">werner works</h3>
+      <p class="card-desc">New company name, new word mark: a complete design system, implemented right through to the company brochure.</p>
+    </a>
+    <a href="/en/case-studies/volksbank-phd/" class="card reveal reveal-delay-1">
+      <div class="card-num">B</div>
+      <h3 class="card-title">Volksbank PHD</h3>
+      <p class="card-desc">The local brand stayed, the umbrella brand was added as an endorsement — still visible on the building today, now in the third version of the addition.</p>
+    </a>
+    <a href="/en/case-studies/gneuss/" class="card reveal">
+      <div class="card-num">C</div>
+      <h3 class="card-title">Gneuss</h3>
+      <p class="card-desc">Only the symbol went, the word mark stayed. Today the products carry the corrected logo.</p>
+    </a>
+    <a href="/en/case-studies/arminia-bielefeld/" class="card reveal reveal-delay-1">
+      <div class="card-num">D</div>
+      <h3 class="card-title">DSC Arminia Bielefeld</h3>
+      <p class="card-desc">A dedicated, licence-free house typeface for thousands of applications — and templates for the stadium video screens.</p>
+    </a>
+  </div>
+</section>
+
+<!-- 05 — UPSTREAM -->
+<section class="container measure" style="padding-block:1rem 3rem;">
+  <div style="background:var(--paper-2);padding:2rem 2.25rem;border-left:2px solid var(--accent);">
+    <p class="label" style="margin-bottom:.75rem;">Is the decision still open?</p>
+    <p style="font-size:.9375rem;line-height:1.8;">Whether to rename, which name stays and how a group's brands relate to each other is decided by <a href="https://luenstroth.com/en/challenges/renaming-a-company/" style="color:var(--accent);">Lünstroth brand consultancy</a>. If an agreed order does not take hold in the group, that too is first a question of leadership and only then one of design.</p>
+  </div>
+</section>
+
+<section class="container measure" style="padding-block:1rem 7rem;">
+  <a href="/en/contact/" class="btn-fill reveal">Start a project</a>
+</section>

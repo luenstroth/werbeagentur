@@ -1,0 +1,23 @@
+{%- set t = i18n[lang] -%}
+{#- Sprachumschalter: führt IMMER zur gespiegelten Seite, nie zur Startseite.
+    Das Gegenstück liefert der Filter "gegenstueck" (siehe .eleventy.js). -#}
+{%- set andere = (page.url | gegenstueck(collections.sprachpaare)) if not noTranslation else null -%}
+<nav class="site-nav" id="site-nav">
+  <div class="container nav-inner">
+    <a href="{{ t.home }}" class="nav-logo">{% include "logo.njk" %}</a>
+    <div class="nav-mobile-menu">
+      <div class="nav-links">
+        {%- for item in t.nav %}
+        <a href="{{ item.url }}"{% if page.url.startsWith(item.url) %} aria-current="page"{% endif %}>{{ item.label }}</a>
+        {%- endfor %}
+      </div>
+      {%- if andere %}
+      <a href="{{ andere }}" class="nav-lang" hreflang="{{ 'de' if lang == 'en' else 'en' }}" lang="{{ 'de' if lang == 'en' else 'en' }}" aria-label="{{ t.switchLabel }}">{{ t.switchShort }}</a>
+      {%- endif %}
+      <a href="{{ t.cta.url }}" class="btn-fill nav-cta">{{ t.cta.label }}</a>
+    </div>
+    <button class="nav-toggle" aria-label="{{ t.menuLabel }}" id="nav-toggle">
+      <span></span><span></span>
+    </button>
+  </div>
+</nav>

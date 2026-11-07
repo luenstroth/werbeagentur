@@ -1,0 +1,51 @@
+---
+layout: base.njk
+title: "Kommunikationsstrategie: erst festlegen, dann gestalten"
+description: "Eine Copy-Plattform legt fest, was wann kommuniziert wird, und macht Maßnahmen überprüfbar – die Grundlage einer belastbaren Kommunikationsstrategie."
+permalink: /leistungen/konzept-kommunikationsstrategie/
+tags: ["leistung"]
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Konzept & Kommunikationsstrategie",
+    "provider": {"@type": "Organization", "name": "Lünstroth Werbeagentur"}
+  }
+---
+
+<header style="padding:calc(var(--nav-h) + 4rem) 0 3rem;background:var(--paper-2);">
+  <div class="container">
+    <h1 class="label reveal" style="margin-bottom:1rem;">Konzept & Kommunikationsstrategie</h1>
+    <p class="display-lg reveal reveal-delay-1" style="max-width:820px;">Festlegen, was gesagt wird — bevor darüber gestritten wird, wie es aussieht.</p>
+  </div>
+</header>
+
+<section class="container" style="padding-block:4rem 2rem;max-width:760px;">
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">Eine Kommunikationsstrategie beginnt mit einer Diagnose: Wofür steht das Unternehmen heute, was muss die Kommunikation künftig leisten, und wo widersprechen sich Anspruch und bestehender Auftritt? Lünstroth analysiert Marktposition, Wettbewerb und Zielgruppen, bevor die erste Botschaft formuliert wird.</p>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">Das Ergebnis ist eine Copy-Plattform: Was genau gesagt wird, in welcher Reihenfolge, mit welcher Priorität und über welche Kanäle. Sie ist die verbindliche Grundlage für Kampagnen, Website, Vertriebsunterlagen und Video – und macht spätere Maßnahmen an ihr überprüfbar.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 3rem;max-width:900px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Drei Fragen, die jedes Konzept beantworten muss</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "Nutzen: Was tut das Produkt oder Unternehmen tatsächlich für den Kunden?",
+      "Alleinstellung: Was unterscheidet es glaubwürdig vom Wettbewerb?",
+      "Zielgruppen-Denken: Wie denkt die Zielgruppe tatsächlich — wann bevorzugt sie einen Wettbewerber, und warum?"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<section class="container" style="padding-block:1rem 4rem;max-width:760px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Kein Tonalitäts-Selbstzweck</h2>
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">Tonalität — der klassische Marketing-Begriff für den "Klang" einer Marke — bekommt bei Lünstroth nur dann besonderes Gewicht, wenn das Angebot selbst markenzentriert ist. Für viele B2B-Aufgabenstellungen ist der Nutzen wichtiger als der Ton, in dem er formuliert wird.</p>
+</section>
+
+<section class="container" style="padding-block:0 5rem;max-width:760px;text-align:center;">
+  <a href="/kontakt/" class="btn-fill">Projekt anfragen</a>
+</section>

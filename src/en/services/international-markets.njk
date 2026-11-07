@@ -1,0 +1,102 @@
+---
+title: "Communication for international markets: multilingual and legally sound"
+description: "Packaging, video and sales material for several countries: more than translation – different price levels, different labelling requirements, different trademark law."
+permalink: /en/services/international-markets/
+key: /leistungen/auslandsmaerkte/
+tags: ["anlassEn"]
+anlassOrder: 5
+anlassName: "Material for international markets"
+anlassTeaser: "Translation is the smallest part. Different price levels, different labelling requirements, different trademark law."
+ogImageSrc: "img/Material-fuer-Auslandsmaerkte.jpg"
+heroAlt: "Shipping cartons stacked high in a warehouse"
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Communication for international markets",
+    "serviceType": "International communication, multilingual packaging and video production",
+    "inLanguage": "en",
+    "provider": { "@id": "https://luenstroth-werbeagentur.de/#organisation" },
+    "areaServed": "Worldwide"
+  }
+---
+{%- set hero = {
+  img: "img/Material-fuer-Auslandsmaerkte.jpg",
+  alt: "Shipping cartons stacked high in a warehouse",
+  label: "Communication for international markets",
+  claim: "Material for<br>international markets<span class=\"type-dot\">.</span>",
+  sub: "The same goods, a different country — and suddenly different rules apply to price, pack and name.",
+  labelIsH1: true
+} %}
+{% include "hero-foto.njk" %}
+
+<!-- 01 — THE SITUATION -->
+<section class="container measure section-block section-block--tight">
+  <p class="label reveal" style="margin-bottom:1rem;">01 — The situation</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Translation is the smallest part</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">What counts as premium in the home market is average in a technologically more advanced market — and simply too expensive in another. The same product then needs a different justification for its price, not just a different sentence.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">On top of that come labelling requirements that differ from country to country, and trademark systems in which a name or a pack is judged differently than at home.</p>
+  <p class="pull-quote reveal reveal-delay-2">Consistent in its craft, local in its address — otherwise it is either arbitrary or expensive.</p>
+</section>
+
+<!-- 02 — WHAT IS CREATED -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">02 — What is created</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.5rem;">One core, many versions</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "Multilingual packaging with the labelling required in each target market",
+      "Videos on a shared image base with language-specific lettering — produced, not merely conceived, in up to 20 languages",
+      "Sales material that justifies the price in each market instead of repeating the home market",
+      "Checks on likelihood of confusion and trademark law in the target countries, while the design is being developed",
+      "A documented separation between what stays the same everywhere and what may adapt"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<!-- 03 — WHAT STAYS -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">03 — What stays, what adapts</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Settle it up front instead of negotiating every deviation</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">The central message and the visual identity stay the same in every country. Wording, choice of images, price argument and weighting of channels may adapt. This separation is recorded at the start. A national subsidiary can then act quickly without the brand looking slightly different in every country.</p>
+</section>
+
+<!-- 04 — EVIDENCE -->
+<section class="container section-block" style="max-width:1100px;">
+  <p class="label reveal" style="margin-bottom:1rem;">04 — Evidence</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:2rem;max-width:760px;">Three routes into other markets</h2>
+  <div class="grid-3" style="background:none;gap:clamp(1.5rem,2.5vw,2.5rem);">
+    <a href="/en/case-studies/hella/" class="card reveal">
+      <div class="card-num">A</div>
+      <h3 class="card-title">Hella</h3>
+      <p class="card-desc">Social media videos for many countries: a shared image base, language-specific lettering, brand management across markets with different quality and price levels.</p>
+    </a>
+    <a href="/en/case-studies/piasten/" class="card reveal reveal-delay-1">
+      <div class="card-num">B</div>
+      <h3 class="card-title">Piasten</h3>
+      <p class="card-desc">Export packaging with trilingual product names, the labelling of the target countries and a checked likelihood of confusion.</p>
+    </a>
+    <a href="/en/case-studies/cobiax/" class="card reveal reveal-delay-2">
+      <div class="card-num">C</div>
+      <h3 class="card-title">Cobiax</h3>
+      <p class="card-desc">A deliberately English claim for a manufacturer focused on the Middle East — and a presence that works in those markets.</p>
+    </a>
+  </div>
+</section>
+
+<!-- 05 — UPSTREAM -->
+<section class="container measure" style="padding-block:1rem 3rem;">
+  <div style="background:var(--paper-2);padding:2rem 2.25rem;border-left:2px solid var(--accent);">
+    <p class="label" style="margin-bottom:.75rem;">Is it about entering the market itself?</p>
+    <p style="font-size:.9375rem;line-height:1.8;">Whether a new market is opened with the existing brand, an adapted one or a brand of its own is a decision made before the first piece of material. That is the domain of <a href="https://luenstroth.com/en/brand-consultancy/brand-strategy/" style="color:var(--accent);">Lünstroth brand consultancy</a>.</p>
+  </div>
+</section>
+
+<section class="container measure" style="padding-block:1rem 7rem;">
+  <a href="/en/contact/" class="btn-fill reveal">Start a project</a>
+</section>

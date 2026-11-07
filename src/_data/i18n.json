@@ -1,0 +1,250 @@
+{
+  "de": {
+    "locale": "de_DE",
+    "home": "/",
+    "homeLabel": "Startseite",
+    "menuLabel": "Menü",
+    "switchLabel": "English",
+    "switchShort": "EN",
+    "siteName": "Lünstroth Werbeagentur",
+    "nav": [
+      {
+        "url": "/vorgehensweise-der-agentur/",
+        "label": "Arbeitsweise"
+      },
+      {
+        "url": "/agentur/",
+        "label": "Agentur"
+      },
+      {
+        "url": "/leistungen/",
+        "label": "Leistungen"
+      },
+      {
+        "url": "/case-studies/",
+        "label": "Case Studies"
+      },
+      {
+        "url": "/ki-einsatz/",
+        "label": "KI-Einsatz"
+      }
+    ],
+    "cta": {
+      "url": "/kontakt/",
+      "label": "Projekt anfragen"
+    },
+    "footer": {
+      "tagline": "Unverzichtbar statt austauschbar.",
+      "navHeading": "Navigation",
+      "nav": [
+        {
+          "url": "/agentur/",
+          "label": "Agentur"
+        },
+        {
+          "url": "/vorgehensweise-der-agentur/",
+          "label": "Arbeitsweise"
+        },
+        {
+          "url": "/leistungen/",
+          "label": "Leistungen"
+        },
+        {
+          "url": "/case-studies/",
+          "label": "Case Studies"
+        },
+        {
+          "url": "/ki-einsatz/",
+          "label": "KI-Einsatz"
+        },
+        {
+          "url": "/werbeagentur-fuer-den-mittelstand/",
+          "label": "Mittelstand"
+        },
+        {
+          "url": "/kontakt/",
+          "label": "Kontakt"
+        }
+      ],
+      "servicesHeading": "Leistungen",
+      "services": [
+        {
+          "url": "/leistungen/listungsgespraech-handel/",
+          "label": "Listungsgespräch beim Handel"
+        },
+        {
+          "url": "/leistungen/website-b2b/",
+          "label": "Website-Relaunch"
+        },
+        {
+          "url": "/leistungen/produkteinfuehrung/",
+          "label": "Produkteinführung"
+        },
+        {
+          "url": "/leistungen/messeauftritt/",
+          "label": "Messeauftritt"
+        },
+        {
+          "url": "/leistungen/auslandsmaerkte/",
+          "label": "Material für Auslandsmärkte"
+        },
+        {
+          "url": "/leistungen/rollout/",
+          "label": "Rollout des neuen Auftritts"
+        },
+        {
+          "url": "https://luenstroth.com/de/markenberatung/",
+          "label": "Markenberatung (luenstroth.com)"
+        }
+      ],
+      "contactHeading": "Kontakt",
+      "address": "Friedrichstraße 18<br>33615 Bielefeld<br><a href=\"tel:+49521448122710\">0521 448122710</a>",
+      "legal": [
+        {
+          "url": "/impressum/",
+          "label": "Impressum"
+        },
+        {
+          "url": "/datenschutz/",
+          "label": "Datenschutz"
+        }
+      ]
+    },
+    "crumbs": {
+      "case-studies": "Case Studies",
+      "leistungen": "Leistungen",
+      "positionierung": "Positionierung",
+      "agentur": "Agentur",
+      "kontakt": "Kontakt",
+      "ki-einsatz": "KI-Einsatz",
+      "vorgehensweise-der-agentur": "Arbeitsweise",
+      "werbeagentur-fuer-den-mittelstand": "Mittelstand",
+      "impressum": "Impressum",
+      "datenschutz": "Datenschutz"
+    }
+  },
+  "en": {
+    "locale": "en_GB",
+    "home": "/en/",
+    "homeLabel": "Home",
+    "menuLabel": "Menu",
+    "switchLabel": "Deutsch",
+    "switchShort": "DE",
+    "siteName": "Lünstroth Advertising Agency",
+    "nav": [
+      {
+        "url": "/en/approach/",
+        "label": "Approach"
+      },
+      {
+        "url": "/en/agency/",
+        "label": "Agency"
+      },
+      {
+        "url": "/en/services/",
+        "label": "Services"
+      },
+      {
+        "url": "/en/case-studies/",
+        "label": "Case Studies"
+      },
+      {
+        "url": "/en/use-of-ai/",
+        "label": "Use of AI"
+      }
+    ],
+    "cta": {
+      "url": "/en/contact/",
+      "label": "Start a project"
+    },
+    "footer": {
+      "tagline": "Indispensable, not interchangeable.",
+      "navHeading": "Navigation",
+      "nav": [
+        {
+          "url": "/en/agency/",
+          "label": "Agency"
+        },
+        {
+          "url": "/en/approach/",
+          "label": "Approach"
+        },
+        {
+          "url": "/en/services/",
+          "label": "Services"
+        },
+        {
+          "url": "/en/case-studies/",
+          "label": "Case Studies"
+        },
+        {
+          "url": "/en/use-of-ai/",
+          "label": "Use of AI"
+        },
+        {
+          "url": "/en/mid-sized-companies/",
+          "label": "Mid-sized companies"
+        },
+        {
+          "url": "/en/contact/",
+          "label": "Contact"
+        }
+      ],
+      "servicesHeading": "Services",
+      "services": [
+        {
+          "url": "/en/services/retail-listing/",
+          "label": "Retail listing meeting"
+        },
+        {
+          "url": "/en/services/b2b-website/",
+          "label": "Website relaunch"
+        },
+        {
+          "url": "/en/services/product-launch/",
+          "label": "Product launch"
+        },
+        {
+          "url": "/en/services/trade-fair/",
+          "label": "Trade fair"
+        },
+        {
+          "url": "/en/services/international-markets/",
+          "label": "International markets"
+        },
+        {
+          "url": "/en/services/brand-rollout/",
+          "label": "Brand rollout"
+        },
+        {
+          "url": "https://luenstroth.com/en/brand-consultancy/",
+          "label": "Brand consultancy (luenstroth.com)"
+        }
+      ],
+      "contactHeading": "Contact",
+      "address": "Friedrichstraße 18<br>33615 Bielefeld, Germany<br><a href=\"tel:+49521448122710\">+49 521 448122710</a>",
+      "legal": [
+        {
+          "url": "/en/legal-notice/",
+          "label": "Legal notice"
+        },
+        {
+          "url": "/en/privacy/",
+          "label": "Privacy"
+        }
+      ]
+    },
+    "crumbs": {
+      "case-studies": "Case Studies",
+      "services": "Services",
+      "positioning": "Positioning",
+      "agency": "Agency",
+      "contact": "Contact",
+      "use-of-ai": "Use of AI",
+      "approach": "Approach",
+      "mid-sized-companies": "Mid-sized companies",
+      "legal-notice": "Legal notice",
+      "privacy": "Privacy"
+    }
+  }
+}

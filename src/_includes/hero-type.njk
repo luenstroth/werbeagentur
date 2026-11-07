@@ -1,0 +1,45 @@
+{#  Typografischer Hero für Seiten ohne eigenen Inhalt (Startseite, Agentur,
+    Übersichten). Seiten, die Arbeit zeigen, bleiben fotografisch.
+
+    rueckwaerts = true blendet die Wörter in umgekehrter Reihenfolge ein.
+    Das ist NUR für „Vom Ende her denken." sinnvoll — dort führt der Satz
+    sich selbst vor. Bei jedem anderen Satz wäre es ein Effekt ohne Grund,
+    deshalb ist der Standard eine ruhige Einblendung von vorne.          #}
+
+{#  WICHTIG: Die H1 ist die Suchbegriffs-Zeile, nicht der kreative Satz.
+    Der kreative Satz ist nur VISUELL die Überschrift — semantisch ein
+    Absatz. Umgekehrt verschenkt die Seite ihren wichtigsten Rankingfaktor
+    an eine Formulierung, nach der niemand sucht.                        #}
+{% macro heroType(h1, woerter, sub, rueckwaerts = false) %}
+<header class="hero--type">
+  <div class="container">
+    <h1 class="label reveal" style="margin-bottom:1.75rem;">{{ h1 }}</h1>
+
+    {#  woerter: Array einzelner Wörter, OHNE Schlusspunkt — der Punkt wird
+        als akzentfarbener .type-dot angehängt. Ein versehentlich mitgegebener
+        Punkt am letzten Wort wird entfernt (verhindert „austauschbar..“).
+        Ein Array mit nur einem Element wird als ganzer Satz ausgegeben
+        (". " erzeugt dann einen Zeilenumbruch), ohne Wort-Animation.     #}
+    <p class="type-claim">
+    {%- if woerter | length == 1 %}
+      {{ woerter[0] | replace(". ", ".<br>") | safe }}
+    {%- else %}
+      {%- for w in woerter %}
+      {%- set pos = (woerter.length - loop.index) if rueckwaerts else loop.index0 -%}
+      {%- set wort = (w | replace(r/\.$/, "")) if loop.last else w -%}
+      <span class="type-word" style="animation-delay:{{ (pos * 0.13 + 0.15) | round(2) }}s;">{{ wort }}{% if loop.last %}<span class="type-dot">.</span>{% endif %}</span>{% if not loop.last %} {% endif %}
+      {%- endfor %}
+    {%- endif %}
+    </p>
+
+
+    {%- if sub %}
+    <p class="type-sub reveal reveal-delay-2">{{ sub }}</p>
+    {%- endif %}
+
+    {%- if caller %}
+    <div class="type-meta reveal reveal-delay-2">{{ caller() }}</div>
+    {%- endif %}
+  </div>
+</header>
+{% endmacro %}

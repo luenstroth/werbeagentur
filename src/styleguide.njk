@@ -1,0 +1,97 @@
+﻿---
+layout: base.njk
+title: "Styleguide — Lünstroth Werbeagentur"
+description: "Interne Komponentenbibliothek, nicht verlinkt."
+permalink: /styleguide/
+eleventyExcludeFromCollections: true
+noTranslation: true
+robots: "noindex, nofollow"
+---
+
+<div class="container" style="padding-top:4rem;padding-bottom:6rem;">
+
+  <p class="label" style="margin-bottom:1rem;">Interne Referenz</p>
+  <h1 class="display-lg" style="margin-bottom:3rem;">Styleguide</h1>
+
+  <div style="border-top:1px solid rgba(var(--ink-rgb),.1);padding-top:2rem;margin-bottom:4rem;">
+    <p class="label" style="margin-bottom:1.5rem;">Typografie</p>
+    <p class="display-xl" style="margin-bottom:1rem;">Display XL</p>
+    <p class="display-lg" style="margin-bottom:1rem;">Display Large</p>
+    <p class="display-md" style="margin-bottom:1rem;">Display Medium</p>
+    <p class="body-lg" style="max-width:640px;">Body Large — für Lead-Absätze. Desktop-first bedeutet: diese Werte entfalten sich erst auf breiten Bildschirmen voll, nicht runterskaliert von Mobile.</p>
+  </div>
+
+  <div style="border-top:1px solid rgba(var(--ink-rgb),.1);padding-top:2rem;margin-bottom:4rem;">
+    <p class="label" style="margin-bottom:1.5rem;">Buttons</p>
+    <div style="display:flex;gap:1.5rem;flex-wrap:wrap;align-items:center;">
+      <a href="#" class="btn-primary">Primär</a>
+      <a href="#" class="btn-fill">Gefüllt</a>
+      <a href="#" class="btn-arrow">Mit Pfeil →</a>
+    </div>
+  </div>
+
+  <div style="border-top:1px solid rgba(var(--ink-rgb),.1);padding-top:2rem;margin-bottom:4rem;">
+    <p class="label" style="margin-bottom:1.5rem;">Karten (grid-3)</p>
+    <div class="grid-3">
+      <a href="#" class="card">
+        <div class="card-num">01</div>
+        <h3 class="card-title">Kartentitel</h3>
+        <p class="card-desc">Kurzbeschreibung der Leistung oder des Fallbeispiels.</p>
+      </a>
+      <a href="#" class="card">
+        <div class="card-num">02</div>
+        <h3 class="card-title">Kartentitel</h3>
+        <p class="card-desc">Kurzbeschreibung der Leistung oder des Fallbeispiels.</p>
+      </a>
+      <a href="#" class="card">
+        <div class="card-num">03</div>
+        <h3 class="card-title">Kartentitel</h3>
+        <p class="card-desc">Kurzbeschreibung der Leistung oder des Fallbeispiels.</p>
+      </a>
+    </div>
+  </div>
+
+  <div style="border-top:1px solid rgba(var(--ink-rgb),.1);padding-top:2rem;margin-bottom:4rem;">
+    <p class="label" style="margin-bottom:1.5rem;">Vergleichs-Karten (compare-grid)</p>
+    <div class="compare-grid">
+      <div class="compare-col">
+        <span class="compare-tag">Bisher</span>
+        <p class="compare-text">Beschreibung des alten Zustands.</p>
+      </div>
+      <div class="compare-col">
+        <span class="compare-tag">Neu</span>
+        <p class="compare-text">Beschreibung des neuen Zustands.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="border-top:1px solid rgba(var(--ink-rgb),.1);padding-top:2rem;margin-bottom:4rem;">
+    <p class="label" style="margin-bottom:1.5rem;">Häkchen-Liste (check-list)</p>
+    <ul class="check-list">
+      <li class="check-item reveal"><span class="check-icon"></span><span>Erster Punkt</span></li>
+      <li class="check-item reveal reveal-delay-1"><span class="check-icon"></span><span>Zweiter Punkt</span></li>
+    </ul>
+  </div>
+
+  <div style="border-top:1px solid rgba(var(--ink-rgb),.1);padding-top:2rem;margin-bottom:4rem;">
+    <p class="label" style="margin-bottom:1.5rem;">Ken-Burns (langsamer Zoom, 22s Loop)</p>
+    <div class="ken-burns" style="height:50vh;">
+      {% respImage "img/hero.jpeg", "Demo", "100vw" %}
+    </div>
+  </div>
+
+  <div style="border-top:1px solid rgba(var(--ink-rgb),.1);padding-top:2rem;margin-bottom:4rem;">
+    <p class="label" style="margin-bottom:1.5rem;">Parallax (JS-gesteuert, langsam scrollen)</p>
+    <div class="parallax-box">
+      <div data-parallax=".35">{% respImage "img/hero.jpeg", "Demo", "100vw" %}</div>
+    </div>
+  </div>
+
+  <div style="border-top:1px solid rgba(var(--ink-rgb),.1);padding-top:2rem;margin-bottom:4rem;">
+    <p class="label" style="margin-bottom:1.5rem;">Soft Fade-in (scrollen, um zu sehen)</p>
+    <div class="reveal" style="padding:2rem;background:var(--paper-2);margin-bottom:1rem;">Reveal 1</div>
+    <div class="reveal reveal-delay-1" style="padding:2rem;background:var(--paper-2);margin-bottom:1rem;">Reveal 2 (verzögert)</div>
+    <div class="reveal reveal-delay-2" style="padding:2rem;background:var(--paper-2);">Reveal 3 (mehr verzögert)</div>
+  </div>
+
+</div>

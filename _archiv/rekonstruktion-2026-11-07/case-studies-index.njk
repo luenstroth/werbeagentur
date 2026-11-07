@@ -1,0 +1,189 @@
+---
+layout: base.njk
+title: "Case Studies: 13 Markenprojekte aus dem Mittelstand"
+description: "Übernahme, Generationswechsel, Export, Wettbewerbsdruck: 13 reale Ausgangslagen aus Maschinenbau, Automotive, Bau, Banken, Food und Sport."
+heroImage: "img/gneuss-hero3.jpg"
+heroAlt: "Siebdrehscheibe von Gneuss für die kontinuierliche Filtration von Kunststoffschmelzen"
+permalink: /case-studies/
+breadcrumbName: "Case Studies"
+---
+{#- Auszeichnung der Sammlung. Speist sich aus collections.caseStudy, damit
+    kuenftige Case Studies automatisch mit aufgenommen werden. JSON-LD darf
+    laut Spezifikation auch im Body stehen. -#}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "headline": {{ title | dump | safe }},
+  "description": {{ description | dump | safe }},
+  "url": "https://luenstroth-werbeagentur.de/case-studies/",
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": {{ collections.caseStudy | length }},
+    "itemListElement": [
+      {%- for cs in collections.caseStudy %}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index }},
+        "name": {{ cs.data.title | dump | safe }},
+        "url": "https://luenstroth-werbeagentur.de{{ cs.url }}"
+      }{% if not loop.last %},{% endif %}
+      {%- endfor %}
+    ]
+  }
+}
+</script>
+
+{% from "hero-type.njk" import heroType %}
+{{ heroType(
+  "Case Studies: Markenprojekte aus dem Mittelstand",
+  ["Niemand", "ruft", "wegen", "eines", "Logos", "an"],
+  "Man ruft an, weil ein Unternehmen übernommen wurde. Weil die Gründergeneration abtritt. Weil international mehr Umsatz her muss. Dreizehn echte Fragen, dreizehn unterschiedliche Lösungen."
+) }}
+
+<section class="container" style="padding-block:4rem 5rem;">
+  <div class="grid-3 case-grid" style="background:none;gap:clamp(2rem,3vw,3rem);">
+    <a href="/case-studies/volksbank-phd/" class="case-card reveal">
+      <div class="case-card-img">
+        {% respImage "img/Bankverein-Werther-Hero.jpg", "Filiale des Bankverein Werther mit erhaltenem Schriftzug und dem kleineren Zusatz der Dachmarke", "33vw" %}
+        <p class="case-card-question">„Wie integrieren wir am besten das übernommene Bank-Institut?"</p>
+      </div>
+      <div class="case-card-body">
+        <span class="case-card-tag">Banken</span>
+        <h2 class="case-card-title">Volksbank PHD</h2>
+      </div>
+    </a>
+
+    <a href="/case-studies/gneuss/" class="case-card reveal reveal-delay-1">
+      <div class="case-card-img">
+        {% respImage "img/gneuss-hero3.jpg", "Siebdrehscheibe von Gneuss für die kontinuierliche Filtration von Kunststoffschmelzen", "33vw" %}
+        <p class="case-card-question">„Die Gründergeneration tritt ab. Wie stabilisieren wir das Unternehmen für die zweite Generation?"</p>
+      </div>
+      <div class="case-card-body">
+        <span class="case-card-tag">Maschinenbau</span>
+        <h2 class="case-card-title">Gneuss</h2>
+      </div>
+    </a>
+
+    <a href="/case-studies/cobiax/" class="case-card reveal reveal-delay-2">
+      <div class="case-card-img">
+        {% respImage "img/cobiax-hero.jpg", "Elbphilharmonie Hamburg – die Geschossdecken wurden mit Cobiax-Hohlkörpermodulen ausgeführt", "33vw" %}
+        <p class="case-card-question">„Wir brauchen international mehr Umsatz."</p>
+      </div>
+      <div class="case-card-body">
+        <span class="case-card-tag">Bauindustrie</span>
+        <h2 class="case-card-title">Cobiax</h2>
+      </div>
+    </a>
+
+    <a href="/case-studies/arminia-bielefeld/" class="case-card reveal">
+      <div class="case-card-img">
+        {% respImage "img/branding-arminia-bielefeld.jpg", "Vereinsfahne von DSC Arminia Bielefeld mit dem Vereinswappen", "33vw" %}
+        <p class="case-card-question">„Wir brauchen mehr Einnahmen. Wie geht das?"</p>
+      </div>
+      <div class="case-card-body">
+        <span class="case-card-tag">Profifußball / Bundesliga</span>
+        <h2 class="case-card-title">DSC Arminia Bielefeld</h2>
+      </div>
+    </a>
+
+    <a href="/case-studies/stadtwerke-bielefeld/" class="case-card reveal reveal-delay-1">
+      <div class="case-card-img">
+        {% respImage "img/Stadtwerke-Hero.jpg", "Hochspannungsmast mit Freileitungen", "33vw" %}
+        <p class="case-card-question">„Wir geraten unter Konkurrenzdruck. Was tun?"</p>
+      </div>
+      <div class="case-card-body">
+        <span class="case-card-tag">Energie</span>
+        <h2 class="case-card-title">Stadtwerke Bielefeld</h2>
+      </div>
+    </a>
+
+    <a href="/case-studies/hella/" class="case-card reveal reveal-delay-2">
+      <div class="case-card-img">
+        {% respImage "img/hella-hero.jpg", "Fahrzeug auf einer Landstraße aus der Vogelperspektive", "33vw" %}
+        <p class="case-card-question">„Wie steuern wir unsere Marke in national unterschiedlichen Preisgefügen und erhöhen die Markenbindung bei allen Absatzmittlern?"</p>
+      </div>
+      <div class="case-card-body">
+        <span class="case-card-tag">Automotive</span>
+        <h2 class="case-card-title">Hella</h2>
+      </div>
+    </a>
+
+    <a href="/case-studies/werner-works/" class="case-card reveal">
+      <div class="case-card-img">
+        {% respImage "img/werner-works-hero.jpg", "Feine Lamellenstruktur im Streiflicht", "33vw" %}
+        <p class="case-card-question">„Niemand hatte den Firmennamen selbst infrage gestellt — bis wir es taten."</p>
+      </div>
+      <div class="case-card-body">
+        <span class="case-card-tag">Möbelindustrie</span>
+        <h2 class="case-card-title">werner works</h2>
+      </div>
+    </a>
+
+    <a href="/case-studies/meco/" class="case-card reveal reveal-delay-1">
+      <div class="case-card-img">
+        {% respImage "img/Meco-Hero.jpg", "Gebündelte Metallrohre aus der Fertigung von Meco", "33vw" %}
+        <p class="case-card-question">„Unser Geschäft hat sich gewandelt. Zeigt unser Auftritt das noch?"</p>
+      </div>
+      <div class="case-card-body">
+        <span class="case-card-tag">Fluidtechnik</span>
+        <h2 class="case-card-title">Meco</h2>
+      </div>
+    </a>
+
+    <a href="/case-studies/meisterhaft-zdb/" class="case-card reveal reveal-delay-2">
+      <div class="case-card-img">
+        {% respImage "img/Zentralverband-Deutsches-Baugewerbe-Hero.jpg", "Rohbau mit mehreren Baukränen im Abendlicht", "33vw" %}
+        <p class="case-card-question">„Unser Begriff beschreibt genau, was wir leisten — aber ist er überhaupt als Marke schutzfähig?"</p>
+      </div>
+      <div class="case-card-body">
+        <span class="case-card-tag">Verbände / Bauwirtschaft</span>
+        <h2 class="case-card-title">Meisterhaft (ZDB)</h2>
+      </div>
+    </a>
+
+    <a href="/case-studies/eva-mann/" class="case-card reveal">
+      <div class="case-card-img">
+        {% respImage "img/Eva-Mann-Hero2.jpg", "Model in einem Entwurf des Modelabels Eva Mann", "33vw" %}
+        <p class="case-card-question">„Ein Name für ein Fashion-Label — aber wie macht man ihn wirklich unvergesslich?"</p>
+      </div>
+      <div class="case-card-body">
+        <span class="case-card-tag">Fashion</span>
+        <h2 class="case-card-title">Eva Mann</h2>
+      </div>
+    </a>
+
+    <a href="/case-studies/albatros/" class="case-card reveal reveal-delay-1">
+      <div class="case-card-img">
+        {% respImage "img/albatros-hero.jpg", "Sicherheitsschuhe von Albatros im Spritzwasser", "33vw" %}
+        <p class="case-card-question">„Unsere Eigenmarke wirkt zu ‘eigenmarkig‘ für angemessene Preise."</p>
+      </div>
+      <div class="case-card-body">
+        <span class="case-card-tag">Eigenmarke / Arbeitsschutz</span>
+        <h2 class="case-card-title">Albatros</h2>
+      </div>
+    </a>
+
+    <a href="/case-studies/kuehlmann/" class="case-card reveal reveal-delay-2">
+      <div class="case-card-img">
+        {% respImage "img/hero-kuehlmann.jpg", "Angerichteter Salat auf einem Teller", "33vw" %}
+        <p class="case-card-question">„Discountpreis – und trotzdem kein Billig-Look?"</p>
+      </div>
+      <div class="case-card-body">
+        <span class="case-card-tag">Food / Handelsmarke</span>
+        <h2 class="case-card-title">Delikato für Kühlmann</h2>
+      </div>
+    </a>
+
+    <a href="/case-studies/piasten/" class="case-card reveal">
+      <div class="case-card-img">
+        {% respImage "img/hero-piasten.jpg", "Flüssige Schokoladenmasse in der Produktion", "33vw" %}
+        <p class="case-card-question">„Unsere Marken werden nicht beworben. Wie verkaufen sie trotzdem?"</p>
+      </div>
+      <div class="case-card-body">
+        <span class="case-card-tag">Food / Süßwaren</span>
+        <h2 class="case-card-title">Piasten</h2>
+      </div>
+    </a>
+  </div>
+</section>

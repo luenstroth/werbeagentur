@@ -1,0 +1,101 @@
+---
+layout: base.njk
+title: "Kommunikation für Auslandsmärkte: mehrsprachig und rechtssicher"
+description: "Verpackung, Video und Vertriebsunterlagen für mehrere Länder: mehr als Übersetzung – andere Preislagen, andere Kennzeichnungspflichten, anderes Markenrecht."
+permalink: /leistungen/auslandsmaerkte/
+tags: ["anlass"]
+anlassOrder: 5
+anlassName: "Material für Auslandsmärkte"
+anlassTeaser: "Übersetzen ist der kleinste Teil. Andere Preislagen, andere Kennzeichnungspflichten, anderes Markenrecht."
+ogImageSrc: "img/Material-fuer-Auslandsmaerkte.jpg"
+heroAlt: "Hoch gestapelte Versandkartons in einer Lagerhalle"
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Kommunikation für Auslandsmärkte",
+    "serviceType": "Internationale Kommunikation, mehrsprachige Verpackung und Videoproduktion",
+    "provider": { "@id": "https://luenstroth-werbeagentur.de/#organisation" },
+    "areaServed": "Worldwide"
+  }
+---
+{%- set hero = {
+  img: "img/Material-fuer-Auslandsmaerkte.jpg",
+  alt: "Hoch gestapelte Versandkartons in einer Lagerhalle",
+  label: "Kommunikation für Auslandsmärkte",
+  claim: "Material für<br>Auslandsmärkte<span class=\"type-dot\">.</span>",
+  sub: "Dieselbe Ware, ein anderes Land — und plötzlich gelten andere Regeln für Preis, Packung und Name.",
+  labelIsH1: true
+} %}
+{% include "hero-foto.njk" %}
+
+<!-- 01 — DIE LAGE -->
+<section class="container measure section-block section-block--tight">
+  <p class="label reveal" style="margin-bottom:1rem;">01 — Die Lage</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Übersetzen ist der kleinste Teil</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Was im Heimatmarkt als Premium gilt, ist in einem technologisch weiter entwickelten Markt Mittelmaß — und in einem anderen schlicht zu teuer. Dasselbe Produkt braucht dann eine andere Begründung für seinen Preis, nicht nur einen anderen Satz.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Dazu kommen Kennzeichnungspflichten, die von Land zu Land verschieden sind, und Markenrechtssysteme, in denen ein Name oder eine Packung anders bewertet wird als zu Hause.</p>
+  <p class="pull-quote reveal reveal-delay-2">Konsistent in der Machart, lokal in der Ansprache — sonst ist es entweder beliebig oder teuer.</p>
+</section>
+
+<!-- 02 — WAS ENTSTEHT -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">02 — Was dafür entsteht</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.5rem;">Ein Kern, viele Fassungen</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "Mehrsprachige Verpackungen mit den Kennzeichnungen der jeweiligen Zielmärkte",
+      "Videos auf gemeinsamer Bildbasis mit sprachspezifischem Lettering — produziert in bis zu 20 Sprachen, nicht nur konzipiert",
+      "Vertriebsunterlagen, die den Preis im jeweiligen Markt begründen statt den Heimatmarkt zu wiederholen",
+      "Prüfung von Verwechslungsgefahr und Markenrecht in den Zielländern, während gestaltet wird",
+      "Eine dokumentierte Trennung zwischen dem, was überall gleich bleibt, und dem, was sich anpassen darf"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<!-- 03 — WAS BLEIBT -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">03 — Was bleibt, was sich anpasst</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Vorher festlegen, statt bei jeder Abweichung zu verhandeln</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Die zentrale Aussage und das Erscheinungsbild bleiben in jedem Land gleich. Formulierung, Bildauswahl, Preisargumentation und Gewichtung der Kanäle dürfen sich anpassen. Diese Trennung wird zu Beginn festgehalten. So kann eine Landesgesellschaft schnell handeln, ohne dass die Marke in jedem Land ein bisschen anders aussieht.</p>
+</section>
+
+<!-- 04 — BELEGE -->
+<section class="container section-block" style="max-width:1100px;">
+  <p class="label reveal" style="margin-bottom:1rem;">04 — Belege</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:2rem;max-width:760px;">Drei Wege in andere Märkte</h2>
+  <div class="grid-3" style="background:none;gap:clamp(1.5rem,2.5vw,2.5rem);">
+    <a href="/case-studies/hella/" class="card reveal">
+      <div class="card-num">A</div>
+      <h3 class="card-title">Hella</h3>
+      <p class="card-desc">Social-Media-Videos für viele Länder: gemeinsame Bildbasis, sprachspezifisches Lettering, Markenführung über unterschiedliche Qualitäts- und Preismärkte hinweg.</p>
+    </a>
+    <a href="/case-studies/piasten/" class="card reveal reveal-delay-1">
+      <div class="card-num">B</div>
+      <h3 class="card-title">Piasten</h3>
+      <p class="card-desc">Exportverpackungen mit dreisprachigen Produktbezeichnungen, den Kennzeichnungen der Zielländer und geprüfter Verwechslungsgefahr.</p>
+    </a>
+    <a href="/case-studies/cobiax/" class="card reveal reveal-delay-2">
+      <div class="card-num">C</div>
+      <h3 class="card-title">Cobiax</h3>
+      <p class="card-desc">Ein bewusst englischer Claim für einen Hersteller mit Schwerpunkt im Nahen Osten — und ein Auftritt, der in diesen Märkten trägt.</p>
+    </a>
+  </div>
+</section>
+
+<!-- 05 — VORGELAGERT -->
+<section class="container measure" style="padding-block:1rem 3rem;">
+  <div style="background:var(--paper-2);padding:2rem 2.25rem;border-left:2px solid var(--accent);">
+    <p class="label" style="margin-bottom:.75rem;">Geht es um den Markteintritt selbst?</p>
+    <p style="font-size:.9375rem;line-height:1.8;">Ob ein neuer Markt mit der bestehenden Marke erschlossen wird, mit einer angepassten oder mit einer eigenen, ist eine Entscheidung vor dem ersten Material. Dafür ist die <a href="https://luenstroth.com/de/markenberatung/markenstrategie/" style="color:var(--accent);">Lünstroth Markenberatung</a> zuständig.</p>
+  </div>
+</section>
+
+<section class="container measure" style="padding-block:1rem 7rem;">
+  <a href="/kontakt/" class="btn-fill reveal">Projekt anfragen</a>
+</section>

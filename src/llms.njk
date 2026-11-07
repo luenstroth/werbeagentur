@@ -1,0 +1,20 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# Lünstroth Werbeagentur
+
+> Werbeagentur der Lünstroth GmbH in Bielefeld, seit 1994. Für Industrie, Handel und Markenartikler, national und international. Sechs Anlässe: Verpackung fürs Listungsgespräch, B2B-Website, Produkteinführung, Messe, Material für Auslandsmärkte, Rollout eines neuen Auftritts. Deutsch und Englisch. Markenstrategie, Naming, Positionierung und Markenarchitektur übernimmt die Schwestermarke Lünstroth (https://luenstroth.com).
+
+Kontakt: Friedrichstraße 18, 33615 Bielefeld, Deutschland · +49 521 448122710 · kontakt@luenstroth-werbeagentur.de
+Volltext aller Seiten: https://luenstroth-werbeagentur.de/llms-full.txt
+
+## Deutsch
+{%- for p in collections.all | sort(false, true, "url") %}{% if not p.data.noSitemap and p.url and p.url.endsWith("/") and not p.url.startsWith("/en/") %}
+- [{{ p.data.title }}](https://luenstroth-werbeagentur.de{{ p.url }}): {{ p.data.description }}
+{%- endif %}{% endfor %}
+
+## English
+{%- for p in collections.all | sort(false, true, "url") %}{% if not p.data.noSitemap and p.url and p.url.endsWith("/") and p.url.startsWith("/en/") %}
+- [{{ p.data.title }}](https://luenstroth-werbeagentur.de{{ p.url }}): {{ p.data.description }}
+{%- endif %}{% endfor %}

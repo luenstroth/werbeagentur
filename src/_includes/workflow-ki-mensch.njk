@@ -1,0 +1,68 @@
+<div style="margin:1rem 0 3rem;">
+<style>
+.aiw-step { position: relative; padding-left: 3rem; padding-bottom: 2.5rem; }
+.aiw-step:last-child { padding-bottom: 0; }
+.aiw-seg {
+  position: absolute; left: 15px; top: 34px; bottom: 0; width: 2px;
+  background: var(--paper-3);
+}
+.aiw-seg-fill {
+  position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+  background: var(--accent); transform: scaleY(0); transform-origin: top;
+  transition: transform 1s cubic-bezier(.16,1,.3,1);
+}
+.reveal.is-visible .aiw-seg-fill { transform: scaleY(1); }
+.aiw-dot {
+  position: absolute; left: 0; top: 2px; width: 32px; height: 32px;
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-size: .8125rem; font-weight: 700; z-index: 1;
+}
+.aiw-dot--ki { background: var(--accent); color: #fff; }
+.aiw-dot--mensch { background: var(--ink); color: #fff; }
+.aiw-title-row { display: flex; align-items: center; gap: .75rem; margin-bottom: .35rem; flex-wrap: wrap; }
+.aiw-step-title { font-size: 1.0625rem; font-weight: 600; }
+.aiw-tag {
+  font-size: .625rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  padding: .2rem .55rem; border-radius: 2px;
+}
+.aiw-tag--ki { background: rgba(var(--accent-rgb),.12); color: var(--accent); }
+.aiw-tag--mensch { background: rgba(var(--ink-rgb),.08); color: var(--ink); }
+.aiw-step-desc { font-size: .875rem; line-height: 1.65; color: rgba(var(--ink-rgb),.62); max-width: 560px; }
+@media (prefers-reduced-motion: reduce) { .aiw-seg-fill { transition: none; transform: scaleY(1); } }
+</style>
+
+{%- if lang == "en" %}
+{%- set tagKi = "AI-supported" %}{%- set tagMensch = "Human decision" %}
+{%- set steps = [
+  {n:"1", t:"Research & competitive analysis", tag:"ki", d:"AI-supported evaluation of large volumes of information — market data, competitors' presences, specialist literature — as a basis, not as a result."},
+  {n:"2", t:"Concept development", tag:"mensch", d:"AI serves as a sparring partner for first ideas. The actual conceptual decision — what is said and why — stays with people."},
+  {n:"3", t:"Creative execution", tag:"mensch", d:"Design, copy and visual concepts are created under human creative responsibility, with brand guardrails for the supporting use of AI."},
+  {n:"4", t:"Translation & localisation", tag:"ki", d:"AI-supported first-draft translation for international communication, followed by human review of tone and technical precision."},
+  {n:"5", t:"Fact-checking & approval", tag:"mensch", d:"Every statement is checked and approved by people before it reaches the client — no unchecked AI output goes out."},
+  {n:"6", t:"Delivery & transfer of rights", tag:"mensch", d:"Full transfer of all rights to the client — regardless of where in the process AI was used in a supporting role."}
+] -%}
+{%- else %}
+{%- set tagKi = "KI-unterstützt" %}{%- set tagMensch = "Menschliche Entscheidung" %}
+{%- set steps = [
+  {n:"1", t:"Recherche & Wettbewerbsanalyse", tag:"ki", d:"KI-gestützte Auswertung großer Informationsmengen — Marktdaten, Wettbewerbsauftritte, Fachliteratur — als Grundlage, nicht als Ergebnis."},
+  {n:"2", t:"Konzeptentwicklung", tag:"mensch", d:"KI dient als Sparringspartner für erste Ideen. Die eigentliche konzeptionelle Entscheidung — was gesagt wird und warum — bleibt beim Menschen."},
+  {n:"3", t:"Kreative Umsetzung", tag:"mensch", d:"Gestaltung, Text und Bildkonzeption entstehen unter menschlicher kreativer Verantwortung, mit Marken-Leitplanken für den unterstützenden KI-Einsatz."},
+  {n:"4", t:"Übersetzung & Lokalisierung", tag:"ki", d:"KI-gestützte Erstübersetzung für internationale Kommunikation, mit anschließender menschlicher Prüfung auf Ton und fachliche Präzision."},
+  {n:"5", t:"Faktenprüfung & Freigabe", tag:"mensch", d:"Jede Aussage wird von Menschen geprüft und freigegeben, bevor sie den Kunden erreicht — keine ungeprüfte KI-Ausgabe geht nach draußen."},
+  {n:"6", t:"Auslieferung & Rechteübertragung", tag:"mensch", d:"Vollständige Übertragung sämtlicher Rechte an den Kunden — unabhängig davon, an welcher Stelle im Prozess KI unterstützend eingesetzt wurde."}
+] -%}
+{%- endif %}
+{%- for s in steps %}
+<div class="aiw-step reveal">
+  {%- if not loop.last %}
+  <div class="aiw-seg"><div class="aiw-seg-fill"></div></div>
+  {%- endif %}
+  <div class="aiw-dot aiw-dot--{{ s.tag }}">{{ s.n }}</div>
+  <div class="aiw-title-row">
+    <span class="aiw-step-title">{{ s.t }}</span>
+    <span class="aiw-tag aiw-tag--{{ s.tag }}">{{ tagKi if s.tag == "ki" else tagMensch }}</span>
+  </div>
+  <p class="aiw-step-desc">{{ s.d }}</p>
+</div>
+{%- endfor %}
+</div>

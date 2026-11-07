@@ -1,0 +1,63 @@
+---
+layout: base.njk
+title: "Kontakt: Projekt anfragen bei Lünstroth"
+description: "Projekt anfragen bei der Lünstroth Werbeagentur: Verpackung, Website, Produkteinführung, Messe, Rollout. Friedrichstraße 18, Bielefeld, Telefon 0521 448122710."
+permalink: /kontakt/
+ogImageSrc: "img/kontakt.jpg"
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "headline": "Kontakt: Projekt anfragen bei Lünstroth",
+    "description": "Projekt anfragen bei der Lünstroth Werbeagentur: Verpackung, Website, Produkteinführung, Messe, Rollout. Friedrichstraße 18, Bielefeld, Telefon 0521 448122710.",
+    "url": "https://luenstroth-werbeagentur.de/kontakt/",
+    "about": {
+      "@type": "Organization",
+      "name": "Lünstroth Werbeagentur",
+      "url": "https://luenstroth-werbeagentur.de/",
+      "email": "kontakt@luenstroth-werbeagentur.de",
+      "telephone": "+49 521 448122710",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Friedrichstraße 18",
+        "postalCode": "33615",
+        "addressLocality": "Bielefeld",
+        "addressCountry": "DE"
+      }
+    }
+  }
+
+---
+
+{%- set hero = {
+  img: "img/kontakt.jpg",
+  alt: "Hände über einem Klemmbrett mit Skizzen und Notizen während eines Gesprächs",
+  label: "Kontakt zur Werbeagentur Lünstroth",
+  claim: "Ein konkretes Problem.<br>Reden wir darüber<span class=\"type-dot\">.</span>",
+  labelIsH1: true
+} %}
+{% include "hero-foto.njk" %}
+
+<section class="container" style="padding-block:4rem 5rem;max-width:640px;">
+  <p class="body-lg reveal" style="margin-bottom:1.25rem;">Am schnellsten erreichen Sie uns per E-Mail — mit ein paar Sätzen zum Anlass und, falls schon absehbar, dem groben Zeitrahmen.</p>
+  <p class="body-lg reveal" style="margin-bottom:2.5rem;">Unsere Mandate beginnen in der Regel bei 20.000 €. Für eine reine strategische Markenberatung wenden Sie sich an die <a href="https://luenstroth.com/">Lünstroth Markenberatung</a>.</p>
+
+  <div class="reveal reveal-delay-1" style="background:var(--paper-2);padding:clamp(1.75rem,3vw,2.5rem);margin-bottom:2rem;">
+    <p class="label" style="margin-bottom:.75rem;">E-Mail</p>
+    <a href="mailto:kontakt@luenstroth-werbeagentur.de" style="font-size:1.25rem;font-weight:600;color:var(--ink);text-decoration:none;">kontakt@luenstroth-werbeagentur.de</a>
+  </div>
+
+  <div class="reveal reveal-delay-1" style="background:var(--paper-2);padding:clamp(1.75rem,3vw,2.5rem);margin-bottom:2rem;">
+    <p class="label" style="margin-bottom:.75rem;">Telefon</p>
+    <a href="tel:+49521448122710" style="font-size:1.25rem;font-weight:600;color:var(--ink);text-decoration:none;">0521 448122710</a>
+  </div>
+
+  <div class="reveal reveal-delay-2" style="background:var(--paper-2);padding:clamp(1.75rem,3vw,2.5rem);">
+    <p class="label" style="margin-bottom:.75rem;">Adresse</p>
+    <address style="font-style:normal;font-size:1.0625rem;line-height:1.8;">
+      Lünstroth GmbH<br>
+      Friedrichstraße 18<br>
+      33615 Bielefeld
+    </address>
+  </div>
+</section>

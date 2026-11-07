@@ -1,0 +1,140 @@
+---
+layout: base.njk
+title: "Webdesign-Agentur: WordPress, TYPO3 oder statisch?"
+description: "Jede Technologie hat echte Stärken und Schwächen. Wie Lünstroth die passende Lösung für Unternehmenswebsites auswählt – nach Projekt, nicht nach Gewohnheit."
+ogImageSrc: "img/og-startseite.jpg"
+heroAlt: "Vom Ende her denken. Lünstroth Werbeagentur."
+permalink: /leistungen/webdesign/
+tags: ["leistung"]
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Webdesign",
+    "provider": {"@type": "Organization", "name": "Lünstroth Werbeagentur"}
+  }
+---
+
+{% from "hero-type.njk" import heroType %}
+{{ heroType(
+  "Webdesign und Website-Entwicklung",
+  ["Die", "Technologie", "folgt", "dem", "Projekt,", "nicht", "umgekehrt"],
+  "Es gibt keine beste Website-Technologie — nur die beste für ein bestimmtes Projekt."
+) }}
+
+<section class="container" style="padding-block:4rem 2rem;max-width:760px;">
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">Es gibt keine beste Website-Technologie — nur die beste für ein bestimmtes Projekt. Lünstroth arbeitet bewusst mit mehreren Technologien parallel, von WordPress über TYPO3 bis zu modernen statischen Systemen und nativen Apps, und wählt danach aus, was das jeweilige Unternehmen tatsächlich braucht — nicht danach, was am liebsten gebaut wird.</p>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">Das gilt für kleine Markenauftritte genauso wie für große, mehrsprachige Projekte mit vielen Redakteuren, komplexer Rechteverwaltung oder hohen Sicherheitsanforderungen — bedarfsgenau skalierbar in beide Richtungen.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 1rem;max-width:760px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Wenn das Produkt unsichtbar ist: Meco</h2>
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">Meco fertigt Anschlussarmaturen für Rohr- und Schlauchverbindungen. Ein Bauteil, das niemand sieht und über das niemand spricht — es sitzt im Inneren einer Anlage und fällt nur auf, wenn es versagt. Eine Website, die dieses Bauteil zeigt, zeigt nichts.</p>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">Deshalb zeigt sie nicht das Produkt, sondern das, was hindurchfließt. Die Aufgabe steht als Satz darüber — und der Satz musste auch auf Englisch tragen, ohne seinen Bau zu verlieren:</p>
+</section>
+
+<section class="container" style="padding-block:0 1rem;max-width:1100px;">
+  <div class="grid-2 reveal" style="gap:clamp(1rem,2vw,1.75rem);">
+    <figure style="margin:0;">
+      <div class="case-img" style="aspect-ratio:3840/1844;">
+        {% respImage "img/website-meco-bielefeld.jpg", "Startseite von Meco auf Deutsch: Wasseraufnahme über die volle Breite, darüber der Satz „Wenn Flüssiges von A nach B soll“", "(min-width: 1100px) 540px, 50vw" %}
+      </div>
+      <figcaption class="compare-text" style="margin-top:.6rem;">„Wenn Flüssiges von A nach B soll“</figcaption>
+    </figure>
+    <figure style="margin:0;">
+      <div class="case-img" style="aspect-ratio:3840/1844;">
+        {% respImage "img/Meco-Website.jpg", "Dieselbe Startseite auf Englisch mit dem Satz „When liquid has to get from A to B …“", "(min-width: 1100px) 540px, 50vw" %}
+      </div>
+      <figcaption class="compare-text" style="margin-top:.6rem;">„When liquid has to get from A to B …“</figcaption>
+    </figure>
+  </div>
+  <p class="body-lg reveal reveal-delay-1" style="max-width:760px;margin:1.75rem auto 0;">Das ist keine Übersetzung, sondern eine zweite Fassung desselben Gedankens. „Von A nach B“ funktioniert im Englischen ebenso beiläufig wie im Deutschen — das ist der Grund, warum diese Formulierung gewählt wurde und nicht eine treffendere, die sich nicht übertragen lässt. Bei mehrsprachigen Auftritten entscheidet sich so etwas vor der Gestaltung, nicht danach.</p>
+</section>
+
+<section class="container" style="padding-block:2rem 1rem;max-width:760px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Wenn die Marke die Navigation verdrängt: Eva Mann</h2>
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">Bei einem Modelabel konkurriert jedes Bedienelement mit dem Bild. Die Navigation ist hier deshalb auf vier Einträge reduziert und typografisch so zurückgenommen, dass sie erst auffällt, wenn man sie sucht. Was bleibt, ist ganzflächig die Aufnahme — und darüber die Wortmarke als einziges gestaltetes Element.</p>
+</section>
+
+<figure class="figure-bleed reveal">
+  {#- Eigenes Seitenverhältnis statt 21:9: Der 21:9-Zuschnitt kappt oben die
+      Wortmarke — also genau das Element, um das es im Text geht. -#}
+  <div class="figure-bleed-media" style="aspect-ratio:3840/1844;">
+    {% respImage "img/website-eva-mann.jpg", "Startseite des Modelabels Eva Mann: ganzflächige Schwarzweißaufnahme, darüber die Wortmarke und eine auf vier Einträge reduzierte Navigation", "100vw" %}
+  </div>
+  <figcaption>Eva Mann: Die Zurücknahme ist die Gestaltung. Vier Navigationspunkte, keine Schaltflächen, kein Slider.</figcaption>
+</figure>
+
+<section class="container" style="padding-block:1rem 2rem;max-width:1100px;">
+  <h2 class="display-md reveal" style="margin-bottom:.5rem;">Was bei jedem Projekt mitgedacht wird</h2>
+  {%- include "grid-webdesign-considerations.njk" -%}
+</section>
+
+<section class="container" style="padding-block:1rem 3rem;max-width:900px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Welche Technologie zu wem passt</h2>
+  <p class="body-lg reveal" style="margin-bottom:2rem;">Vier Ansätze, ehrlich gegenübergestellt — inklusive der Nachteile, die die jeweils andere Lösung besser löst:</p>
+  {%- include "chart-webdesign-tech.njk" -%}
+  <p class="body-lg reveal reveal-delay-2" style="margin-top:1rem;">Kein System gewinnt in allen Kriterien — und das ist der Punkt. WordPress bleibt unschlagbar, wenn viele Personen ohne Entwicklerkenntnisse regelmäßig selbst Inhalte pflegen sollen. TYPO3 spielt seine Stärken bei großen, mehrsprachigen Organisationen mit komplexer Rechteverwaltung aus. Statische Systeme liefern maximale Geschwindigkeit und Sicherheit, verlangen dafür Entwickler-Unterstützung bei Änderungen. Headless-CMS liegt bewusst dazwischen.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 3rem;max-width:900px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Über die Website hinaus: native Apps</h2>
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">Manche Anforderungen lassen sich nicht mehr im Browser lösen. Für eine GPS-gestützte Parkraum-App und eine App für bargeldloses Bezahlen an öffentlichen Ladesäulen wurden native Anwendungen für iOS und Android entwickelt — dieselbe Sorgfalt in der Markenumsetzung, nur in einer anderen technischen Umgebung.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 4rem;max-width:1100px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Beispiele aus der Praxis</h2>
+  <div class="grid-2 reveal reveal-delay-1">
+    <div>
+      <div class="case-img" style="margin-bottom:1rem;">
+        <img src="/img/website-meco-bielefeld.jpg" alt="Website-Relaunch für Meco, Bielefeld">
+      </div>
+      <p class="card-desc">Meco: Web-Relaunch inklusive Logo-Anpassung an digitale Sehgewohnheiten und begleitendem Imagevideo.</p>
+    </div>
+    <div>
+      <div class="case-img" style="margin-bottom:1rem;">
+        <img src="/img/website-bauverein-schildhof.jpg" alt="Website für Bauverein Schildhof">
+      </div>
+      <p class="card-desc">Bauverein Schildhof: neue Website mit klarer, zielgruppengerechter Struktur.</p>
+    </div>
+    <div>
+      <div class="case-img" style="margin-bottom:1rem;">
+        <img src="/img/website-dds-consulting.jpg" alt="Website für DDS-Consulting">
+      </div>
+      <p class="card-desc">DDS-Consulting: neue Webpräsenz inklusive CMS und zielgruppengenauem Design.</p>
+    </div>
+    <div>
+      <div class="case-img" style="margin-bottom:1rem;">
+        <img src="/img/website-eva-mann.jpg" alt="Website für das Fashion Label Eva Mann">
+      </div>
+      <p class="card-desc">Eva Mann: Website für ein Fashion-Label — Teil einer mehrjährigen Markenbetreuung. <a href="/case-studies/eva-mann/" style="color:var(--accent);">Vollständige Case Study →</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="container" style="padding-block:1rem 3rem;max-width:760px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Auch groß, wenn nötig</h2>
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">Entstehen ebenso kompakte Markenauftritte wie umfangreiche Projekte mit vielen Sprachversionen, Redakteuren und Freigabeprozessen — bedarfsgenau skaliert, nicht grundsätzlich auf eine Projektgröße festgelegt.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 3rem;max-width:760px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Was das konkret umfasst</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "Technologieauswahl nach Projektbedarf, nicht nach Agentur-Vorliebe",
+      "Umsetzung in WordPress, TYPO3, Headless-CMS, statischen Systemen oder als native App",
+      "E-Commerce-Lösungen inklusive sicherer Zahlungsanbindung",
+      "Skalierbar von kompakten Markenauftritten bis zu mehrsprachigen Großprojekten",
+      "Bildoptimierung, Ladezeit- und Sicherheitsaudit als Standard, nicht als Aufpreis"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<section class="container" style="padding-block:0 5rem;max-width:760px;text-align:center;">
+  <a href="/kontakt/" class="btn-fill">Projekt anfragen</a>
+</section>

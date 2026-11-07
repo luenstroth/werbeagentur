@@ -1,0 +1,18 @@
+<div class="grid-4 reveal" style="margin:2rem 0 3rem;">
+  {%- for item in [
+    {n:"01", t:"Technologie-Wahl", d:"Die Plattform folgt dem Bedarf, nicht der Gewohnheit."},
+    {n:"02", t:"Performance", d:"Ladezeit und Bildoptimierung von Anfang an, kein Nachgedanke."},
+    {n:"03", t:"Sichtbarkeit", d:"SEO und Struktur für KI-gestützte Recherche gleichermaßen."},
+    {n:"04", t:"Sicherheit", d:"Angriffsfläche minimieren, unabhängig vom gewählten System."},
+    {n:"05", t:"Markenkonsistenz", d:"Form folgt Strategie — auch im Digitalen, nicht nur im Logo."},
+    {n:"06", t:"Pflegbarkeit", d:"Wer soll später Inhalte ändern — und wie oft?"},
+    {n:"07", t:"Skalierbarkeit", d:"Mehrsprachig, viele Redakteure, wachsende Anforderungen."},
+    {n:"08", t:"Barrierefreiheit", d:"Zugänglich für möglichst viele Nutzer, nicht nur die Mehrheit."}
+  ] %}
+  <div class="card" style="background:var(--paper-2);">
+    <div class="card-num" style="font-size:1.5rem;">{{ item.n }}</div>
+    <h3 class="card-title" style="font-size:1rem;">{{ item.t }}</h3>
+    <p class="card-desc" style="font-size:.8125rem;">{{ item.d }}</p>
+  </div>
+  {%- endfor %}
+</div>

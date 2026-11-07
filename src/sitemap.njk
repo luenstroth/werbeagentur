@@ -1,0 +1,21 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{%- for p in collections.all %}
+{%- if not p.data.noSitemap and p.url and p.url.endsWith("/") %}
+{%- set paar = p.url | sprachpaar(collections.sprachpaare) %}
+  <url>
+    <loc>https://luenstroth-werbeagentur.de{{ p.url }}</loc>
+    <lastmod>{{ p.date.toISOString() }}</lastmod>
+    {%- if paar %}
+    <xhtml:link rel="alternate" hreflang="de" href="https://luenstroth-werbeagentur.de{{ paar.de }}"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://luenstroth-werbeagentur.de{{ paar.en }}"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luenstroth-werbeagentur.de{{ paar.en }}"/>
+    {%- endif %}
+  </url>
+{%- endif %}
+{%- endfor %}
+</urlset>

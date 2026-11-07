@@ -1,0 +1,109 @@
+---
+layout: base.njk
+title: "GEO: Sichtbar in ChatGPT, Gemini und Perplexity – für B2B"
+description: "B2B-Entscheider nutzen KI-Assistenten bei der Anbietersuche. Wie Ihr Unternehmen in den Antworten von ChatGPT, Gemini und Perplexity vorkommt."
+heroImage: "img/geo-ai.jpg"
+heroAlt: "Antwort einer KI-Suchmaschine, in der Marken genannt und zusammengefasst werden"
+permalink: /leistungen/geo/
+tags: ["leistung"]
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Ersetzt GEO die klassische Suchmaschinenoptimierung?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein, beide bestehen parallel. Google hat im Mai 2026 klargestellt, dass für die eigenen KI-Funktionen keine speziellen GEO-Techniken nötig sind — die Trennung betrifft vor allem eigenständige KI-Chat-Systeme wie ChatGPT, Perplexity oder Copilot."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Woher weiß man, ob das eigene Unternehmen in KI-Antworten vorkommt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Durch gezielte, wiederholte Testabfragen in den gängigen Systemen sowie neue Auswertungswerkzeuge, etwa die automatische KI-Traffic-Trennung in Google Analytics seit Mai 2026 oder die Zitations-Auswertung in Microsoft Clarity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie lange dauert es, bis sich etwas ändert?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Das hängt vom jeweiligen KI-System und dessen Aktualisierungszyklus ab. Erste Ergebnisse sind erfahrungsgemäß nach einigen Wochen sichtbar, nicht sofort."
+        }
+      }
+    ]
+  }
+---
+
+<header class="hero ken-burns" style="height:70vh;min-height:480px;">
+  {% respImage "img/geo-ai.jpg", "Antwort einer KI-Suchmaschine, in der Marken genannt und zusammengefasst werden", "100vw", {eager: true} %}
+  <div class="hero-overlay"></div>
+  <div class="container hero-inner">
+    <h1 class="label reveal" style="color:#fff;margin-bottom:1rem;">GEO · Sichtbarkeit für KI-Assistenten</h1>
+    <p class="display-lg reveal reveal-delay-1" style="color:#fff;max-width:820px;">Wenn niemand mehr googelt.</p>
+  </div>
+</header>
+
+<section class="container" style="padding-block:4rem 2rem;max-width:760px;">
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">94 % der B2B-Entscheider haben 2025 mindestens ein KI-System in ihrem Beschaffungsprozess genutzt (<a href="https://www.forrester.com/blogs/b2b_buyers_make_zero_click_buying_number_one/" style="color:var(--accent);" target="_blank" rel="noopener">Forrester B2B Buyers' Journey Survey, 2026</a>) — ein Anstieg gegenüber 89 % im Vorjahr. Über die Hälfte beginnt die Recherche inzwischen direkt in einem KI-Chat, nicht mehr bei Google (<a href="https://learn.g2.com/g2-2026-ai-search-insight-report" style="color:var(--accent);" target="_blank" rel="noopener">G2, April 2026</a>).</p>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">Die Kehrseite: Nach einer aktuellen Untersuchung taucht die große Mehrheit der Unternehmen in solchen KI-Antworten überhaupt nicht auf — nur ein kleiner Bruchteil wird bei allgemeinen Kategorie-Fragen genannt (<a href="https://2x.marketing/press-release/2026-2x-ai-visibility-index-b2b/" style="color:var(--accent);" target="_blank" rel="noopener">2X AI Visibility Index, 2026</a>). Wer nicht vorkommt, wird schlicht nicht in die engere Auswahl aufgenommen, unabhängig von der eigentlichen Qualifikation.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 3rem;max-width:900px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Was sich dadurch ändert</h2>
+  <div class="compare-grid reveal reveal-delay-1">
+    <div class="compare-col">
+      <span class="compare-tag">Klassische Suchmaschinenoptimierung</span>
+      <p class="compare-text">Ziel: möglichst weit oben in einer Ergebnisliste erscheinen, die der Nutzer selbst durchsieht und bewertet.</p>
+    </div>
+    <div class="compare-col">
+      <span class="compare-tag">Sichtbarkeit für KI-Assistenten</span>
+      <p class="compare-text">Ziel: in der einen, direkt formulierten Antwort vorkommen — als eine von wenigen Nennungen, nicht als Listenplatz.</p>
+    </div>
+  </div>
+  <p class="body-lg reveal reveal-delay-2" style="margin-top:2rem;max-width:760px;">Nach Untersuchungen von Princeton und Georgia Tech (<a href="https://arxiv.org/abs/2311.09735" style="color:var(--accent);" target="_blank" rel="noopener">Aggarwal et al., 2024</a>) erhöhen konkrete Zahlen und Fakten in Inhalten die Wahrscheinlichkeit, von KI-Systemen zitiert zu werden, um 30 bis 40 Prozent. Strukturierte, eindeutige Aussagen schlagen werbliche Formulierungen — genau umgekehrt zur klassischen Marketingsprache.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 3rem;max-width:760px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Was die Umsetzung konkret umfasst</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "Strukturierte Unternehmens- und Leistungsbeschreibungen, die KI-Systeme eindeutig auswerten können",
+      "Technische Maschinenlesbarkeit der Website (u. a. llms.txt, sauberes Markup)",
+      "Fakten- und zahlenbasierte Inhalte statt werblicher Formulierungen, mit belegbaren Quellen",
+      "Laufende Kontrolle, ob und wie das Unternehmen in gängigen KI-Systemen tatsächlich genannt wird"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<section class="container" style="padding-block:1rem 4rem;max-width:760px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Häufige Fragen</h2>
+  <div class="reveal" style="margin-bottom:1.5rem;">
+    <p style="font-weight:600;margin-bottom:.5rem;">Ersetzt GEO die klassische Suchmaschinenoptimierung?</p>
+    <p style="font-size:.9375rem;line-height:1.8;color:rgba(var(--ink-rgb),.7);">Nein, beide bestehen parallel. Google selbst hat im Mai 2026 klargestellt, dass für die eigenen KI-Funktionen keine speziellen GEO-Techniken nötig sind — die Trennung betrifft vor allem eigenständige KI-Chat-Systeme wie ChatGPT, Perplexity oder Copilot, die anders arbeiten als die klassische Google-Suche.</p>
+  </div>
+  <div class="reveal reveal-delay-1" style="margin-bottom:1.5rem;">
+    <p style="font-weight:600;margin-bottom:.5rem;">Woher weiß man, ob das eigene Unternehmen in KI-Antworten vorkommt?</p>
+    <p style="font-size:.9375rem;line-height:1.8;color:rgba(var(--ink-rgb),.7);">Durch gezielte, wiederholte Testabfragen in den gängigen Systemen sowie neue Auswertungswerkzeuge (u. a. Google Analytics trennt KI-Traffic seit Mai 2026 automatisch aus, Microsoft Clarity zeigt seit 2026 die zugrunde liegenden Anfragen hinter KI-Zitationen).</p>
+  </div>
+  <div class="reveal reveal-delay-2">
+    <p style="font-weight:600;margin-bottom:.5rem;">Wie lange dauert es, bis sich etwas ändert?</p>
+    <p style="font-size:.9375rem;line-height:1.8;color:rgba(var(--ink-rgb),.7);">Das hängt vom jeweiligen KI-System ab, da die Aktualisierungszyklen unterschiedlich sind. Erste Ergebnisse sind erfahrungsgemäß nach einigen Wochen sichtbar, nicht sofort.</p>
+  </div>
+</section>
+
+<section class="container" style="padding-block:0 5rem;max-width:760px;">
+  <div style="background:var(--paper-2);padding:2rem 2.25rem;border-left:2px solid var(--accent);">
+    <p class="label" style="margin-bottom:.75rem;">Angrenzende Frage</p>
+    <p style="font-size:.9375rem;line-height:1.8;">Wie ein Unternehmen grundsätzlich mit KI-Systemen umgehen sollte — von der Governance-Frage bis zur strategischen Risikoabwägung auf Führungsebene — behandelt <a href="https://perspice.com" style="color:var(--accent);">Perspice</a>. Diese Seite betrifft die konkrete Umsetzung: die Sichtbarkeit einzelner Inhalte für KI-Assistenten.</p>
+  </div>
+</section>

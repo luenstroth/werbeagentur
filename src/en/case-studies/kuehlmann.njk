@@ -1,0 +1,99 @@
+---
+title: "A retailer brand for the discount channel: Delikato Leichter Genuss"
+description: "Eight varieties, three product groups, one brand image: packaging design for Aldi's retailer brand Delikato Leichter Genuss, produced by Kühlmann Feinkost."
+heroImage: "img/hero-kuehlmann.jpg"
+heroAlt: "Salad arranged on a plate"
+permalink: /en/case-studies/kuehlmann/
+key: /case-studies/kuehlmann/
+tags: ["caseStudyEn"]
+client: "Kühlmann Feinkost"
+---
+
+<header class="hero ken-burns">
+  {% respImage "img/hero-kuehlmann.jpg", "Salad arranged on a plate", "100vw", {eager: true} %}
+  <div class="hero-overlay"></div>
+  <div class="container hero-inner">
+    <p class="label reveal" style="color:#fff;margin-bottom:1rem;">Case study · Food / retailer brand · Kühlmann Feinkost</p>
+    <h1 class="display-lg reveal reveal-delay-1" style="color:#fff;max-width:880px;">A discount retailer brand that does not look like a retailer brand</h1>
+  </div>
+</header>
+
+<section class="container" style="padding-block:4rem 2rem;max-width:760px;">
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">Kühlmann Feinkost produces the salad range <strong>Leichter Genuss</strong> (“light enjoyment”) for Aldi under its own brand Delikato. For the manufacturer, ranges like this determine capacity utilisation and revenue; for the retailer, whether the shopper reaches for it at the chiller cabinet.</p>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">The design brief: eight varieties that are recognisable as one range, can be told apart on the shelf in seconds and, despite the discount price, do not look cheap. None of it is advertised – the pack is the only sales tool.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 3rem;max-width:760px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">One header for the brand, three colours for the product groups</h2>
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">The upper part stays the same across all varieties: brand mark, lettering and the swoosh beneath. This block carries recognition. Colour, by contrast, organises the range by product group and guides the shopper to the right variety without reading:</p>
+  <ul class="check-list" style="margin-bottom:1.5rem;">
+    {%- for item in [
+      "Orange: meat and poultry",
+      "Green: vegetable, potato, pasta, egg",
+      "Blue: fish and seafood"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+  <p class="body-lg reveal reveal-delay-1">The positions stay constant too: net quantity on the left, fat content bottom right, product photo on the baseline. Anyone who knows one variety finds their way around every other one immediately.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 4rem;max-width:1100px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Eight varieties, one presence</h2>
+  <div class="grid-2 reveal reveal-delay-1" style="gap:clamp(1.5rem,2.5vw,2.5rem);">
+    {%- for p in [
+      {f:"delikato-fleischsalat-frei.webp", c:"Meat salad, 250 g – 12 % fat", g:"meat and poultry"},
+      {f:"delikato-gefluegelsalat-frei.webp", c:"Poultry salad, 200 g – 6 % fat", g:"meat and poultry"},
+      {f:"delikato-kartoffelsalat-frei.webp", c:"Potato salad, 300 g – 4 % fat", g:"vegetable, potato, pasta, egg"},
+      {f:"delikato-nudelsalat-frei.webp", c:"Italian pasta salad, 300 g – 5 % fat", g:"vegetable, potato, pasta, egg"},
+      {f:"delikato-eiersalat-frei.webp", c:"Egg salad, 250 g – 10 % fat", g:"vegetable, potato, pasta, egg"},
+      {f:"delikato-tzatziki-frei.webp", c:"Tzatziki, 300 g – 4 % fat", g:"vegetable, potato, pasta, egg"},
+      {f:"delikato-krabbencocktail-frei.webp", c:"Shrimp cocktail, 200 g – 6 % fat", g:"fish and seafood"},
+      {f:"delikato-thunfischsalat-frei.webp", c:"Tuna salad, 200 g – 13 % fat", g:"fish and seafood"}
+    ] %}
+    <div>
+      <div style="aspect-ratio:1399/870;margin-bottom:.75rem;">
+        <img src="/img/food/{{ p.f }}" alt="Delikato Leichter Genuss, {{ p.c }} – label in the outline of the die cut" loading="lazy" width="1399" height="870" style="width:100%;height:100%;object-fit:contain;display:block;">
+      </div>
+      <p class="compare-text">{{ p.c }}<br><span style="color:rgba(var(--ink-rgb),.45);">Product group: {{ p.g }}</span></p>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="container" style="padding-block:1rem 4rem;max-width:760px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Fat content as a reason to buy</h2>
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">“Nur 4 % Fett” (“only 4 % fat”) appears on every pack in the same place and at the same size. The range's promise is thus not claimed but quantified – verifiable variety by variety, from 4 % for tzatziki to 13 % for tuna salad.</p>
+  <p class="body-lg reveal reveal-delay-1">The name “Leichter Genuss” deliberately stays with enjoyment and avoids the language of dieting. On the chilled shelf the range therefore stands next to the classic salads, not in a niche.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 3rem;max-width:760px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Scope of work</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "Packaging design for eight varieties of a retailer brand range",
+      "Colour system by product group for orientation at the chiller cabinet",
+      "Fixed design grids for net quantity, fat content and product image",
+      "Design matched to the discount price level without looking cheap",
+      "Sell-in communication for retail"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<section class="container" style="padding-block:0 5rem;max-width:760px;">
+  <div style="background:var(--paper-2);padding:2rem 2.25rem;border-left:2px solid var(--accent);">
+    <p class="label" style="margin-bottom:.75rem;">Scope of the mandate</p>
+    <p style="font-size:.9375rem;line-height:1.8;">Packaging design for the retailer brand range Delikato Leichter Genuss, produced by Kühlmann Feinkost for Aldi. Delikato is an Aldi own brand.</p>
+  </div>
+  <div style="text-align:center;margin-top:2.5rem;">
+    <a href="/en/case-studies/" class="btn-arrow">← More case studies</a>
+  </div>
+</section>

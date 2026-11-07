@@ -1,0 +1,27 @@
+---
+layout: base.njk
+title: "Seite nicht gefunden — Lünstroth Werbeagentur"
+description: "Diese Seite gibt es nicht mehr oder nicht unter dieser Adresse."
+permalink: /404.html
+robots: "noindex, follow"
+noSitemap: true
+---
+{#  Wird vom Server für 404 und 410 ausgeliefert, unter der angefragten
+    (falschen) Adresse. Deshalb nur absolute Pfade verwenden.
+    Viele Besucher kommen von alten WordPress-Adressen (Tags, Blog,
+    Mediathek) — die Seite führt deshalb zu den Einstiegen, nicht nur
+    zur Startseite.                                                    #}
+<header class="hero--type">
+  <div class="container">
+    <p class="label" style="margin-bottom:1.75rem;">Fehler 404</p>
+    <h1 class="type-claim">Diese Seite gibt es nicht<span class="type-dot">.</span></h1>
+    <p class="type-sub">Entweder hat sie sich mit dem Relaunch erledigt, oder die Adresse ist nicht ganz vollständig. Diese Einstiege führen weiter:</p>
+    <div class="type-meta">
+      <a href="/" class="btn-fill">Zur Startseite</a>
+      <span class="type-rule"></span>
+      <a href="/case-studies/" class="btn-arrow">Case Studies →</a>
+      <a href="/leistungen/" class="btn-arrow">Leistungen →</a>
+      <a href="/kontakt/" class="btn-arrow">Kontakt →</a>
+    </div>
+  </div>
+</header>

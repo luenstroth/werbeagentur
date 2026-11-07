@@ -1,0 +1,99 @@
+---
+layout: base.njk
+title: "Handelsmarke für den Discount: Delikato Leichter Genuss"
+description: "Acht Sorten, drei Warengruppen, ein Markenbild: Package Design für die Aldi-Handelsmarke Delikato Leichter Genuss, produziert von Kühlmann Feinkost."
+heroImage: "img/hero-kuehlmann.jpg"
+heroAlt: "Angerichteter Salat auf einem Teller"
+permalink: /case-studies/kuehlmann/
+tags: ["caseStudy"]
+client: "Kühlmann Feinkost"
+---
+
+<header class="hero ken-burns">
+  {% respImage "img/hero-kuehlmann.jpg", "Angerichteter Salat auf einem Teller", "100vw", {eager: true} %}
+  <div class="hero-overlay"></div>
+  <div class="container hero-inner">
+    <p class="label reveal" style="color:#fff;margin-bottom:1rem;">Case Study · Food / Handelsmarke · Kühlmann Feinkost</p>
+    <h1 class="display-lg reveal reveal-delay-1" style="color:#fff;max-width:880px;">Eine Handelsmarke im Discount, die nicht nach Handelsmarke aussieht</h1>
+  </div>
+</header>
+
+<section class="container" style="padding-block:4rem 2rem;max-width:760px;">
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">Kühlmann Feinkost produziert für Aldi die Salatlinie <strong>Leichter Genuss</strong> unter der Eigenmarke Delikato. Für den Hersteller hängt an solchen Sortimenten Auslastung und Umsatz, für den Handel die Frage, ob die Kundin im Kühlregal zugreift.</p>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">Die Aufgabe für die Gestaltung: acht Sorten, die als eine Linie erkennbar sind, sich im Regal in Sekunden unterscheiden lassen und trotz Discountpreis nicht nach Billigware aussehen. Beworben wird nichts davon – die Packung ist das einzige Verkaufsmittel.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 3rem;max-width:760px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Ein Kopf für die Marke, drei Farben für die Warengruppen</h2>
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">Der obere Teil bleibt über alle Sorten gleich: Markenzeichen, Schriftzug und der Schwung darunter. Dieser Block trägt die Wiedererkennung. Die Farbe dagegen ordnet das Sortiment nach Warengruppen und führt die Kundin ohne Lesen zur richtigen Sorte:</p>
+  <ul class="check-list" style="margin-bottom:1.5rem;">
+    {%- for item in [
+      "Orange: Fleisch und Geflügel",
+      "Grün: Gemüse, Kartoffel, Nudel, Ei",
+      "Blau: Fisch und Meeresfrüchte"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+  <p class="body-lg reveal reveal-delay-1">Konstant bleiben auch die Positionen: Füllmenge links, Fettgehalt unten rechts, Produktfoto auf der Grundlinie. Wer eine Sorte kennt, findet sich bei jeder anderen sofort zurecht.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 4rem;max-width:1100px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Acht Sorten, ein Auftritt</h2>
+  <div class="grid-2 reveal reveal-delay-1" style="gap:clamp(1.5rem,2.5vw,2.5rem);">
+    {%- for p in [
+      {f:"delikato-fleischsalat-frei.webp", c:"Fleischsalat, 250 g – 12 % Fett", g:"Fleisch und Geflügel"},
+      {f:"delikato-gefluegelsalat-frei.webp", c:"Geflügelsalat, 200 g – 6 % Fett", g:"Fleisch und Geflügel"},
+      {f:"delikato-kartoffelsalat-frei.webp", c:"Kartoffelsalat, 300 g – 4 % Fett", g:"Gemüse, Kartoffel, Nudel, Ei"},
+      {f:"delikato-nudelsalat-frei.webp", c:"Italienischer Nudelsalat, 300 g – 5 % Fett", g:"Gemüse, Kartoffel, Nudel, Ei"},
+      {f:"delikato-eiersalat-frei.webp", c:"Eiersalat, 250 g – 10 % Fett", g:"Gemüse, Kartoffel, Nudel, Ei"},
+      {f:"delikato-tzatziki-frei.webp", c:"Tzatziki, 300 g – 4 % Fett", g:"Gemüse, Kartoffel, Nudel, Ei"},
+      {f:"delikato-krabbencocktail-frei.webp", c:"Krabbencocktail, 200 g – 6 % Fett", g:"Fisch und Meeresfrüchte"},
+      {f:"delikato-thunfischsalat-frei.webp", c:"Thunfischsalat, 200 g – 13 % Fett", g:"Fisch und Meeresfrüchte"}
+    ] %}
+    <div>
+      <div style="aspect-ratio:1399/870;margin-bottom:.75rem;">
+        <img src="/img/food/{{ p.f }}" alt="Delikato Leichter Genuss, {{ p.c }} – Etikett in der Kontur der Stanzform" loading="lazy" width="1399" height="870" style="width:100%;height:100%;object-fit:contain;display:block;">
+      </div>
+      <p class="compare-text">{{ p.c }}<br><span style="color:rgba(var(--ink-rgb),.45);">Warengruppe {{ p.g }}</span></p>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="container" style="padding-block:1rem 4rem;max-width:760px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Der Fettgehalt als Kaufargument</h2>
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">„Nur 4 % Fett“ steht auf jeder Packung an derselben Stelle und in derselben Größe. Das Versprechen der Linie wird damit nicht behauptet, sondern beziffert – sortenweise nachprüfbar, von 4 % beim Tzatziki bis 13 % beim Thunfischsalat.</p>
+  <p class="body-lg reveal reveal-delay-1">Der Name „Leichter Genuss“ bleibt dabei bewusst bei Genuss und meidet Diätsprache. Im Kühlregal steht die Linie damit neben den klassischen Salaten, nicht in der Nische.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 3rem;max-width:760px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Leistungsumfang</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "Package Design für acht Sorten einer Handelsmarken-Linie",
+      "Farbsystem nach Warengruppen für die Orientierung im Kühlregal",
+      "Feste Gestaltungsraster für Füllmenge, Fettgehalt und Produktabbildung",
+      "Abstimmung der Gestaltung auf Discount-Preislage ohne Billiganmutung",
+      "Sell-in-Kommunikation für den Handel"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<section class="container" style="padding-block:0 5rem;max-width:760px;">
+  <div style="background:var(--paper-2);padding:2rem 2.25rem;border-left:2px solid var(--accent);">
+    <p class="label" style="margin-bottom:.75rem;">Umfang des Mandats</p>
+    <p style="font-size:.9375rem;line-height:1.8;">Package Design für die Handelsmarken-Linie Delikato Leichter Genuss, produziert von Kühlmann Feinkost für Aldi. Delikato ist eine Eigenmarke von Aldi.</p>
+  </div>
+  <div style="text-align:center;margin-top:2.5rem;">
+    <a href="/case-studies/" class="btn-arrow">← Weitere Case Studies</a>
+  </div>
+</section>

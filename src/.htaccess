@@ -1,0 +1,103 @@
+# =====================================================================
+# luenstroth-werbeagentur.de — Weiterleitungen WordPress -> Eleventy
+# Basis: GSC-Export 16 Monate (Stand 20.09.2026), alle 120 URLs mit Impressionen
+# 301 = Inhalt lebt unter neuer URL weiter | 410 = bewusst entfernt
+# =====================================================================
+
+Options -MultiViews -Indexes
+RewriteEngine On
+
+# --- Kanonische Host-/Protokoll-Variante --------------------------------
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^(.*)$ https://luenstroth-werbeagentur.de/$1 [R=301,L]
+
+# --- WordPress-Überbleibsel: sauber als "gone" markieren ----------------
+RewriteRule ^(wp-admin|wp-includes|wp-json|xmlrpc\.php|wp-login\.php)(/.*)?$ - [G,L]
+RewriteRule ^(feed|comments/feed|author|category|tag)(/.*)?$ - [G,L]
+RewriteRule ^.+/feed/?$ - [G,L]
+RewriteRule ^bielefeldpost(/.*)?$ - [G,L]
+RewriteRule ^(jobs|terms-conditions)/?$ - [G,L]
+# alte WP-Startseite als eigene Seite
+RewriteRule ^werbeagentur-bielefeld/?$ / [R=301,L]
+# ?p=123 / ?page_id=123 (WP-Shortlinks)
+RewriteCond %{QUERY_STRING} (^|&)(p|page_id|cat|s)= [NC]
+RewriteRule ^$ - [G,L]
+
+# --- Dateien aus der Mediathek -----------------------------------------
+RewriteRule ^wp-content/uploads/Markenbildung-Bundesliga\.pdf$ /img/Markenbildung-Bundesliga.pdf [R=301,L]
+RewriteRule ^wp-content(/.*)?$ - [G,L]
+
+# --- Agentur ------------------------------------------------------------
+RewriteRule ^die-werbeagentur-in-bielefeld/?$ /agentur/ [R=301,L]
+RewriteRule ^kreativagentur/?$ /agentur/ [R=301,L]
+RewriteRule ^agentur/page/[0-9]+/?$ /agentur/ [R=301,L]
+RewriteRule ^agentur/arbeitsweise/?$ /vorgehensweise-der-agentur/ [R=301,L]
+RewriteRule ^die-philosophie-der-agentur/?$ /vorgehensweise-der-agentur/ [R=301,L]
+RewriteRule ^10-werberegeln-der-luenstroth-werbeagentur/?$ /vorgehensweise-der-agentur/ [R=301,L]
+RewriteRule ^planning/?$ /vorgehensweise-der-agentur/ [R=301,L]
+RewriteRule ^b-to-b/?$ /werbeagentur-fuer-den-mittelstand/ [R=301,L]
+RewriteRule ^passt-die-luenstroth-werbeagentur-zu-ihrem-unternehmen/?$ /werbeagentur-fuer-den-mittelstand/ [R=301,L]
+RewriteRule ^kontakt-zur-werbeagentur/?$ /kontakt/ [R=301,L]
+RewriteRule ^cookie-policy/?$ /datenschutz/ [R=301,L]
+
+# --- Fassung 7: Positionierung -> Arbeitsweise bzw. luenstroth.com (07.11.2026) ---
+RewriteRule ^positionierung/platzierung-im-markt/?$ https://luenstroth.com/de/markenberatung/positionierung/ [R=301,L]
+RewriteRule ^positionierung(/.*)?$ /vorgehensweise-der-agentur/ [R=301,L]
+RewriteRule ^en/positioning/placement-in-the-market/?$ https://luenstroth.com/en/brand-consultancy/positioning/ [R=301,L]
+RewriteRule ^en/positioning(/.*)?$ /en/approach/ [R=301,L]
+
+# --- Fassung 7: Gewerke-Seiten -> Anlass-Seiten (06.11.2026) ---------------
+RewriteRule ^leistungen/webdesign/?$ /leistungen/website-b2b/ [R=301,L]
+RewriteRule ^leistungen/geo/?$ /leistungen/website-b2b/ [R=301,L]
+RewriteRule ^leistungen/corporate-design/?$ /leistungen/rollout/ [R=301,L]
+RewriteRule ^leistungen/video/?$ /leistungen/produkteinfuehrung/ [R=301,L]
+RewriteRule ^leistungen/konzept-kommunikationsstrategie/?$ /vorgehensweise-der-agentur/ [R=301,L]
+RewriteRule ^leistungen/eigenmarken/?$ /leistungen/listungsgespraech-handel/ [R=301,L]
+RewriteRule ^leistungen/marken-wettbewerbsrecht/?$ /leistungen/listungsgespraech-handel/ [R=301,L]
+RewriteRule ^leistungen/markenentwicklung-naming/?$ https://luenstroth.com/de/markenberatung/naming/ [R=301,L]
+
+# --- Leistungen ---------------------------------------------------------
+RewriteRule ^leistungen-2/?$ /leistungen/ [R=301,L]
+RewriteRule ^agentur-services/design(/.*)?$ /leistungen/rollout/ [R=301,L]
+RewriteRule ^agentur-services/online/?$ /leistungen/website-b2b/ [R=301,L]
+RewriteRule ^agentur-services/(text|strategie)/?$ /vorgehensweise-der-agentur/ [R=301,L]
+RewriteRule ^agentur-services/video/?$ /leistungen/produkteinfuehrung/ [R=301,L]
+RewriteRule ^agentur-services(/.*)?$ /leistungen/ [R=301,L]
+RewriteRule ^online-webdesign-websites-apps-agentur-bielefeld/?$ /leistungen/website-b2b/ [R=301,L]
+RewriteRule ^online/?$ /leistungen/website-b2b/ [R=301,L]
+RewriteRule ^webdesign-anwaelte-aerzte/?$ /leistungen/website-b2b/ [R=301,L]
+RewriteRule ^webdesign-bauverein-schildhof/?$ /leistungen/website-b2b/ [R=301,L]
+RewriteRule ^dds-consulting-website/?$ /leistungen/website-b2b/ [R=301,L]
+RewriteRule ^video-produktion/?$ /leistungen/produkteinfuehrung/ [R=301,L]
+RewriteRule ^apsolut-webvideo-employer-branding/?$ /leistungen/produkteinfuehrung/ [R=301,L]
+RewriteRule ^(text|kommunikationsstrategie|copy-strategie|kommunikationsstrategie-im-btoc)/?$ /vorgehensweise-der-agentur/ [R=301,L]
+RewriteRule ^markenentwicklung/?$ https://luenstroth.com/de/markenberatung/naming/ [R=301,L]
+RewriteRule ^(corporate-identity-neuaufstellung|rebranding-marke-aufgefrischt)/?$ /leistungen/rollout/ [R=301,L]
+RewriteRule ^eigenmarke-brand-design/?$ /leistungen/listungsgespraech-handel/ [R=301,L]
+RewriteRule ^package-design/?$ /case-studies/piasten/ [R=301,L]
+RewriteRule ^recht/?$ /leistungen/listungsgespraech-handel/ [R=301,L]
+RewriteRule ^(promotion-direct-marketing|katalog)/?$ /leistungen/ [R=301,L]
+
+# --- Case Studies (1:1, wo ein Pendant existiert) ------------------------
+RewriteRule ^arminia-bielefeld-brand-identity/?$ /case-studies/arminia-bielefeld/ [R=301,L]
+RewriteRule ^automotive-hella/?$ /case-studies/hella/ [R=301,L]
+RewriteRule ^technik-maschinenbau-gneuss/?$ /case-studies/gneuss/ [R=301,L]
+RewriteRule ^webdesign-meco/?$ /case-studies/meco/ [R=301,L]
+RewriteRule ^bankverein-werther-brand-relaunch/?$ /case-studies/volksbank-phd/ [R=301,L]
+RewriteRule ^tarifmarkenentwicklung/?$ /case-studies/stadtwerke-bielefeld/ [R=301,L]
+RewriteRule ^qualifizierungssystem-bundesverband/?$ /case-studies/meisterhaft-zdb/ [R=301,L]
+RewriteRule ^fashion-werbeagentur/?$ /case-studies/eva-mann/ [R=301,L]
+RewriteRule ^(eva-luen-neues-fashion-label-gelaunched|case-study-volksbank-lippstadt|kassensysteme-anker|marke-ausgegliedert-brand-spin-off|forbo-objektausstattung|b2b-brand-relaunch|werbeagentur-mit-guten-referenzen|beispiele)/?$ /case-studies/ [R=301,L]
+RewriteRule ^referenzen(/.*)?$ /case-studies/ [R=301,L]
+
+# --- Fehlerseite ----------------------------------------------------------
+# Deutsch als Standard, englische Fehlerseite für alles unter /en/.
+# Gilt auch für 410: Wer von einer entfernten WordPress-Adresse kommt,
+# bekommt dieselbe hilfreiche Seite statt der nackten Server-Meldung.
+ErrorDocument 404 /404.html
+ErrorDocument 410 /404.html
+<If "%{REQUEST_URI} =~ m#^/en(/|$)#">
+  ErrorDocument 404 /en/404.html
+  ErrorDocument 410 /en/404.html
+</If>

@@ -1,0 +1,76 @@
+---
+title: "AI in the advertising agency: how Lünstroth uses AI"
+description: "AI with brand guardrails, EU-compliant and with full transfer of rights to the client. Creative decisions remain with people."
+permalink: /en/use-of-ai/
+key: /ki-einsatz/
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "AI in the advertising agency: how Lünstroth uses AI",
+    "url": "https://luenstroth-werbeagentur.de/en/use-of-ai/",
+    "inLanguage": "en",
+    "author": { "@id": "https://luenstroth-werbeagentur.de/#organisation" }
+  }
+---
+
+<header class="hero hero-video">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/img/ki-luenstroth-werbeagentur.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="container hero-inner">
+    <h1 class="label reveal" style="color:#fff;margin-bottom:1rem;">Use of AI</h1>
+    <p class="display-lg reveal reveal-delay-1" style="color:#fff;max-width:820px;">Used extensively. Answered for by people.</p>
+  </div>
+</header>
+
+<section class="container" style="padding-block:4rem 2rem;max-width:760px;">
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">Lünstroth uses AI extensively — in research, concept development, translation and technical implementation. What does not change as a result: the creative decision about what is said, and how, stays with people. AI accelerates and extends the work; it does not replace responsibility for it.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 2rem;max-width:640px;">
+  <h2 class="display-md reveal" style="margin-bottom:.5rem;">Where AI supports — and where it does not</h2>
+  <p class="body-lg reveal" style="margin-bottom:1rem;">A typical project workflow, clearly labelled at every step:</p>
+  {%- include "workflow-ki-mensch.njk" -%}
+</section>
+
+<section class="container" style="padding-block:1rem 4rem;max-width:900px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Brand guardrails instead of generic AI output</h2>
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">AI systems without guidance produce interchangeable, generic results — recognisable by the same phrasing patterns that now appear on countless websites. Lünstroth works with clear brand guardrails: tone of voice, terminology and content limits are defined for every mandate before AI is used in a supporting role at all.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 4rem;max-width:900px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">EU compliance in practice</h2>
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">The transparency obligations under Article 50 of the EU AI Act have applied since 2 August 2026. For text there is an important exemption: whoever editorially reviews AI-generated text and takes responsibility for its publication is not subject to a labelling obligation. Lünstroth uses this regulatory latitude to the full — for faster, more efficient workflows, not just for compliance: every text is reviewed and answered for by people before it reaches a client, exactly as the exemption requires.</p>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">Stricter labelling rules apply to images and moving images (including deepfakes) — these are observed wherever AI-generated visual material is used.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">For companies that need more in-depth AI governance advice — for example a complete risk classification of their own AI systems under the EU AI Act — <a href="https://perspice.com" style="color:var(--accent);" target="_blank" rel="noopener">Perspice</a>, the sister brand of Lünstroth GmbH specialising in this question, is the right partner.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 4rem;max-width:900px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Full transfer of rights, no use as training data</h2>
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">All rights to the results — regardless of where AI was used in a supporting role — pass entirely to the client. Client material and client data are not used to train AI models and are not passed on to third parties for model improvement.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 3rem;max-width:760px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Principles at a glance</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "AI only where it demonstrably improves quality or speed — never as an end in itself",
+      "Brand guardrails for tone of voice and terminology before every AI-supported step",
+      "Human fact-checking and editorial responsibility before every publication",
+      "Compliance with the EU AI Act, in particular the transparency obligations under Article 50",
+      "No use of client material to train AI models",
+      "Full transfer of all rights to the client"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<section class="container" style="padding-block:0 5rem;max-width:760px;text-align:center;">
+  <a href="/en/contact/" class="btn-fill">Start a project</a>
+</section>

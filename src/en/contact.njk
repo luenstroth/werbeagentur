@@ -1,0 +1,50 @@
+---
+title: "Contact: start a project with Lünstroth"
+description: "Start a project: brand development, corporate design, web design and video production. Lünstroth Advertising Agency, Bielefeld, Germany – working internationally."
+permalink: /en/contact/
+ogImageSrc: "img/kontakt.jpg"
+key: /kontakt/
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "headline": "Contact: start a project with Lünstroth",
+    "url": "https://luenstroth-werbeagentur.de/en/contact/",
+    "inLanguage": "en",
+    "about": { "@id": "https://luenstroth-werbeagentur.de/#organisation" }
+  }
+---
+
+{%- set hero = {
+  img: "img/kontakt.jpg",
+  alt: "Hands over a clipboard with sketches and notes during a conversation",
+  label: "Contact the Lünstroth advertising agency",
+  claim: "A concrete problem.<br>Let's talk about it<span class=\"type-dot\">.</span>",
+  labelIsH1: true
+} %}
+{% include "hero-foto.njk" %}
+
+<section class="container" style="padding-block:4rem 5rem;max-width:640px;">
+  <p class="body-lg reveal" style="margin-bottom:1.25rem;">The quickest way to reach us is by email — with a few sentences on the occasion and, if already foreseeable, the rough timeframe. We work in German and English.</p>
+  <p class="body-lg reveal" style="margin-bottom:2.5rem;">Our mandates usually start at €20,000. For pure strategic brand consulting, please contact <a href="https://luenstroth.com/">Lünstroth brand consultancy</a>.</p>
+
+  <div class="reveal reveal-delay-1" style="background:var(--paper-2);padding:clamp(1.75rem,3vw,2.5rem);margin-bottom:2rem;">
+    <p class="label" style="margin-bottom:.75rem;">Email</p>
+    <a href="mailto:kontakt@luenstroth-werbeagentur.de" style="font-size:1.25rem;font-weight:600;color:var(--ink);text-decoration:none;">kontakt@luenstroth-werbeagentur.de</a>
+  </div>
+
+  <div class="reveal reveal-delay-1" style="background:var(--paper-2);padding:clamp(1.75rem,3vw,2.5rem);margin-bottom:2rem;">
+    <p class="label" style="margin-bottom:.75rem;">Phone</p>
+    <a href="tel:+49521448122710" style="font-size:1.25rem;font-weight:600;color:var(--ink);text-decoration:none;">+49 521 448122710</a>
+  </div>
+
+  <div class="reveal reveal-delay-2" style="background:var(--paper-2);padding:clamp(1.75rem,3vw,2.5rem);">
+    <p class="label" style="margin-bottom:.75rem;">Address</p>
+    <address style="font-style:normal;font-size:1.0625rem;line-height:1.8;">
+      Lünstroth GmbH<br>
+      Friedrichstraße 18<br>
+      33615 Bielefeld<br>
+      Germany
+    </address>
+  </div>
+</section>

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /styleguide/
+Allow: /
+
+Sitemap: https://luenstroth-werbeagentur.de/sitemap.xml

@@ -1,0 +1,19 @@
+
+const fs=require('fs'),path=require('path');
+const S='_site';const urls=[["/", "10546"], ["/die-werbeagentur-in-bielefeld/", "219"], ["/fashion-werbeagentur/", "85"], ["/eva-luen-neues-fashion-label-gelaunched/", "89"], ["/arminia-bielefeld-brand-identity/", "337"], ["/kontakt-zur-werbeagentur/", "98"], ["/jobs/", "275"], ["/bielefeldpost/bielefeld-sagt-ja-zum-auto-auf-schienen/", "35"], ["/online-webdesign-websites-apps-agentur-bielefeld/", "6339"], ["/agentur/", "3071"], ["/text/", "291"], ["/rebranding-marke-aufgefrischt/", "123"], ["/werbeagentur-mit-guten-referenzen/", "23"], ["/werbeagentur-fuer-den-mittelstand/", "2567"], ["/technik-maschinenbau-gneuss/", "1107"], ["/automotive-hella/", "791"], ["/kommunikationsstrategie/", "533"], ["/webdesign-anwaelte-aerzte/", "306"], ["/bankverein-werther-brand-relaunch/", "295"], ["/video-produktion/", "224"], ["/dds-consulting-website/", "175"], ["/package-design/", "149"], ["/b-to-b/", "144"], ["/planning/", "121"], ["/copy-strategie/", "102"], ["/apsolut-webvideo-employer-branding/", "102"], ["/kassensysteme-anker/", "93"], ["/die-philosophie-der-agentur/", "84"], ["/tag/text-newsletter/", "80"], ["/corporate-identity-neuaufstellung/", "50"], ["/leistungen-2/", "42"], ["/promotion-direct-marketing/", "41"], ["/impressum/", "30"], ["/katalog/", "27"], ["/markenentwicklung/", "27"], ["/tag/leh/", "22"], ["/vorgehensweise-der-agentur/", "19"], ["/b2b-brand-relaunch/", "18"], ["/webdesign-meco/", "14"], ["/forbo-objektausstattung/", "14"], ["/cookie-policy/", "13"], ["/recht/", "12"], ["/agentur-services/", "9"], ["/tag/arminia-bielefeld/", "9"], ["/marke-ausgegliedert-brand-spin-off/", "8"], ["/eigenmarke-brand-design/", "7"], ["/agentur-services/text/", "7"], ["/tarifmarkenentwicklung/", "6"], ["/kreativagentur/", "6"], ["/tag/btob/", "5"], ["/case-study-volksbank-lippstadt/", "4"], ["/tag/rechtsanwalt/", "4"], ["/agentur-services/kampagne/", "3"], ["/tag/agentur/", "3"], ["/qualifizierungssystem-bundesverband/", "2"], ["/agentur-services/btoc-kampagnen-von-der-luenstroth-werbeagentur-kreativ-und-effektiv/", "2"], ["/tag/fashion/", "2"], ["/agentur-services/page/3/", "2"], ["/kommunikationsstrategie-im-btoc/", "1"], ["/agentur-services/strategie/page/2/", "1"], ["/tag/full-service-agentur/", "1"], ["/tag/video/", "1"], ["/agentur/arbeitsweise/", "1"], ["/tag/markenaufbau/", "1"], ["/tag/praktikum/", "1"]];
+const out=[];
+function walk(d){for(const f of fs.readdirSync(d)){const p=path.join(d,f);if(fs.statSync(p).isDirectory())walk(p);else if(f==='index.html'||f.endsWith('.html'))out.push(p);}}
+walk(S);
+console.log('=== SEITEN');
+for(const p of out){const h=fs.readFileSync(p,'utf8');
+ const t=(h.match(/<title>([^<]*)/)||[])[1]||'';const d=(h.match(/name="description" content="([^"]*)/)||[])[1]||'';
+ const h1=((h.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)||[])[1]||'').replace(/<[^>]+>/g,'').replace(/\s+/g,' ').trim();
+ const types=[];let bad=0;
+ for(const m of h.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)){try{const j=JSON.parse(m[1]);const a=[].concat(j['@graph']||j);a.forEach(x=>types.push(x['@type']));}catch(e){bad++;}}
+ const noidx=/noindex/.test(h)?' NOINDEX':'';
+ console.log([p.replace(/\\/g,'/').replace('_site',''),t.length+':'+t,d.length,'H1:'+h1.slice(0,70),types.join('+')+(bad?' JSONFEHLER'+bad:'')+noidx].join(' | '));}
+console.log('=== GSC-URLS');
+const ht=fs.readFileSync('src/.htaccess','utf8').split(/\r?\n/).filter(l=>/^\s*Rewrite(Rule|Cond)/.test(l));
+for(const [u,imp] of urls){const local=fs.existsSync(path.join(S,u,'index.html'));let hit='';
+ for(const l of ht){const m=l.match(/^\s*RewriteRule\s+(\S+)\s+(\S+)\s+\[([^\]]*)\]/);if(!m)continue;try{if(new RegExp(m[1]).test(u.replace(/^\//,''))){hit=m[2]+' ['+m[3]+']';break;}}catch(e){}}
+ console.log(imp.padStart(6),u,'->',local?'SEITE':'',hit||(local?'':'!!! KEIN ZIEL'));}

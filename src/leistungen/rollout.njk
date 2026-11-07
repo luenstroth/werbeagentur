@@ -1,0 +1,106 @@
+---
+layout: base.njk
+title: "Rollout des neuen Auftritts: Corporate Design umsetzen"
+description: "Neuer Name, neues Logo, neue Ordnung – entschieden. Jetzt muss es auf Schild, Fahrzeug, Website, Formular und Präsentation ankommen. Corporate-Design-Rollout für den Mittelstand."
+permalink: /leistungen/rollout/
+tags: ["anlass"]
+anlassOrder: 6
+anlassName: "Die Entscheidung ist gefallen — der Rollout"
+anlassTeaser: "Die Entscheidung ist gefallen. Jetzt muss sie auf hunderten Anwendungen ankommen — ohne dass das Alte ein Jahr weiterlebt."
+ogImageSrc: "img/Rollout.jpg"
+heroAlt: "Zwei Hände legen geometrische Papierformen auf eine weiße Fläche"
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Rollout des neuen Auftritts",
+    "serviceType": "Corporate-Design-Umsetzung, Rollout",
+    "provider": { "@id": "https://luenstroth-werbeagentur.de/#organisation" },
+    "areaServed": "Worldwide"
+  }
+---
+{%- set hero = {
+  img: "img/Rollout.jpg",
+  alt: "Zwei Hände legen geometrische Papierformen auf eine weiße Fläche",
+  label: "Rollout des neuen Auftritts",
+  claim: "Die Entscheidung<br>ist gefallen<span class=\"type-dot\">.</span>",
+  sub: "Neuer Name, korrigiertes Logo, neue Ordnung. Jetzt muss es dort ankommen, wo Kunden es sehen — überall gleichzeitig.",
+  labelIsH1: true
+} %}
+{% include "hero-foto.njk" %}
+
+<!-- 01 — DIE LAGE -->
+<section class="container measure section-block section-block--tight">
+  <p class="label reveal" style="margin-bottom:1rem;">01 — Die Lage</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Hunderte Anwendungen, ein Stichtag</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Ein neuer Auftritt wird einmal entschieden und tausendfach angewendet: auf Schildern und Fahrzeugen, auf Produkten und Verpackungen, in Präsentationen, Formularen, Signaturen, auf der Website und in jedem Video. Wird das nicht geordnet ausgerollt, lebt das Alte noch lange neben dem Neuen weiter.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Kunden sehen dann zwei Absender — und fragen sich, welcher gilt. Genau das, was die Entscheidung beenden sollte.</p>
+  <p class="pull-quote reveal reveal-delay-2">Ein Auftritt, der nur im Handbuch konsistent ist, ist nicht konsistent.</p>
+</section>
+
+<!-- 02 — WAS ENTSTEHT -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">02 — Was dafür entsteht</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.5rem;">Vom Logo zu jeder Anwendung</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "Eine Bestandsaufnahme aller Anwendungen und eine Reihenfolge nach Sichtbarkeit — was Kunden zuerst sehen, wird zuerst umgestellt",
+      "Gestaltungssystem mit Typografie, Farben, Bildsprache und Rastern, das auch ohne Agentur angewendet werden kann",
+      "Vorlagen für den Alltag: Präsentation, Geschäftsausstattung, Formulare, Signaturen",
+      "Umsetzung auf Website, Broschüre, Verpackung, Beschilderung und Video",
+      "Regeln für Ton und Begriffe, so dokumentiert, dass auch die KI-Systeme des Unternehmens sie einhalten können"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<!-- 03 — NUR WAS SICH ÄNDERT -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">03 — Nur, was sich ändert</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Wiedererkennung ist ein Wert, der mitgenommen wird</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Nicht jeder Rollout ist ein Neuanfang. Oft bleibt das Meiste, und nur ein Teil ändert sich: ein Signet entfällt, eine Hierarchie wird neu geordnet, ein Zusatz kommt hinzu. Dann besteht die Kunst darin, das Neue sichtbar zu machen, ohne das Vertraute zu verlieren — und keine Anwendung zu übersehen, die noch den alten Stand zeigt.</p>
+</section>
+
+<!-- 04 — BELEGE -->
+<section class="container section-block" style="max-width:1100px;">
+  <p class="label reveal" style="margin-bottom:1rem;">04 — Belege</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:2rem;max-width:760px;">Vier Rollouts, vier Eingriffstiefen</h2>
+  <div class="grid-2" style="background:none;gap:clamp(1.5rem,2.5vw,2.5rem);">
+    <a href="/case-studies/werner-works/" class="card reveal">
+      <div class="card-num">A</div>
+      <h3 class="card-title">werner works</h3>
+      <p class="card-desc">Neue Firmierung, neue Wortmarke: ein vollständiges Gestaltungssystem, umgesetzt bis in die Unternehmensbroschüre.</p>
+    </a>
+    <a href="/case-studies/volksbank-phd/" class="card reveal reveal-delay-1">
+      <div class="card-num">B</div>
+      <h3 class="card-title">Volksbank PHD</h3>
+      <p class="card-desc">Die Ortsmarke blieb, die Dachmarke kam als Zusatz dazu — am Gebäude bis heute sichtbar, inzwischen in der dritten Fassung des Zusatzes.</p>
+    </a>
+    <a href="/case-studies/gneuss/" class="card reveal">
+      <div class="card-num">C</div>
+      <h3 class="card-title">Gneuss</h3>
+      <p class="card-desc">Nur das Signet entfiel, die Wortmarke blieb. Die Produkte tragen heute das korrigierte Logo.</p>
+    </a>
+    <a href="/case-studies/arminia-bielefeld/" class="card reveal reveal-delay-1">
+      <div class="card-num">D</div>
+      <h3 class="card-title">DSC Arminia Bielefeld</h3>
+      <p class="card-desc">Eine eigene, lizenzkostenfreie Hausschrift für tausende Anwendungen — und Vorlagen für die Videowände im Stadion.</p>
+    </a>
+  </div>
+</section>
+
+<!-- 05 — VORGELAGERT -->
+<section class="container measure" style="padding-block:1rem 3rem;">
+  <div style="background:var(--paper-2);padding:2rem 2.25rem;border-left:2px solid var(--accent);">
+    <p class="label" style="margin-bottom:.75rem;">Ist die Entscheidung noch offen?</p>
+    <p style="font-size:.9375rem;line-height:1.8;">Ob umfirmiert wird, welcher Name bleibt und wie die Marken einer Gruppe zueinander stehen, entscheidet die <a href="https://luenstroth.com/de/herausforderungen/umfirmierung/" style="color:var(--accent);">Lünstroth Markenberatung</a>. Kommt eine beschlossene Ordnung in der Gruppe nicht an, ist das ebenfalls zuerst eine Führungsfrage und erst danach eine der Gestaltung.</p>
+  </div>
+</section>
+
+<section class="container measure" style="padding-block:1rem 7rem;">
+  <a href="/kontakt/" class="btn-fill reveal">Projekt anfragen</a>
+</section>

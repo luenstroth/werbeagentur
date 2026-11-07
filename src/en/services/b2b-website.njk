@@ -1,0 +1,98 @@
+---
+title: "B2B website relaunch: when the website no longer sells"
+description: "The business has changed, the website still tells the old story. Website relaunch for industry and mid-sized companies – for engineers, purchasing and AI assistants."
+permalink: /en/services/b2b-website/
+key: /leistungen/website-b2b/
+tags: ["anlassEn"]
+anlassOrder: 2
+anlassName: "The website no longer sells"
+anlassTeaser: "The business has changed, the website still tells the old story. And anyone researching today asks an AI assistant first."
+ogImageSrc: "img/Website-verkauft-nicht-mehr.jpg"
+heroAlt: "Hand on a laptop trackpad"
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "B2B website relaunch",
+    "serviceType": "Web design, website relaunch, visibility in AI assistants",
+    "inLanguage": "en",
+    "provider": { "@id": "https://luenstroth-werbeagentur.de/#organisation" },
+    "areaServed": "Worldwide"
+  }
+---
+{%- set hero = {
+  img: "img/Website-verkauft-nicht-mehr.jpg",
+  alt: "Hand on a laptop trackpad",
+  label: "Website relaunch for industry and mid-sized companies",
+  claim: "The website<br>no longer sells<span class=\"type-dot\">.</span>",
+  sub: "Usually not because it looks dated, but because it describes a company that no longer exists in that form.",
+  labelIsH1: true
+} %}
+{% include "hero-foto.njk" %}
+
+<!-- 01 — THE SITUATION -->
+<section class="container measure section-block section-block--tight">
+  <p class="label reveal" style="margin-bottom:1rem;">01 — The situation</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">The business has moved on, the website has not</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">New products, new markets, a different focus — and a website that still shows the company of five years ago. Prospects notice before they call. Some then do not call.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">In B2B, a website is not visited by one person but by several, each with different questions. The engineer looks for data and evidence. Purchasing looks for delivery capability and a contact. Management wants to know whether the company will still stand behind it in ten years.</p>
+  <p class="pull-quote reveal reveal-delay-2">A website that addresses all three in the same way addresses none of them properly.</p>
+</section>
+
+<!-- 02 — WHAT IS CREATED -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">02 — What is created</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.5rem;">A website that gives every visitor their reason</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "A structure based on visitors' questions, not on the company's organisation chart",
+      "Copy that translates technical advantages into the benefit that matters to each target group",
+      "Design within the existing identity — or its careful adaptation to digital viewing habits",
+      "Image film and imagery from our own production",
+      "Technology that loads fast and can be maintained without an agency — and, on request, ongoing operation"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<!-- 03 — AI ASSISTANTS -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">03 — Being found</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Readable for AI assistants too</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">More and more research no longer starts in a search engine but with a question to an AI assistant. It recommends suppliers without linking to them — and only those whose website it can clearly understand.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">That takes no tricks, just clarity: who the company is, what it offers, for whom and with what evidence — in a form that machines can read as well as people. Today this is part of the website, not a later project.</p>
+</section>
+
+<!-- 04 — EVIDENCE -->
+<section class="container section-block" style="max-width:1100px;">
+  <p class="label reveal" style="margin-bottom:1rem;">04 — Evidence</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:2rem;max-width:760px;">Two websites, two different tasks</h2>
+  <div class="grid-2" style="background:none;gap:clamp(1.5rem,2.5vw,2.5rem);">
+    <a href="/en/case-studies/meco/" class="card reveal">
+      <div class="card-num">A</div>
+      <h3 class="card-title">Meco</h3>
+      <p class="card-desc">From carburettor maker to fluid transfer specialist. The new website shows the know-how that was barely visible before — with a refined logo and an in-house image film.</p>
+    </a>
+    <a href="/en/case-studies/eva-mann/" class="card reveal reveal-delay-1">
+      <div class="card-num">B</div>
+      <h3 class="card-title">Eva Mann</h3>
+      <p class="card-desc">A website as part of ongoing brand management: maintained season after season, in the same presence as lookbook, trade advertisement and trade fair.</p>
+    </a>
+  </div>
+</section>
+
+<!-- 05 — UPSTREAM -->
+<section class="container measure" style="padding-block:1rem 3rem;">
+  <div style="background:var(--paper-2);padding:2rem 2.25rem;border-left:2px solid var(--accent);">
+    <p class="label" style="margin-bottom:.75rem;">Is it unclear what the company stands for today?</p>
+    <p style="font-size:.9375rem;line-height:1.8;">Then the problem lies before the website. If it first has to be decided how the company positions itself against the competition, that is a question for <a href="https://luenstroth.com/en/brand-consultancy/positioning/" style="color:var(--accent);">Lünstroth brand consultancy</a>.</p>
+  </div>
+</section>
+
+<section class="container measure" style="padding-block:1rem 7rem;">
+  <a href="/en/contact/" class="btn-fill reveal">Start a project</a>
+</section>

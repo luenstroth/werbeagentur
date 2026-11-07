@@ -1,0 +1,28 @@
+{#  Foto-Hero mit typografischem Claim (Kontakt, Arbeitsweise, Mittelstand).
+    Optik: .hero--foto in main.css — Motiv rechts, dunkler Verlauf links.
+    Bewusst Include statt Makro: respImage ist asynchron und läuft in
+    Nunjucks-Makros nicht. Aufruf:
+
+    {% set hero = { img: "img/x.jpg", alt: "…", label: "…", claim: "…",
+                    sub: "…", labelIsH1: true } %}
+    {% include "hero-foto.njk" %}
+
+    labelIsH1 true  → Label-Zeile ist die H1 (Suchbegriff), der Claim ist
+                      visuell die Überschrift, semantisch ein Absatz.
+    labelIsH1 false → der Claim ist die H1.                                #}
+<header class="hero hero--foto">
+  {% respImage hero.img, hero.alt, "100vw", {eager: true} %}
+  <div class="hero-overlay"></div>
+  <div class="container hero-inner">
+    {%- if hero.labelIsH1 %}
+    <h1 class="label reveal" style="margin-bottom:1.75rem;">{{ hero.label }}</h1>
+    <p class="type-claim reveal reveal-delay-1">{{ hero.claim | safe }}</p>
+    {%- else %}
+    <p class="label reveal" style="margin-bottom:1.75rem;">{{ hero.label }}</p>
+    <h1 class="type-claim reveal reveal-delay-1">{{ hero.claim | safe }}</h1>
+    {%- endif %}
+    {%- if hero.sub %}
+    <p class="type-sub reveal reveal-delay-2">{{ hero.sub }}</p>
+    {%- endif %}
+  </div>
+</header>

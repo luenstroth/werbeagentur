@@ -1,0 +1,12 @@
+{
+  "name": "luenstroth-werbeagentur",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "eleventy --serve --watch",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-img": "^4.0.0"
+  }
+}

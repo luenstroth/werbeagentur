@@ -1,0 +1,16 @@
+Dateien: 8
+  [0] F:\24\company\webs\agency\luenstroth-werbeagentur\_stanzen\Eiersalat.eps  exists=true  len=17405054
+  [1] F:\24\company\webs\agency\luenstroth-werbeagentur\_stanzen\Fleischsalat.eps  exists=true  len=17378097
+  [2] F:\24\company\webs\agency\luenstroth-werbeagentur\_stanzen\Geflügelsalat.eps  exists=true  len=18431101
+  [3] F:\24\company\webs\agency\luenstroth-werbeagentur\_stanzen\Kartoffelsalat.eps  exists=true  len=16907522
+  [4] F:\24\company\webs\agency\luenstroth-werbeagentur\_stanzen\Krabbencocktail.eps  exists=true  len=13806425
+  [5] F:\24\company\webs\agency\luenstroth-werbeagentur\_stanzen\Nudelsalat.eps  exists=true  len=16130767
+  [6] F:\24\company\webs\agency\luenstroth-werbeagentur\_stanzen\Thunfischsalat.eps  exists=true  len=12478389
+  [7] F:\24\company\webs\agency\luenstroth-werbeagentur\_stanzen\Tzatziki.eps  exists=true  len=5244262
+oeffne Eiersalat.eps
+  geoeffnet, app.documents.length=1
+  doc.name=Eiersalat [Converted].eps
+  pathItems=352 layers=2
+  Layer 0: Stanzform
+  Layer 1: Ebene 2
+  geschlossen

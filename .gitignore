@@ -1,0 +1,11 @@
+node_modules/
+_site/
+_image-cache/
+_og-cache/
+.DS_Store
+
+# Grosse Originale und Arbeitsdateien nur lokal
+_archiv/videos-original/
+_archiv/*.zip
+_archiv/audit.txt
+*.mp4.orig

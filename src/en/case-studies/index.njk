@@ -1,0 +1,73 @@
+---
+title: "Case studies: 13 brand projects from mid-sized companies"
+description: "Acquisition, generational change, export, competitive pressure: 13 real starting points from engineering, automotive, construction, banking, food and sport."
+heroImage: "img/gneuss-hero3.jpg"
+heroAlt: "Gneuss rotary filter disc for the continuous filtration of polymer melts"
+permalink: /en/case-studies/
+key: /case-studies/
+breadcrumbName: "Case Studies"
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "headline": {{ title | dump | safe }},
+  "description": {{ description | dump | safe }},
+  "url": "https://luenstroth-werbeagentur.de/en/case-studies/",
+  "inLanguage": "en",
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": {{ collections.caseStudyEn | length }},
+    "itemListElement": [
+      {%- for cs in collections.caseStudyEn %}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index }},
+        "name": {{ cs.data.title | dump | safe }},
+        "url": "https://luenstroth-werbeagentur.de{{ cs.url }}"
+      }{% if not loop.last %},{% endif %}
+      {%- endfor %}
+    ]
+  }
+}
+</script>
+
+{% from "hero-type.njk" import heroType %}
+{{ heroType(
+  "Case studies: brand projects from mid-sized companies",
+  ["Nobody", "calls", "about", "a", "logo"],
+  "People call because a company has been acquired. Because the founding generation is stepping down. Because international revenue has to grow. Thirteen real questions, thirteen different solutions."
+) }}
+
+<section class="container" style="padding-block:4rem 5rem;">
+  <div class="grid-3 case-grid" style="background:none;gap:clamp(2rem,3vw,3rem);">
+    {%- set cases = [
+      {u:"volksbank-phd", img:"img/Bankverein-Werther-Hero.jpg", alt:"Bankverein Werther branch with the original lettering retained and the smaller addition of the umbrella brand", q:"“How do we best integrate the bank we have taken over?”", tag:"Banking", n:"Volksbank PHD"},
+      {u:"gneuss", img:"img/gneuss-hero3.jpg", alt:"Gneuss rotary filter disc for the continuous filtration of polymer melts", q:"“The founding generation is stepping down. How do we stabilise the company for the second generation?”", tag:"Mechanical engineering", n:"Gneuss"},
+      {u:"cobiax", img:"img/cobiax-hero.jpg", alt:"Elbphilharmonie Hamburg – the floor slabs were built with Cobiax void-former modules", q:"“We need more revenue internationally.”", tag:"Construction industry", n:"Cobiax"},
+      {u:"arminia-bielefeld", img:"img/branding-arminia-bielefeld.jpg", alt:"Club flag of DSC Arminia Bielefeld with the club crest", q:"“We need more income. How?”", tag:"Professional football / Bundesliga", n:"DSC Arminia Bielefeld"},
+      {u:"stadtwerke-bielefeld", img:"img/Stadtwerke-Hero.jpg", alt:"High-voltage pylon with overhead lines", q:"“We are coming under competitive pressure. What now?”", tag:"Energy", n:"Stadtwerke Bielefeld"},
+      {u:"hella", img:"img/hella-hero.jpg", alt:"Car on a country road seen from above", q:"“How do we steer our brand across national price structures that differ – and strengthen loyalty with every distributor?”", tag:"Automotive", n:"Hella"},
+      {u:"werner-works", img:"img/werner-works-hero.jpg", alt:"Fine slat structure in raking light", q:"“Nobody had questioned the company name itself — until we did.”", tag:"Furniture industry", n:"werner works"},
+      {u:"meco", img:"img/Meco-Hero.jpg", alt:"Bundled metal tubes from Meco's production", q:"“Our business has changed. Does our presence still show it?”", tag:"Fluid technology", n:"Meco"},
+      {u:"meisterhaft-zdb", img:"img/Zentralverband-Deutsches-Baugewerbe-Hero.jpg", alt:"Building shell with several tower cranes in the evening light", q:"“Our term describes exactly what we do — but can it be protected as a trademark at all?”", tag:"Associations / construction", n:"Meisterhaft (ZDB)"},
+      {u:"eva-mann", img:"img/Eva-Mann-Hero2.jpg", alt:"Model wearing a design by the fashion label Eva Mann", q:"“A name for a fashion label — but how do you make it truly unforgettable?”", tag:"Fashion", n:"Eva Mann"},
+      {u:"albatros", img:"img/albatros-hero.jpg", alt:"Albatros safety shoes in splashing water", q:"“Our private label looks too much like a private label to command fair prices.”", tag:"Private label / safety footwear", n:"Albatros"},
+      {u:"kuehlmann", img:"img/hero-kuehlmann.jpg", alt:"Salad arranged on a plate", q:"“Discount price – but no cheap look?”", tag:"Food / retailer brand", n:"Delikato for Kühlmann"},
+      {u:"piasten", img:"img/hero-piasten.jpg", alt:"Liquid chocolate mass in production", q:"“Our brands are not advertised. How do they still sell?”", tag:"Food / confectionery", n:"Piasten"}
+    ] -%}
+    {#- asyncEach statt for: respImage ist ein asynchroner Shortcode -#}
+    {%- asyncEach c in cases %}
+    <a href="/en/case-studies/{{ c.u }}/" class="case-card reveal{% if loop.index0 % 3 %} reveal-delay-{{ loop.index0 % 3 }}{% endif %}">
+      <div class="case-card-img">
+        {% respImage c.img, c.alt, "33vw" %}
+        <p class="case-card-question">{{ c.q }}</p>
+      </div>
+      <div class="case-card-body">
+        <span class="case-card-tag">{{ c.tag }}</span>
+        <h2 class="case-card-title">{{ c.n }}</h2>
+      </div>
+    </a>
+    {%- endeach %}
+  </div>
+</section>

@@ -1,0 +1,98 @@
+---
+title: "Product launch: a product comes to market"
+description: "A new product has to convince engineers, purchasing, retail and end customers – each with a different reason. Launch communication for industry and branded goods."
+permalink: /en/services/product-launch/
+key: /leistungen/produkteinfuehrung/
+tags: ["anlassEn"]
+anlassOrder: 3
+anlassName: "A product comes to market"
+anlassTeaser: "A technical advantage is not yet a reason to buy. Every stage between manufacturer and end customer needs its own."
+ogImageSrc: "img/Produkt-kommt-auf-den-Markt.jpg"
+heroAlt: "Hand on a closed shipping box"
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Product launch communication",
+    "serviceType": "Launch communication, product communication",
+    "inLanguage": "en",
+    "provider": { "@id": "https://luenstroth-werbeagentur.de/#organisation" },
+    "areaServed": "Worldwide"
+  }
+---
+{%- set hero = {
+  img: "img/Produkt-kommt-auf-den-Markt.jpg",
+  alt: "Hand on a closed shipping box",
+  label: "Product launch communication",
+  claim: "A product comes<br>to market<span class=\"type-dot\">.</span>",
+  sub: "The technology is ready. Now everyone who decides on it has to understand it — and each of them understands something different by it.",
+  labelIsH1: true
+} %}
+{% include "hero-foto.njk" %}
+
+<!-- 01 — THE SITUATION -->
+<section class="container measure section-block section-block--tight">
+  <p class="label reveal" style="margin-bottom:1rem;">01 — The situation</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">One advantage, four listeners</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Whoever developed a product knows its advantages precisely — in the language of development. Between manufacturer and end customer, however, there are often several stages: purchasing, retail, workshop, planner. Each assesses the same product by its own criteria.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">An argument that convinces the engineer can leave the dealer cold. And an advantage the specialist grasps at once can mean nothing to the end customer — or even look like a disadvantage.</p>
+  <p class="pull-quote reveal reveal-delay-2">A technical detail only becomes a reason to buy once someone translates what it means for each stage.</p>
+</section>
+
+<!-- 02 — WHAT IS CREATED -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">02 — What is created</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.5rem;">The right reason for every stage</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "A line of argument per stage: for engineering, purchasing, retail and end customers — from the same facts, but not in the same sentence",
+      "Product communication for the end customer, with the product as the main character",
+      "Material and portals for dealers, workshops and specialist partners",
+      "Video and imagery from our own production, multilingual where needed",
+      "Packaging and sales material when the product goes through retail"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<!-- 03 — EXAMPLE -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">03 — What this looks like</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">The same fact, three arguments</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">The venting of a high-voltage battery is an inconspicuous component. With a pressure relief valve that opens only in a thermal incident, the battery stays closed and clean in normal operation.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">For the vehicle manufacturer, that is an argument about warranty costs. For the end customer, a promise of durability. For the dealer, a sales argument against cheaper alternatives. The same technical fact — three different reasons to choose it.</p>
+</section>
+
+<!-- 04 — EVIDENCE -->
+<section class="container section-block" style="max-width:1100px;">
+  <p class="label reveal" style="margin-bottom:1rem;">04 — Evidence</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:2rem;max-width:760px;">Multi-stage and international</h2>
+  <div class="grid-2" style="background:none;gap:clamp(1.5rem,2.5vw,2.5rem);">
+    <a href="/en/case-studies/hella/" class="card reveal">
+      <div class="card-num">A</div>
+      <h3 class="card-title">Hella</h3>
+      <p class="card-desc">End customers, independent workshops, franchise chains and small-series manufacturers: four channels with their own approach — consumer communication, service portals, Special OE material and multilingual videos.</p>
+    </a>
+    <a href="/en/case-studies/piasten/" class="card reveal reveal-delay-1">
+      <div class="card-num">B</div>
+      <h3 class="card-title">Warner Hudson for Piasten</h3>
+      <p class="card-desc">A range brand launched in international markets: one brand mark for several product lines, trilingual, for different price levels and seasons.</p>
+    </a>
+  </div>
+</section>
+
+<!-- 05 — UPSTREAM -->
+<section class="container measure" style="padding-block:1rem 3rem;">
+  <div style="background:var(--paper-2);padding:2rem 2.25rem;border-left:2px solid var(--accent);">
+    <p class="label" style="margin-bottom:.75rem;">Does the product need its own name?</p>
+    <p style="font-size:.9375rem;line-height:1.8;">Whether a new product runs under the existing brand, gets its own technology brand or needs a new name is decided before the launch — by <a href="https://luenstroth.com/en/brand-consultancy/naming/" style="color:var(--accent);">Lünstroth brand consultancy</a>.</p>
+  </div>
+</section>
+
+<section class="container measure" style="padding-block:1rem 7rem;">
+  <a href="/en/contact/" class="btn-fill reveal">Start a project</a>
+</section>

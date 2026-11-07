@@ -1,0 +1,103 @@
+---
+layout: base.njk
+title: "Verpackungsdesign für das Listungsgespräch beim Handel"
+description: "Erst entscheidet der Einkäufer über die Listung, dann der Kunde in Sekunden am Regal. Verpackung, Sell-in-Unterlagen und Abverkaufstest für Hersteller und Handelsmarken."
+permalink: /leistungen/listungsgespraech-handel/
+tags: ["anlass"]
+anlassOrder: 1
+anlassName: "Das Listungsgespräch beim Handel"
+anlassTeaser: "Erst entscheidet der Einkäufer, dann der Kunde am Regal. Die Verpackung muss beide überzeugen — und darf keine Abmahnung riskieren."
+ogImageSrc: "img/Listungsgespraech.jpg"
+heroAlt: "Eine Hand greift eine Packung aus einem dicht bestückten Regal"
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Verpackung und Sell-in für das Listungsgespräch",
+    "serviceType": "Verpackungsdesign, Sell-in-Kommunikation",
+    "provider": { "@id": "https://luenstroth-werbeagentur.de/#organisation" },
+    "areaServed": "Worldwide"
+  }
+---
+{#  Anlass-Seite (Fassung 7): beschreibt den Moment des Einsatzes, nicht die
+    Markenentscheidung davor. Die gehört luenstroth.com — siehe Abschnitt 05. #}
+{%- set hero = {
+  img: "img/Listungsgespraech.jpg",
+  alt: "Eine Hand greift eine Packung aus einem dicht bestückten Regal",
+  label: "Verpackungsdesign für das Listungsgespräch",
+  claim: "Erst der Einkäufer.<br>Dann das Regal<span class=\"type-dot\">.</span>",
+  sub: "Zwei Entscheidungen, zwei Personen, zwei völlig verschiedene Kriterien. Wer nur die zweite überzeugt, kommt nie ins Regal.",
+  labelIsH1: true
+} %}
+{% include "hero-foto.njk" %}
+
+<!-- 01 — DIE LAGE -->
+<section class="container measure section-block section-block--tight">
+  <p class="label reveal" style="margin-bottom:1rem;">01 — Die Lage</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Zwei Entscheidungen hintereinander</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Im Listungsgespräch fragt der Einkäufer nach Marge, Drehzahl, Sortimentslücke und Risiko. Ihn interessiert, ob das Produkt seinen Regalmeter besser nutzt als das, was dort heute steht. Ein schönes Packungsdesign beantwortet keine dieser Fragen.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Ist das Produkt gelistet, entscheidet ein anderer: der Kunde am Regal, in wenigen Sekunden, meist ohne zu lesen. Für viele Handelsmarken und für Marken ohne Werbebudget ist die Packung dabei das einzige Verkaufsmittel.</p>
+  <p class="pull-quote reveal reveal-delay-2">Die Verpackung muss also zweimal verkaufen: einmal am Konferenztisch, einmal im Regal.</p>
+</section>
+
+<!-- 02 — WAS ENTSTEHT -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">02 — Was dafür entsteht</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.5rem;">Für den Einkäufer und für den Kunden</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "Verpackung als System: ein konstanter Markenkopf für die Wiedererkennung, eine Ordnung, die das Sortiment ohne Lesen erschließt, feste Positionen für die Angaben, nach denen gegriffen wird",
+      "Sell-in-Unterlagen für das Listungsgespräch: Sortimentslogik, Positionierung im Regal, Argumente zu Marge und Drehzahl",
+      "Abverkaufstest vor Produktionsbeginn, mit eigenen Verfahren — die Ergebnisse dienen zugleich als Argument im Listungsgespräch",
+      "Kennzeichnung für mehrere Länder, wenn das Sortiment in den Export geht"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<!-- 03 — MARKENRECHT -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">03 — Kein Risiko im Regal</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Markenrecht gehört in den Entwurf, nicht in die Nachprüfung</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Eine Handelsmarke soll sich oft bewusst nahe an einer Herstellermarke bewegen. Wird die Packung als Nachahmung wahrgenommen, droht eine Abmahnung — und selbst eine unberechtigte kann eine Listung oder eine Lieferbeziehung belasten.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Die Verwechslungsgefahr wird deshalb geprüft, während gestaltet wird. Wer die Grenze kennt, bevor der Entwurf steht, spart Korrekturschleifen und kann den Spielraum bis dorthin nutzen.</p>
+</section>
+
+<!-- 04 — BELEGE -->
+<section class="container section-block" style="max-width:1100px;">
+  <p class="label reveal" style="margin-bottom:1rem;">04 — Belege</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:2rem;max-width:760px;">Drei Sortimente, drei verschiedene Ausgangslagen</h2>
+  <div class="grid-3" style="background:none;gap:clamp(1.5rem,2.5vw,2.5rem);">
+    <a href="/case-studies/kuehlmann/" class="card reveal">
+      <div class="card-num">A</div>
+      <h3 class="card-title">Delikato für Kühlmann</h3>
+      <p class="card-desc">Handelsmarke im Discount: acht Sorten, drei Farben für drei Warengruppen, der Fettgehalt immer an derselben Stelle — auch dort, wo die Zahl weniger schmeichelhaft ist.</p>
+    </a>
+    <a href="/case-studies/piasten/" class="card reveal reveal-delay-1">
+      <div class="card-num">B</div>
+      <h3 class="card-title">Piasten</h3>
+      <p class="card-desc">Süßwaren ohne Werbebudget, für Deutschland und den Export. Zwei Neuentwicklungen fielen im Abverkaufstest durch — vor den Investitionen in Werkzeuge und Listung.</p>
+    </a>
+    <a href="/case-studies/albatros/" class="card reveal reveal-delay-2">
+      <div class="card-num">C</div>
+      <h3 class="card-title">Albatros</h3>
+      <p class="card-desc">Eine Handelsmarke für Sicherheitsschuhe, die zu sehr nach Eigenmarke aussah. Neue Packungen über das ganze Sortiment, gestützt von einem Brand Guide.</p>
+    </a>
+  </div>
+</section>
+
+<!-- 05 — VORGELAGERT -->
+<section class="container measure" style="padding-block:1rem 3rem;">
+  <div style="background:var(--paper-2);padding:2rem 2.25rem;border-left:2px solid var(--accent);">
+    <p class="label" style="margin-bottom:.75rem;">Steht die Marke selbst zur Entscheidung?</p>
+    <p style="font-size:.9375rem;line-height:1.8;">Eine neue Sortimentsmarke, eine Eigenmarkenstrategie oder die Frage, wie viele Marken ein Sortiment überhaupt braucht: Diese Entscheidungen fallen vor der Verpackung. Dafür ist die <a href="https://luenstroth.com/de/markenberatung/sortimentsmarke/" style="color:var(--accent);">Lünstroth Markenberatung</a> zuständig.</p>
+  </div>
+</section>
+
+<section class="container measure" style="padding-block:1rem 7rem;">
+  <a href="/kontakt/" class="btn-fill reveal">Projekt anfragen</a>
+</section>

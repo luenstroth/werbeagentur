@@ -1,0 +1,98 @@
+---
+title: "Thinking from the end – how the agency works"
+description: "What matters is the concept and securing the right placement in the market, with maximum credibility and persuasive power. Four pages on how Lünstroth works."
+permalink: /en/positioning/
+key: /positionierung/
+ogImageSrc: "img/og-startseite.jpg"
+heroAlt: "Lünstroth Advertising Agency."
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "headline": "Thinking from the end – how the agency works",
+    "inLanguage": "en",
+    "author": { "@id": "https://luenstroth-werbeagentur.de/#organisation" }
+  }
+---
+
+{% from "hero-type.njk" import heroType %}
+{{ heroType(
+  "Positioning and approach of the advertising agency",
+  ["What", "matters", "is", "the", "concept"],
+  "And securing the right placement in the market — with maximum credibility and persuasive power. Four pages on what that means in practice."
+) }}
+
+<section class="container" style="padding-block:4rem 2rem;max-width:760px;">
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">Most communication projects start with the means: a campaign, a relaunch, a website. The tool is fixed before the task is clear. Here the order is reversed — the starting point is the decision that is supposed to be made at the end, and everything else follows backwards from it.</p>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">This is not a matter of style but a response to a changed situation: execution — design, copy, images, code — has become fast and cheap. What has remained scarce is the well-founded decision about what to do and what to leave out, and the willingness to stand by it.</p>
+  <p class="pull-quote reveal reveal-delay-2">What matters is the concept — and securing the right placement in the market, with maximum credibility and persuasive power.</p>
+  <p class="body-lg reveal" style="margin-top:1.5rem;">This sentence contains four statements. Each has its own page.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 4rem;max-width:1100px;">
+  <h2 class="display-md reveal" style="margin-bottom:2rem;">The four strengths at a glance</h2>
+  <div class="grid-2 reveal reveal-delay-1" style="gap:clamp(1.75rem,3vw,3rem);">
+    {%- for s in [
+      {
+        n:"01", t:"Thinking from the end", u:"/en/positioning/thinking-from-the-end/",
+        lead:"The method: start with the decision situation, not with the brief.",
+        d:"Who actually decides, where, within what time, against which alternative? From there a path leads backwards through retail, purchasing and specialist planning to what needs to be done. The means is settled at the end, not at the beginning — which is why what will be produced is open when a mandate starts.",
+        s:"Cobiax: the buying decision was made by the developer, not the structural engineer — which changed the claim."
+      },
+      {
+        n:"02", t:"Concept before execution", u:"/en/positioning/concept-before-execution/",
+        lead:"The service: a decision with a verifiable rationale, not a package of proposals.",
+        d:"Diagnosis and concept can be commissioned on their own, with a fixed scope — not as unbilled groundwork for a design commission. Part of this is “change follows strategy”: what the strategy demands is changed, nothing more. Recognition is an asset you do not write off without reason.",
+        s:"Gneuss: only the symbol went, the word mark stayed. Volksbank PHD: the acquired local brand was kept in full."
+      },
+      {
+        n:"03", t:"Placement in the market", u:"/en/positioning/placement-in-the-market/",
+        lead:"The safeguard: a location in the competitive field, not a self-description.",
+        d:"Who are you compared against, on which shelf, in which tender, in which list of search results? Five factors decide: distance from competitors, sales channel, pricing latitude, robustness in trademark law and findability — including by generative systems that recommend brands without linking to them.",
+        s:"Albatros: too much like a private label for fair prices. Kühlmann: discount price, but no cheap look."
+      },
+      {
+        n:"04", t:"Credibility and persuasive power", u:"/en/positioning/credibility/",
+        lead:"The yardstick: plausibility can now be manufactured, credibility cannot.",
+        d:"It consists of verifiability, consistency over time and the courage to leave things out — decisions about content, not about wording. And persuasion is not the same as being liked. That does not mean dry: in many markets emotion is the product. What matters is whether it arises from the subject or is merely borrowed from the image.",
+        s:"Delikato: the fat content is printed on the pack variety by variety — even where the figure is less flattering."
+      }
+    ] %}
+    <div class="reveal reveal-delay-{{ loop.index0 % 3 }}" style="border-top:2px solid var(--accent);padding-top:1.25rem;">
+      <p class="card-num" style="font-size:2.25rem;">{{ s.n }}</p>
+      <h3 class="card-title" style="margin-bottom:.5rem;"><a href="{{ s.u }}">{{ s.t }}</a></h3>
+      <p class="body-lg" style="margin-bottom:.75rem;font-size:1.0625rem;">{{ s.lead }}</p>
+      <p class="card-desc" style="margin-bottom:1rem;">{{ s.d }}</p>
+      <p class="card-desc" style="border-left:2px solid rgba(var(--ink-rgb),.15);padding-left:.9rem;margin-bottom:1rem;"><em>{{ s.s }}</em></p>
+      <a href="{{ s.u }}" class="btn-arrow">Read more →</a>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="container" style="padding-block:1rem 4rem;max-width:760px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">How the four fit together</h2>
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">The order is not an outline but a sequence. <strong>Thinking from the end</strong> clarifies what the work is aiming at. <strong>Concept before execution</strong> decides what is done to get there and what is left out. <strong>Placement in the market</strong> determines where the brand should stand and whether that position is robust. <strong>Credibility and persuasive power</strong> is the yardstick against which every result is tested — and the reason some things that looked good are dropped.</p>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">The result is not a catalogue of services but a chain of decisions that can be traced backwards. That is the difference from a presence that is merely liked: you can disagree with it — with arguments, not with taste.</p>
+</section>
+
+<section class="container" style="padding-block:1rem 5rem;max-width:900px;">
+  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Where to read more</h2>
+  <div class="grid-3 reveal reveal-delay-1">
+    <div>
+      <h3 class="card-title" style="margin-bottom:.5rem;"><a href="/en/case-studies/">Case studies</a></h3>
+      <p class="card-desc">Thirteen mandates, each with a different starting point — and each with the question of what was at stake.</p>
+    </div>
+    <div>
+      <h3 class="card-title" style="margin-bottom:.5rem;"><a href="/en/services/">Services</a></h3>
+      <p class="card-desc">Diagnosis and concept, brand and identity, media that sell, ongoing operation.</p>
+    </div>
+    <div>
+      <h3 class="card-title" style="margin-bottom:.5rem;"><a href="/en/approach/">Approach</a></h3>
+      <p class="card-desc">How a mandate runs — from diagnosis to looking after the brand system.</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:3rem;">
+    <a href="/en/contact/" class="btn-fill">Start a project</a>
+  </div>
+</section>

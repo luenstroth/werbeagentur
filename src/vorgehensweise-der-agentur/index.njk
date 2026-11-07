@@ -1,0 +1,203 @@
+---
+layout: base.njk
+title: "Vorgehensweise: ein Konzept, anpassbar an jeden Markt"
+description: "Wie ein Konzept so angelegt wird, dass es sich an internationale Märkte und unterschiedliche Preislagen anpassen lässt, statt überall unverändert zu gelten."
+permalink: /vorgehensweise-der-agentur/
+ogImageSrc: "img/arbeitsweise.jpg"
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Vorgehensweise",
+    "provider": {"@type": "Organization", "name": "Lünstroth Werbeagentur"}
+  }
+---
+
+{%- set hero = {
+  img: "img/arbeitsweise.jpg",
+  alt: "Zwei Personen arbeiten mit Winkelmesser und Stift an einer technischen Zeichnung",
+  label: "Arbeitsweise der Agentur",
+  claim: "Ein Konzept,<br>viele Realitäten<span class=\"type-dot\">.</span>",
+  sub: "Wie ein Konzept so angelegt wird, dass es sich an internationale Märkte und unterschiedliche Preislagen anpassen lässt, statt überall unverändert zu gelten.",
+  labelIsH1: false
+} %}
+{% include "hero-foto.njk" %}
+
+<!-- 01 — KONZEPT -->
+<section class="container measure section-block section-block--tight">
+  <p class="label reveal" style="margin-bottom:1rem;">01 — Konzept</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Das Konzept als einzige verbindliche Quelle</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Jedes Mandat beginnt mit derselben Frage: Was muss die Marktposition tatsächlich leisten — und trägt die bestehende Kommunikation das noch? Erst aus der Antwort entsteht das strategische Konzept, nie umgekehrt. Gestaltung, Kanalwahl und Ausführung folgen aus dem Konzept, nicht aus einer Vorliebe für ein bestimmtes Format.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:2rem;">Dieses Konzept ist die einzige verbindliche Quelle für alles, was danach entsteht — unabhängig davon, ob es sich um eine Anzeige, ein Video, eine Website oder eine automatisiert generierte Produktbeschreibung handelt.</p>
+
+  <h3 class="subhead reveal">Warum die Reihenfolge zählt</h3>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:2rem;">Wird zuerst gestaltet und erst danach nach der Begründung gesucht, entstehen Widersprüche, die spätestens beim zweiten Kanal oder beim zweiten Markt sichtbar werden. Ein Logo, das ohne konzeptionelle Grundlage entsteht, lässt sich nicht rückwirkend mit einer Strategie unterfüttern — die Strategie muss zuerst stehen, damit Gestaltung, Text und Kanalwahl aus derselben Quelle folgen, statt sich gegenseitig zu widersprechen.</p>
+
+  <h3 class="subhead reveal">Was in das Konzept einfließt</h3>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1rem;">Drei Wissensbereiche fließen in jedes Konzept ein, bevor eine einzige Gestaltungsentscheidung fällt:</p>
+  <ul class="check-list" style="margin-bottom:1rem;">
+    {%- for item in [
+      "Branchenkenntnis: wie der Markt tatsächlich funktioniert, nicht wie er von außen wirkt",
+      "Strategieverständnis: welche Entscheidung die Marktposition tatsächlich verändert",
+      "Markt-Know-how: wie Hersteller, Handel und Endkunden ein Angebot jeweils unterschiedlich bewerten"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+{#- 02 und 03 übernommen aus den früheren /positionierung/-Seiten (Fassung 7).
+    Entfallen: „Platzierung im Markt“ (Positionierung = luenstroth.com) und
+    „Konzept eigenständig beauftragbar“ (widerspricht Fassung 6). -#}
+<!-- 02 — VOM ENDE HER -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">02 — Vom Ende her</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Am Anfang steht der Moment der Entscheidung</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Die meisten Kommunikationsprojekte beginnen beim Mittel: eine Kampagne, eine Website, ein neuer Messestand. Das Werkzeug steht fest, bevor die Aufgabe geklärt ist. Hier ist die Reihenfolge umgekehrt. Am Anfang steht der Moment, in dem jemand entscheidet — und erst daraus ergibt sich rückwärts, was gebraucht wird.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1rem;">Vier Fragen beschreiben diesen Moment:</p>
+  <ul class="check-list" style="margin-bottom:1.5rem;">
+    {%- for item in [
+      "Wer entscheidet tatsächlich? Nicht, wer unterschreibt, sondern wer die Entscheidung vorbereitet — und wer sie kippen kann.",
+      "An welchem Ort und in welcher Zeit? Drei Sekunden am Kühlregal sind eine andere Aufgabe als ein Vergabeprozess über sechs Monate.",
+      "Gegen welche Alternative? Auch „gar nichts tun“ ist eine Alternative — oft die stärkste.",
+      "Was weiß diese Person in diesem Moment, und was glaubt sie? Die Lücke zwischen beidem ist die eigentliche Aufgabe."
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">Deshalb steht zu Beginn eines Mandats nicht fest, was am Ende produziert wird. Manchmal ist es eine Verpackung, manchmal ein einziger Satz — und manchmal die Erkenntnis, dass das beauftragte Mittel nicht das richtige ist. Das auszusprechen gehört zur Arbeit.</p>
+</section>
+
+<!-- 03 — GLAUBWÜRDIGKEIT -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">03 — Glaubwürdigkeit</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Geglaubt werden statt gefallen</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Ein Satz, der richtig klingt, ist heute in Sekunden hergestellt. Ein Satz, dem geglaubt wird, nicht. Glaubwürdigkeit entsteht aus Entscheidungen über Inhalte: aus Angaben, die man prüfen kann, aus Aussagen, die über Jahre gleich bleiben, und aus dem Mut, Unhaltbares wegzulassen.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Bei der Salatlinie Delikato steht der Fettgehalt sortenweise auf der Packung — auch dort, wo die Zahl weniger schmeichelhaft ausfällt. Eine Angabe, die nur im günstigen Fall erscheint, ist Werbung. Eine, die immer erscheint, ist eine Auskunft.</p>
+
+  <figure class="reveal reveal-delay-1" style="margin:2.5rem auto;max-width:520px;">
+    <img src="/img/volksbank-lippstadt-luftbild-2011.webp" alt="Ganzseitige Zeitungsanzeige der Volksbank Lippstadt: Luftbild der Stadt mit markierten Filialstandorten, Schlagzeile „Natürlich können Sie mit der Volksbank online arbeiten. Sie können aber auch einfach um die Ecke gehen.“" loading="lazy" width="1200" height="1769" style="width:100%;height:auto;display:block;">
+    <figcaption style="font-size:.75rem;color:rgba(var(--ink-rgb),.5);margin-top:.6rem;line-height:1.5;">Volksbank Lippstadt, Tageszeitungs-Anzeige, 2011. Luftbild: Digitales Orthophoto, Bildflug 27.04.2008. Datenquelle: Land NRW / Geobasis NRW, <a href="https://www.govdata.de/dl-de/by-2-0" rel="license noopener" target="_blank" style="color:inherit;">dl-de/by-2-0</a>.</figcaption>
+  </figure>
+
+  <p class="body-lg reveal" style="margin-bottom:1.5rem;">„Wir sind für Sie vor Ort“ steht auf jeder zweiten Bankanzeige. Diese Anzeige behauptet Nähe nicht, sie legt sie offen: ein Luftbild der Stadt mit allen Filialen. Wer sie aufschlägt, sucht zuerst die eigene Straße — und beantwortet die Frage nach der Entfernung selbst.</p>
+  <p class="pull-quote reveal reveal-delay-1">Ein Entwurf kann allen gefallen und niemanden bewegen.</p>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">Emotion ist erwünscht – bei Süßwaren, im Profisport, in der Mode ist sie das Produkt. Nur ist Gefallen kein Maß dafür: Zustimmung im Abstimmungskreis sagt nichts darüber, ob am Markt etwas ausgelöst wird. Umgekehrt ist das Luftbild oben kein schönes Motiv. Es bewegt trotzdem, weil der Leser darin seine eigene Straße findet.</p>
+</section>
+
+<!-- 04 — MARKENFILTER -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">04 — Markenfilter</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Ein Regelwerk, das auch Maschinen verstehen</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Aus dem Konzept entsteht ein dokumentierter Markenfilter: klare Regeln für Tonalität, Terminologie, visuelle Grenzen und zulässige Aussagen. Ein Markenfilter, der nur für menschliche Kreative gedacht ist, reicht heute nicht mehr aus.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:2rem;">Immer mehr Unternehmen setzen selbst KI-Systeme ein — im Kundenservice, in der automatisierten Content-Erstellung, in der Marketing-Automatisierung. Diese Systeme kommunizieren im Namen der Marke, ob das geplant war oder nicht. Ein Markenfilter muss deshalb so präzise dokumentiert sein, dass er nicht nur die eigene Arbeit leitet, sondern auch als Leitplanke für die KI-Systeme des Kunden selbst nutzbar ist.</p>
+  <p class="pull-quote reveal reveal-delay-2">Eine Marke, die nur so lange konsistent ist, wie ein Mensch jede einzelne Aussage prüft, ist im Kern nicht wirklich konsistent.</p>
+
+  <h3 class="subhead reveal" style="margin-top:1rem;">Was ein Markenfilter konkret enthält</h3>
+  <ul class="check-list" style="margin-bottom:2rem;">
+    {%- for item in [
+      "Tonalitäts-Regeln: welcher Ton zur Marke passt und welcher nicht, mit konkreten Beispielen statt abstrakter Adjektive",
+      "Terminologie-Glossar: welche Begriffe für Produkte, Zielgruppen und Leistungen verbindlich sind",
+      "Positive und negative Beispiele: Formulierungen, die die Marke tragen, und solche, die sie unterlaufen",
+      "Visuelle Grenzen: welche Gestaltungsfreiheit besteht und wo sie endet"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+
+  <h3 class="subhead reveal">Warum das gerade bei KI-Systemen des Kunden zählt</h3>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">Ein KI-gestützter Kundenservice-Chatbot, der auf veraltete Terminologie zugreift, oder eine automatisierte Produktbeschreibung, die eine Aussage trifft, die nicht zur aktuellen Positionierung passt, untergräbt die Konsistenz einer Marke genauso wirksam wie eine fehlerhafte Anzeige — nur in deutlich höherer Taktzahl und ohne dass ein Mensch jede einzelne Ausgabe prüft. Ein Markenfilter, der explizit für den Einsatz in solchen Systemen dokumentiert ist, reduziert dieses Risiko strukturell, statt es der Aufmerksamkeit Einzelner zu überlassen.</p>
+</section>
+
+<!-- 05 — ANPASSUNG -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">05 — Anpassung</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Der Traum vom roten Faden — und die Realität großer Organisationen</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Ein Konzept, das sich nahtlos und unverändert durch jedes Land, jede Abteilung und jeden Vertriebspartner ziehen lässt, ist strategisch und kommunikativ der richtige Anspruch — und in der Praxis großer Unternehmen so gut wie nie die Realität. Gewachsene Silos, unterschiedliche Prioritäten zwischen Regionen, interne Zuständigkeiten, die sich nicht per Dekret auflösen lassen: Ein Konzept, das das ignoriert, scheitert an der eigenen Organisation des Kunden, bevor es überhaupt beim Endkunden ankommt.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:2rem;">Deshalb wird jedes Konzept von Anfang an so entwickelt, dass es sich anpassen lässt — an unterschiedliche internationale Gegebenheiten und an unterschiedliche Preiskategorien innerhalb desselben Portfolios, ohne die zugrundeliegende Substanz zu verlieren. Kein starres Regelwerk, das überall identisch aussehen muss, sondern ein belastbarer Kern, der auf die tatsächliche Situation vor Ort reagieren kann.</p>
+
+  <h3 class="subhead reveal">Wo der rote Faden in der Praxis bricht</h3>
+  <ul class="check-list" style="margin-bottom:2rem;">
+    {%- for item in [
+      "Regionale Vertriebsstrukturen mit unterschiedlichem Reifegrad der eigenen Marketingorganisation",
+      "Sprachliche und kulturelle Unterschiede, die eine wörtliche Übersetzung unbrauchbar machen",
+      "Unterschiedliche Wettbewerbssituationen je Markt, die eine andere Gewichtung derselben Botschaft verlangen",
+      "Historisch gewachsene Sonderlösungen einzelner Landesgesellschaften, die nicht über Nacht verschwinden"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+
+  <h3 class="subhead reveal">Was sich anpassen lässt — und was nicht</h3>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">Nicht jedes Element eines Konzepts hat denselben Verbindlichkeitsgrad. Die zugrundeliegende Positionierung und die zentrale Botschaft bleiben unverändert — sie sind der Kern, den keine regionale Anpassung aufweichen darf. Formulierung, Bildsprache im Detail, Kanalgewichtung und Preiskommunikation dagegen dürfen und müssen sich an die jeweilige Marktrealität anpassen. Diese Trennung wird von Anfang an dokumentiert, statt bei jeder Abweichung neu verhandelt werden zu müssen.</p>
+
+  <h3 class="subhead reveal">Preiskategorien als konkretes Beispiel</h3>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">Ein Produkt, das im Heimatmarkt im Premium-Segment positioniert ist, kann in einem anderen Markt in einer mittleren Preiskategorie antreten müssen — aus Wettbewerbsgründen, wegen der lokalen Kaufkraft oder wegen eines bereits etablierten Vertriebspartners mit eigener Preislogik. Die Markenbotschaft bleibt dabei erkennbar dieselbe, die Preiskommunikation und die Argumentation, warum der Preis gerechtfertigt ist, unterscheiden sich bewusst. Das ist keine Verwässerung des Konzepts, sondern die Voraussetzung dafür, dass es in der jeweiligen Preiskategorie überhaupt trägt.</p>
+</section>
+
+<!-- 06 — UMSETZUNG -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">06 — Umsetzung</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Von der Freigabe bis zur Ausspielung</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Nach der Freigabe eines Konzepts endet das Mandat nicht bei der Übergabe von Vorlagen. Die Produktion übernimmt Lünstroth vollständig selbst — etwa Social-Media-Video-Clips, die in bis zu <span class="stat">20 Sprachen</span> produziert werden, nicht nur konzipiert.</p>
+
+  <h3 class="subhead reveal">Wer die Ausspielung übernimmt</h3>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">Die eigentliche Schaltung — wann und wo ein fertiges Material veröffentlicht wird — liegt in der Regel beim Kunden selbst, kann aber auf Wunsch ebenso übernommen werden. Dasselbe gilt für Social Media: Konzept, Inhalte und Produktion liegen bei Lünstroth, der laufende Betrieb — Posten, Community-Management — beim Kunden.</p>
+
+  <h3 class="subhead reveal">Media-Einkauf: nach Bereich unterschiedlich</h3>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">Im Fashion-B2C-Bereich kauft Lünstroth Anzeigenplätze sowie TV- und Radiozeiten selbst ein. Im B2B-Bereich liegt der Media-Einkauf bislang beim Kunden — eine bewusste, aus der jeweiligen Marktpraxis begründete Unterscheidung, keine pauschale Leistung.</p>
+
+  <h3 class="subhead reveal">Nachsteuerung nach dem Livegang</h3>
+  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:1.5rem;">Erfolgskontrolle und iterative Anpassung nach Veröffentlichung übernimmt in der Regel das Marketing des Kunden selbst. Auf Wunsch bieten wir das ebenfalls an.</p>
+</section>
+
+<!-- 07 — KI IM PROZESS -->
+<section class="container measure section-block section-block--close">
+  <p class="label reveal" style="margin-bottom:1rem;">07 — KI im Prozess</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Werkzeug, nicht Entscheider</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:2rem;">KI unterstützt bei Recherche, Übersetzung und technischer Umsetzung — die konzeptionelle und kreative Entscheidung bleibt menschlich verantwortet.</p>
+
+  <div class="grid-2 reveal reveal-delay-1" style="margin-bottom:2rem;">
+    <div>
+      <h3 class="subhead">Wo KI unterstützt</h3>
+      <ul class="check-list">
+        {%- for item in ["Recherche und Wettbewerbsanalyse", "Erstübersetzung für internationale Kommunikation", "Technische Umsetzung und Formatanpassung"] %}
+        <li class="check-item">
+          <span class="check-icon"></span>
+          <span>{{ item }}</span>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+    <div>
+      <h3 class="subhead">Wo Menschen entscheiden</h3>
+      <ul class="check-list">
+        {%- for item in ["Konzeptionelle Grundsatzentscheidungen", "Kreative Umsetzung und Gestaltung", "Freigabe vor jeder Veröffentlichung"] %}
+        <li class="check-item">
+          <span class="check-icon"></span>
+          <span>{{ item }}</span>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Wie Lünstroth KI konkret einsetzt, welche Marken-Leitplanken dabei gelten und wie die EU-KI-Verordnung eingehalten wird, ist auf einer eigenen Seite ausführlich dokumentiert.</p>
+  <a href="/ki-einsatz/" class="btn-arrow reveal reveal-delay-2">Zum KI-Einsatz →</a>
+</section>
+
+<section class="container measure" style="padding-block:1rem 7rem;">
+  <a href="/kontakt/" class="btn-fill reveal">Projekt anfragen</a>
+</section>
