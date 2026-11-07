@@ -26,6 +26,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
+  eleventyConfig.addPassthroughCopy({ "src/favicon.svg": "favicon.svg", "src/favicon.ico": "favicon.ico", "src/favicon-96x96.png": "favicon-96x96.png", "src/apple-touch-icon.png": "apple-touch-icon.png", "src/web-app-manifest-192x192.png": "web-app-manifest-192x192.png", "src/web-app-manifest-512x512.png": "web-app-manifest-512x512.png", "src/site.webmanifest": "site.webmanifest" });
   // Weiterleitungen alte WordPress-URLs -> neue Struktur (Apache/netcup)
   eleventyConfig.addPassthroughCopy("src/.htaccess");
   eleventyConfig.addPassthroughCopy("src/fonts");
