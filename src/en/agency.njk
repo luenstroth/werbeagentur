@@ -16,12 +16,14 @@ pageSchema: |
   }
 ---
 
-{% from "hero-type.njk" import heroType %}
-{{ heroType(
-  "Lünstroth advertising agency: brand, design and communication since 1994",
-  ["Thinking", "first"],
-  "Design rarely accounts for more than ten per cent of the effort in a mandate. The rest is the question of how a product actually lands with purchasing, retail and the end customer."
-) }}
+{%- set hero = {
+  text: "Thinking first",
+  effect: "sketch",
+  label: "Lünstroth advertising agency: brand, design and communication since 1994",
+  sub: "Design rarely accounts for more than ten per cent of the effort in a mandate. The rest is the question of how a product actually lands with purchasing, retail and the end customer.",
+  labelIsH1: true
+} %}
+{% include "hero-statement.njk" %}
 
 <!-- 01 — APPROACH -->
 <section class="container measure section-block section-block--tight">

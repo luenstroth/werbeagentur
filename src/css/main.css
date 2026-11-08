@@ -1045,6 +1045,13 @@ img { display: block; max-width: 100%; }
 .stmt--cross .stmt-l { opacity: 0; transform: translateX(calc(40vw + var(--i) * .18em)); animation: stmt-cross 1.4s cubic-bezier(.16,1,.3,1) forwards; animation-delay: calc(var(--i) * 18ms + .2s); }
 @keyframes stmt-cross { 20% { opacity: 1; } to { opacity: 1; transform: none; } }
 
+/* sketch  "Denken vor Gestalten": jede Letter erscheint zuerst als feine Umrisslinie (Vorzeichnung) und füllt sich danach */
+.stmt--sketch .stmt-l { color: transparent; -webkit-text-stroke: 1px rgba(var(--ink-rgb), .9); opacity: 0;
+  animation: stmt-sketch-in .5s var(--ease) forwards, stmt-sketch-fill .9s var(--ease) forwards;
+  animation-delay: calc(var(--i) * 55ms + .2s), calc(var(--n) * 55ms + .55s + var(--i) * 25ms); }
+@keyframes stmt-sketch-in { to { opacity: 1; } }
+@keyframes stmt-sketch-fill { to { color: var(--ink); -webkit-text-stroke-color: transparent; } }
+
 @keyframes stmt-fade { to { opacity: 1; } }
 @keyframes stmt-dot { to { transform: scale(1); } }
 

@@ -21,12 +21,14 @@ pageSchema: |
 
 ---
 
-{% from "hero-type.njk" import heroType %}
-{{ heroType(
-  "Werbeagentur Lünstroth: Marke, Design und Kommunikation seit 1994",
-  ["Denken", "vor", "Gestalten"],
-  "Gestaltung macht bei einem Mandat selten mehr als zehn Prozent des Aufwands aus. Der Rest ist die Frage, wie ein Produkt bei Einkauf, Handel und Endkunde tatsächlich ankommt."
-) }}
+{%- set hero = {
+  text: "Denken vor Gestalten",
+  effect: "sketch",
+  label: "Werbeagentur Lünstroth: Marke, Design und Kommunikation seit 1994",
+  sub: "Gestaltung macht bei einem Mandat selten mehr als zehn Prozent des Aufwands aus. Der Rest ist die Frage, wie ein Produkt bei Einkauf, Handel und Endkunde tatsächlich ankommt.",
+  labelIsH1: true
+} %}
+{% include "hero-statement.njk" %}
 
 <!-- 01 — ARBEITSWEISE -->
 <section class="container measure section-block section-block--tight">
