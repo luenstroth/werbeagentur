@@ -660,8 +660,8 @@ img { display: block; max-width: 100%; }
 .logo-tile-cap {
   position: absolute; left: 0; right: 0; bottom: 0; z-index: 2;
   display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
-  height: 42%; padding: .75rem 1.25rem;
-  background: rgba(var(--accent-rgb),.86);
+  height: auto; min-height: 42%; max-height: 100%; padding: .75rem 1.25rem; /* waechst mit dem Text, statt ihn abzuschneiden */
+  background: rgba(13,79,92,.94);
   backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
   opacity: 0;
   transition: opacity .65s var(--ease);
@@ -678,7 +678,7 @@ img { display: block; max-width: 100%; }
   display: flex; align-items: center; justify-content: center; gap: .4rem;
   margin-top: .65rem; padding: .35rem .85rem;
   font-size: .625rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
-  color: var(--accent); background: #fff;
+  color: var(--accent-deep); background: #fff;
   opacity: 0; transform: translateY(6px);
   transition: opacity .5s var(--ease) .32s, transform .5s var(--ease) .32s;
 }
