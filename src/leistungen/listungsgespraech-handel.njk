@@ -22,14 +22,13 @@ pageSchema: |
 {#  Anlass-Seite (Fassung 7): beschreibt den Moment des Einsatzes, nicht die
     Markenentscheidung davor. Die gehört luenstroth.com — siehe Abschnitt 05. #}
 {%- set hero = {
-  img: "img/Listungsgespraech.jpg",
-  alt: "Eine Hand greift eine Packung aus einem dicht bestückten Regal",
+  text: "Gelistet",
+  effect: "shelve",
   label: "Verpackungsdesign für das Listungsgespräch",
-  claim: "Gelistet<span class=\"type-dot\">.</span>",
   sub: "Zwei Entscheidungen, zwei Personen, zwei völlig verschiedene Kriterien. Wer nur die zweite überzeugt, kommt nie ins Regal.",
   labelIsH1: true
 } %}
-{% include "hero-foto.njk" %}
+{% include "hero-statement.njk" %}
 
 <!-- 01 — DIE LAGE -->
 <section class="container measure section-block section-block--tight">

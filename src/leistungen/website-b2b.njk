@@ -20,14 +20,13 @@ pageSchema: |
   }
 ---
 {%- set hero = {
-  img: "img/Website-verkauft-nicht-mehr.jpg",
-  alt: "Hand auf dem Trackpad eines Laptops",
+  text: "Neu erzählt",
+  effect: "write",
   label: "Website-Relaunch für Industrie und Mittelstand",
-  claim: "Neu erzählt<span class=\"type-dot\">.</span>",
   sub: "Meist nicht, weil sie veraltet aussieht, sondern weil sie ein Unternehmen beschreibt, das es so nicht mehr gibt.",
   labelIsH1: true
 } %}
-{% include "hero-foto.njk" %}
+{% include "hero-statement.njk" %}
 
 <!-- 01 — DIE LAGE -->
 <section class="container measure section-block section-block--tight">

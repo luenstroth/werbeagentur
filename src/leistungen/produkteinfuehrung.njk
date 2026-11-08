@@ -20,14 +20,13 @@ pageSchema: |
   }
 ---
 {%- set hero = {
-  img: "img/Produkt-kommt-auf-den-Markt.jpg",
-  alt: "Hand an einem verschlossenen Versandkarton",
+  text: "Marktreif",
+  effect: "rise",
   label: "Kommunikation zur Produkteinführung",
-  claim: "Marktreif<span class=\"type-dot\">.</span>",
   sub: "Die Technik ist fertig. Jetzt muss sie jeder verstehen, der über sie entscheidet — und jeder versteht etwas anderes darunter.",
   labelIsH1: true
 } %}
-{% include "hero-foto.njk" %}
+{% include "hero-statement.njk" %}
 
 <!-- 01 — DIE LAGE -->
 <section class="container measure section-block section-block--tight">

@@ -1020,6 +1020,31 @@ img { display: block; max-width: 100%; }
   animation-delay: calc(var(--i) * 38ms + .25s); }
 @keyframes stmt-align { 35% { opacity: 1; } to { opacity: 1; transform: none; } }
 
+/* speak  "Reden wir": Buchstaben setzen im Sprechtakt ein, Wort für Wort mit kurzer Pause */
+.stmt--speak .stmt-l { opacity: 0; transform: translateY(.12em); animation: stmt-speak .55s var(--ease) forwards; animation-delay: calc(var(--i) * 55ms + .3s); }
+.stmt--speak .stmt-w + .stmt-w .stmt-l { animation-delay: calc(var(--i) * 55ms + .62s); }
+@keyframes stmt-speak { to { opacity: 1; transform: none; } }
+
+/* settle  "Mittelstand verstanden": Buchstaben setzen mit Gewicht auf und stehen fest */
+.stmt--settle .stmt-l { opacity: 0; transform: translateY(-.35em); animation: stmt-settle .9s cubic-bezier(.3,1.35,.45,1) forwards; animation-delay: calc(var(--i) * 32ms + .25s); }
+@keyframes stmt-settle { 30% { opacity: 1; } to { opacity: 1; transform: none; } }
+
+/* shelve  "Gelistet": Buchstaben rücken von rechts nacheinander in die Reihe, wie Ware ins Regal */
+.stmt--shelve .stmt-l { opacity: 0; transform: translateX(1.4em); animation: stmt-shelve .8s cubic-bezier(.2,.9,.25,1) forwards; animation-delay: calc(var(--i) * 70ms + .25s); }
+@keyframes stmt-shelve { 25% { opacity: 1; } to { opacity: 1; transform: none; } }
+
+/* write  "Neu erzählt": jede Letter wird von links nach rechts freigelegt, wie eine Zeile, die geschrieben wird */
+.stmt--write .stmt-l { clip-path: inset(-.2em 100% -.3em 0); animation: stmt-write .45s cubic-bezier(.6,0,.3,1) forwards; animation-delay: calc(var(--i) * 75ms + .3s); }
+@keyframes stmt-write { to { clip-path: inset(-.2em -.1em -.3em 0); } }
+
+/* rise  "Marktreif": Buchstaben wachsen aus der Grundlinie heraus */
+.stmt--rise .stmt-l { clip-path: inset(100% -.1em -.3em -.1em); transform: translateY(.45em); animation: stmt-rise 1s var(--ease) forwards; animation-delay: calc(var(--i) * 45ms + .25s); }
+@keyframes stmt-rise { to { clip-path: inset(-.3em -.1em -.3em -.1em); transform: none; } }
+
+/* cross  "Grenzenlos verständlich": der Satz kommt von jenseits des Rands und schließt die Laufweite */
+.stmt--cross .stmt-l { opacity: 0; transform: translateX(calc(40vw + var(--i) * .18em)); animation: stmt-cross 1.4s cubic-bezier(.16,1,.3,1) forwards; animation-delay: calc(var(--i) * 18ms + .2s); }
+@keyframes stmt-cross { 20% { opacity: 1; } to { opacity: 1; transform: none; } }
+
 @keyframes stmt-fade { to { opacity: 1; } }
 @keyframes stmt-dot { to { transform: scale(1); } }
 

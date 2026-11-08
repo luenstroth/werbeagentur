@@ -21,14 +21,13 @@ pageSchema: |
   }
 ---
 {%- set hero = {
-  img: "img/Listungsgespraech.jpg",
-  alt: "A hand taking a pack from a densely stocked shelf",
+  text: "Listed",
+  effect: "shelve",
   label: "Packaging design for the retail listing meeting",
-  claim: "Listed<span class=\"type-dot\">.</span>",
   sub: "Two decisions, two people, two entirely different sets of criteria. Convince only the second, and the product never makes it onto the shelf.",
   labelIsH1: true
 } %}
-{% include "hero-foto.njk" %}
+{% include "hero-statement.njk" %}
 
 <!-- 01 — THE SITUATION -->
 <section class="container measure section-block section-block--tight">
