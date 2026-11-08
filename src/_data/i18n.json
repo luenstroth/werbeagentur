@@ -77,10 +77,6 @@
           "label": "Produkteinführung"
         },
         {
-          "url": "/leistungen/messeauftritt/",
-          "label": "Messeauftritt"
-        },
-        {
           "url": "/leistungen/auslandsmaerkte/",
           "label": "Material für Auslandsmärkte"
         },
@@ -195,10 +191,6 @@
         {
           "url": "/en/services/product-launch/",
           "label": "Product launch"
-        },
-        {
-          "url": "/en/services/trade-fair/",
-          "label": "Trade fair"
         },
         {
           "url": "/en/services/international-markets/",
