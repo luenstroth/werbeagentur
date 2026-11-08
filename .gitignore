@@ -9,3 +9,5 @@ _archiv/videos-original/
 _archiv/*.zip
 _archiv/audit.txt
 *.mp4.orig
+
+_archiv/shots/

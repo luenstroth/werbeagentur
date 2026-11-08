@@ -7,19 +7,23 @@
    ══════════════════════════════════════════════════════ */
 :root {
   /* RGB-Tripel-Basen — niemals direkt Hex/RGB wiederholen, immer diese referenzieren */
-  --paper-rgb:  245,242,238;   /* warmes Papier-Weiß, Hintergrund */
-  --ink-rgb:    17,15,14;      /* fast-schwarz, Haupttext */
-  --accent-rgb:   13,79,92;     /* Petrol-Akzent, Durchsetzungskraft */
+  --paper-rgb:  31,29,27;      /* Anthrazit, Hintergrund (dunkles Schema seit 08.11.2026) */
+  --shade-rgb:  17,15,14;      /* festes Dunkel für Bild-Überlagerungen, unabhängig vom Schema */
+  --ink-rgb:    245,242,238;   /* Papierweiß, Haupttext */
+  --accent-rgb:   127,196,208;  /* helles Petrol: Akzent für Text und Linien auf Dunkel */
   --white-rgb:  255,255,255;   /* reines Weiß, nur für Text auf Accent/Ink */
 
   /* Feste Farbwerte (Basis ohne Deckkraft-Variation) */
-  --paper:      #f5f2ee;
-  --paper-2:    #ece8e3;
-  --paper-3:    #e4dfd9;
-  --ink:        #110f0e;
-  --ink-2:      #2d2925;
-  --accent:       #0D4F5C;
-  --accent-light: #1B7A8C;
+  --paper:      #1f1d1b;
+  --paper-2:    #2a2826;
+  --paper-3:    #353230;
+  --ink:        #f5f2ee;
+  --shade:      #110f0e;   /* festes Dunkel: Fußzeile, Bildbühnen */
+  --light:      #f5f2ee;   /* helle Fläche für Logo-Musterkarten */
+  --ink-2:      #d9d4cd;
+  --accent:       #7FC4D0;
+  --accent-deep:  #0D4F5C;   /* Petrol der Marke: Flächen, Buttons */
+  --accent-light: #A9D6DE;
 
   /* Layout */
   --max:  1440px;
@@ -177,16 +181,16 @@ img { display: block; max-width: 100%; }
   padding: .85rem 1.75rem; text-decoration: none;
   transition: background .22s, color .22s;
 }
-.btn-primary:hover { background: var(--accent); color: #fff; }
+.btn-primary:hover { background: var(--accent-deep); color: #fff; }
 
 .btn-fill {
   display: inline-flex; align-items: center; gap: .6rem;
   font-size: .72rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
-  color: #fff; background: var(--accent); border: 1px solid var(--accent);
+  color: #fff; background: var(--accent-deep); border: 1px solid var(--accent-deep);
   padding: .85rem 1.75rem; text-decoration: none;
   transition: background .22s, border-color .22s;
 }
-.btn-fill:hover { background: var(--ink); border-color: var(--ink); }
+.btn-fill:hover { background: var(--ink); border-color: var(--ink); color: var(--shade); }
 
 .btn-arrow {
   display: inline-flex; align-items: center; gap: .5rem;
@@ -241,7 +245,7 @@ img { display: block; max-width: 100%; }
 }
 .case-card-img::after {
   content: ''; position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(var(--ink-rgb),0) 40%, rgba(var(--ink-rgb),.75) 100%);
+  background: linear-gradient(180deg, rgba(var(--shade-rgb),0) 40%, rgba(var(--shade-rgb),.75) 100%);
 }
 .case-card-img img,
 .case-card-img picture img {
@@ -306,7 +310,7 @@ img { display: block; max-width: 100%; }
    Übersichtsseite trotz acht Bildern leicht bleibt. */
 .task-card-thumb {
   position: relative; width: min(240px, 100%); aspect-ratio: 16/9; margin-bottom: 1.5rem;
-  overflow: hidden; background: var(--ink);
+  overflow: hidden; background: var(--shade);
 }
 .task-card-thumb img,
 .task-card-thumb picture img {
@@ -691,7 +695,7 @@ img { display: block; max-width: 100%; }
 .hero { position: relative; height: 92vh; min-height: 640px; display: flex; align-items: flex-end; }
 .hero-overlay {
   position: absolute; inset: 0; z-index: 1;
-  background: linear-gradient(180deg, rgba(var(--ink-rgb),.25) 0%, rgba(var(--ink-rgb),.55) 65%, rgba(var(--ink-rgb),.8) 100%);
+  background: linear-gradient(180deg, rgba(var(--shade-rgb),.25) 0%, rgba(var(--shade-rgb),.55) 65%, rgba(var(--shade-rgb),.8) 100%);
 }
 .hero-inner { position: relative; z-index: 2; padding-bottom: clamp(3rem,6vw,5rem); }
 
@@ -699,7 +703,7 @@ img { display: block; max-width: 100%; }
    background-color als sofortiger Platzhalter, damit kein weißes/leeres
    Aufblitzen entsteht, während die (bewusst nur per preload="metadata"
    angeforderte) Datei noch lädt. */
-.hero-video { background: var(--ink); }
+.hero-video { background: var(--shade); }
 
 /* ── VOLLBREITEN-ZÄSUR ─────────────────────────────────────
    Bild über die volle Fensterbreite, mitten im Text. Steht bewusst
@@ -789,14 +793,14 @@ img { display: block; max-width: 100%; }
    Typografie des .hero--type auf fotografischer Bühne. Das Motiv steht
    rechts; der Verlauf legt links eine ruhige, dunkle Fläche für den Text an.
    object-position hält Hände und Werkstück auch im Hochformat im Bild. */
-.hero--foto { background: var(--ink); overflow: hidden; }
+.hero--foto { background: var(--shade); overflow: hidden; }
 .hero--foto > picture,
 .hero--foto > img { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
 .hero--foto img { width: 100%; height: 100%; object-fit: cover; object-position: 62% 50%; }
 .hero--foto .hero-overlay {
   background:
-    linear-gradient(90deg, rgba(var(--ink-rgb),.9) 0%, rgba(var(--ink-rgb),.78) 40%, rgba(var(--ink-rgb),.4) 62%, rgba(var(--ink-rgb),.05) 85%, rgba(var(--ink-rgb),0) 100%),
-    linear-gradient(180deg, rgba(var(--ink-rgb),0) 55%, rgba(var(--ink-rgb),.45) 100%);
+    linear-gradient(90deg, rgba(var(--shade-rgb),.9) 0%, rgba(var(--shade-rgb),.78) 40%, rgba(var(--shade-rgb),.4) 62%, rgba(var(--shade-rgb),.05) 85%, rgba(var(--shade-rgb),0) 100%),
+    linear-gradient(180deg, rgba(var(--shade-rgb),0) 55%, rgba(var(--shade-rgb),.45) 100%);
 }
 .hero--foto .label     { color: rgba(255,255,255,.72); }
 .hero--foto .type-claim{ color: #fff; max-width: 22ch; } /* Umbrüche per <br>, keine Waisen */
@@ -804,12 +808,12 @@ img { display: block; max-width: 100%; }
 .hero--foto .type-sub  { color: rgba(255,255,255,.86); }
 .hero--foto .type-rule { background: rgba(255,255,255,.28); }
 .hero--foto .btn-arrow { color: #fff; }
-.hero--foto .btn-fill:hover { background: #fff; border-color: #fff; color: var(--ink); }
+.hero--foto .btn-fill:hover { background: #fff; border-color: #fff; color: var(--shade); }
 @media (max-width: 720px) {
   .hero--foto img { object-position: 58% 50%; }
   /* Hochformat: Text läuft über die volle Breite, also von unten abdunkeln. */
   .hero--foto .hero-overlay {
-    background: linear-gradient(180deg, rgba(var(--ink-rgb),.35) 0%, rgba(var(--ink-rgb),.6) 40%, rgba(var(--ink-rgb),.9) 100%);
+    background: linear-gradient(180deg, rgba(var(--shade-rgb),.35) 0%, rgba(var(--shade-rgb),.6) 40%, rgba(var(--shade-rgb),.9) 100%);
   }
 }
 
@@ -886,7 +890,7 @@ img { display: block; max-width: 100%; }
    FOOTER
    ══════════════════════════════════════════════════════ */
 .site-footer {
-  background: var(--ink); color: rgba(var(--white-rgb),.85);
+  background: var(--shade); color: rgba(var(--white-rgb),.85);
   padding: clamp(3rem,6vw,5rem) 0 2rem;
 }
 .footer-grid {
@@ -940,3 +944,54 @@ img { display: block; max-width: 100%; }
 .faq-item[open] summary::after{content:"–"}
 .faq-answer{padding:0 0 1.25rem;line-height:1.75}
 .faq-answer a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+
+/* ── Dunkles Schema: Logos ──
+   Logo-Vergleiche (vorher/nachher) stehen auf heller Musterkarte, damit Originalfarben stimmen.
+   Die Logowand zeigt Logos einheitlich als helle Silhouetten. */
+.case-img--logo, .case-img--square { background: var(--light) !important; }
+.logo-tile img { filter: brightness(0) invert(.92); opacity: .78; transition: opacity .3s var(--ease); }
+.logo-tile:hover img { opacity: 1; }
+::selection { background: var(--accent-deep); color: #fff; }
+
+/* ── Startseite: Antworten auf den Wandel ──
+   Bilder aus der Welt der Kunden; die Bildunterschrift trägt die Einsicht.
+   Bewegung mit Zweck: Das Bild öffnet sich beim Hineinscrollen wie ein Vorhang
+   (der Fall "öffnet sich"), beim Zeigen tritt die Einsicht hervor. */
+.wandel { padding-block: clamp(5rem, 9vw, 8rem) 1rem; }
+.wandel-head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 1.5rem; align-items: end; margin-bottom: clamp(2rem, 4vw, 3.5rem); }
+.wandel-head h2 { grid-column: span 6; margin: 0; }
+.wandel-head p { grid-column: 8 / span 5; margin: 0; color: rgba(var(--ink-rgb), .78); }
+.wandel-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: clamp(1rem, 2vw, 1.5rem); }
+.wandel-tile { display: block; color: var(--ink); text-decoration: none; }
+.wandel-tile--7 { grid-column: span 7; } .wandel-tile--5 { grid-column: span 5; } .wandel-tile--4 { grid-column: span 4; }
+.wandel-img { position: relative; overflow: hidden; background: var(--paper-2); }
+.wandel-tile--7 .wandel-img, .wandel-tile--5 .wandel-img { aspect-ratio: 4 / 3; }
+.wandel-tile--4 .wandel-img { aspect-ratio: 5 / 4; }
+.wandel-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 1.2s var(--ease); }
+.wandel-tile:hover .wandel-img img, .wandel-tile:focus-visible .wandel-img img { transform: scale(1.045); }
+.wandel-cap { display: flex; flex-direction: column; gap: .2rem; padding-top: 1rem; position: relative; }
+.wandel-cap::before { content: ""; position: absolute; top: 0; left: 0; height: 2px; width: 2.5rem; background: var(--accent); transition: width .8s var(--ease); }
+.wandel-tile:hover .wandel-cap::before, .wandel-tile:focus-visible .wandel-cap::before { width: 100%; }
+.wandel-name { font-weight: 500; font-size: .9375rem; padding-top: .5rem; }
+.wandel-line { font-size: .9375rem; color: rgba(var(--ink-rgb), .64); transition: color .4s var(--ease); }
+.wandel-tile:hover .wandel-line, .wandel-tile:focus-visible .wandel-line { color: var(--ink); }
+.wandel-tile:focus-visible { outline: 2px solid var(--accent); outline-offset: 6px; }
+@supports (animation-timeline: view()) {
+  .wandel-img { animation: wandel-open linear both; animation-timeline: view(); animation-range: entry 0% entry 70%; }
+  @keyframes wandel-open { from { clip-path: inset(18% 0 0 0); } to { clip-path: inset(0 0 0 0); } }
+}
+@media (max-width: 860px) {
+  .wandel-head h2, .wandel-head p { grid-column: 1 / -1; }
+  .wandel-tile--7, .wandel-tile--5 { grid-column: 1 / -1; }
+  .wandel-tile--4 { grid-column: span 6; }
+}
+@media (max-width: 560px) { .wandel-tile--4 { grid-column: 1 / -1; } }
+@media (prefers-reduced-motion: reduce) {
+  .wandel-img { animation: none; clip-path: none; }
+  .wandel-img img, .wandel-cap::before { transition: none; }
+}
+
+/* ── Fallstudien-Hero: kurzes Statement groß, die beschreibende H1 (Suchbegriffe) darunter kleiner ── */
+.case-claim { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: clamp(3rem, 7vw, 6.5rem); line-height: .95; letter-spacing: -.01em; color: #fff; margin: 0 0 1.25rem; }
+.case-claim .type-dot { color: #7FB8C2; }
+.case-h1 { font-family: inherit; font-size: clamp(1.05rem, 1.6vw, 1.35rem); font-weight: 500; line-height: 1.4; color: rgba(255,255,255,.88); max-width: 46ch; margin: 0; }
