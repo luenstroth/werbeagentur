@@ -656,7 +656,7 @@ img { display: block; max-width: 100%; }
 .logo-tile-cap {
   position: absolute; left: 0; right: 0; bottom: 0; z-index: 2;
   display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
-  height: 42%; padding: .75rem 1.25rem;
+  height: auto; min-height: 42%; max-height: 100%; padding: .75rem 1.25rem; /* waechst mit dem Text, statt ihn abzuschneiden */
   background: rgba(var(--accent-rgb),.86);
   backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
   opacity: 0;
