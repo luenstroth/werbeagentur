@@ -14,14 +14,13 @@ pageSchema: |
 ---
 
 {%- set hero = {
-  img: "img/arbeitsweise.jpg",
-  alt: "Zwei Personen arbeiten mit Winkelmesser und Stift an einer technischen Zeichnung",
+  text: "Erst verstehen",
+  effect: "focus",
   label: "Arbeitsweise der Agentur",
-  claim: "Erst verstehen<span class=\"type-dot\">.</span>",
   sub: "Wie ein Konzept so angelegt wird, dass es sich an internationale Märkte und unterschiedliche Preislagen anpassen lässt, statt überall unverändert zu gelten.",
   labelIsH1: false
 } %}
-{% include "hero-foto.njk" %}
+{% include "hero-statement.njk" %}
 
 <!-- 01 — KONZEPT -->
 <section class="container measure section-block section-block--tight">

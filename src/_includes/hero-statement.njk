@@ -1,0 +1,18 @@
+{#- Typografische Bühne ohne Foto: das Statement ist das Bild.
+    Aufruf: {% set hero = { text: "Erst verstehen", effect: "focus" | "align", label: "…", sub: "…", labelIsH1: true|false } %}{% include "hero-statement.njk" %}
+    focus  Buchstaben stellen sich von der Mitte nach außen scharf (wie ein Objektiv)
+    align  Buchstaben kommen aus leicht versetzten Lagen auf eine gemeinsame Grundlinie
+    Für Screenreader steht der ganze Satz im aria-label; die einzelnen Buchstaben sind ausgeblendet. -#}
+{%- set L = hero.text | statementLetters -%}
+<header class="hero hero--statement stmt-wrap">
+  <div class="container hero-inner">
+    {%- set tag = "p" if hero.labelIsH1 else "h1" -%}
+    {%- if hero.labelIsH1 %}<h1 class="label stmt-label">{{ hero.label }}</h1>{% else %}<p class="label stmt-label">{{ hero.label }}</p>{% endif %}
+    <{{ tag }} class="stmt stmt--{{ hero.effect }}" aria-label="{{ hero.text }}." style="--n:{{ L.n }};--m:{{ L.mid }};">
+      {%- for w in L.words %}<span class="stmt-w" aria-hidden="true">{% for l in w %}<span class="stmt-l" style="--i:{{ l.i }};--dy:{{ l.dy }}em;--dx:{{ l.dx }}em;--rot:{{ l.rot }}deg;">{{ l.c }}</span>{% endfor %}</span>{% if not loop.last %} {% endif %}{% endfor %}<span class="stmt-dot" aria-hidden="true">.</span>
+    </{{ tag }}>
+    {%- if hero.sub %}
+    <p class="type-sub stmt-sub">{{ hero.sub }}</p>
+    {%- endif %}
+  </div>
+</header>

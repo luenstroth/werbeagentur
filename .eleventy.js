@@ -112,6 +112,15 @@ module.exports = function (eleventyConfig) {
     return paare;
   });
 
+  // Statement in Buchstaben zerlegen (für .stmt-Animationen). Streuwerte sind deterministisch, damit jeder Build gleich aussieht.
+  eleventyConfig.addFilter("statementLetters", (text = "") => {
+    let i = 0;
+    const words = String(text).trim().split(/\s+/).map((w) => [...w].map((c) => {
+      const k = i++;
+      return { c, i: k, dy: (((k * 37) % 11) - 5) * 0.14, dx: (((k * 23) % 7) - 3) * 0.05, rot: (((k * 53) % 9) - 4) * 3 };
+    }));
+    return { words, n: i, mid: (i - 1) / 2 };
+  });
   eleventyConfig.addFilter("plaintext", (html = "") => String(html)
     .replace(/<(script|style|svg|noscript)[\s\S]*?<\/\1>/gi, "")
     .replace(/<\/(p|h[1-6]|li|div|section|figcaption|blockquote|tr|header)>/gi, "\n")

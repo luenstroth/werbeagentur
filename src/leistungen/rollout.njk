@@ -20,14 +20,13 @@ pageSchema: |
   }
 ---
 {%- set hero = {
-  img: "img/Rollout.jpg",
-  alt: "Zwei Hände legen geometrische Papierformen auf eine weiße Fläche",
+  text: "Überall gleich",
+  effect: "align",
   label: "Rollout des neuen Auftritts",
-  claim: "Überall gleich<span class=\"type-dot\">.</span>",
   sub: "Neuer Name, korrigiertes Logo, neue Ordnung. Jetzt muss es dort ankommen, wo Kunden es sehen — überall gleichzeitig.",
   labelIsH1: true
 } %}
-{% include "hero-foto.njk" %}
+{% include "hero-statement.njk" %}
 
 <!-- 01 — DIE LAGE -->
 <section class="container measure section-block section-block--tight">
