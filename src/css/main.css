@@ -1,4 +1,4 @@
-﻿/* ══════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════
    LÜNSTROTH WERBEAGENTUR — Design-Tokens
    Prinzip: Basisfarbe getrennt von Deckkraft (RGB-Tripel),
    damit jede Deckkraft-Nuance über rgba(var(--x-rgb),N) erhalten
@@ -149,8 +149,8 @@ img { display: block; max-width: 100%; }
 /* Einheitlicher vertikaler Sektionsabstand — .section-block für
    normale Zwischenräume, .section-block--tight wenn zwei Abschnitte
    inhaltlich zusammengehören (z.B. Text + zugehöriges Bildraster). */
-.section-block { padding: 7rem 0 0; }
-.section-block--tight { padding: 1rem 0 0; }
+.section-block { padding-block: 7rem 0; }
+.section-block--tight { padding-top: 1rem; }
 .section-block--close { padding-bottom: 7rem; }
 
 /* ══════════════════════════════════════════════════════
@@ -396,13 +396,13 @@ img { display: block; max-width: 100%; }
     transition: none;
     animation: reveal-in linear forwards;
     animation-timeline: view();
-    /* Start, sobald das Element 10 % im Viewport ist; fertig bei 38 %. */
-    animation-range: entry 10% cover 38%;
+    /* Voll sichtbar, sobald die Oberkante 140 px im Viewport steht – unabhängig von der Elementhöhe. */
+    animation-range: entry 0px entry 140px;
   }
   /* Der Versatz der Nachbarn entsteht über den Range, nicht über delay —
      transition-delay hat in einer Scroll-Timeline keine Wirkung. */
-  .reveal-delay-1 { animation-range: entry 14% cover 44%; }
-  .reveal-delay-2 { animation-range: entry 18% cover 50%; }
+  .reveal-delay-1 { animation-range: entry 20px entry 160px; }
+  .reveal-delay-2 { animation-range: entry 40px entry 180px; }
 
   /* Elemente, die beim Laden schon im Viewport stehen (Hero, erste Sektion),
      dürfen nicht unsichtbar bleiben, wenn ihr Range bereits vorbei ist. */
