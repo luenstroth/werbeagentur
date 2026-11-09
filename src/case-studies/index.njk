@@ -34,12 +34,14 @@ breadcrumbName: "Case Studies"
 }
 </script>
 
-{% from "hero-type.njk" import heroType %}
-{{ heroType(
-  "Case Studies: Markenprojekte aus dem Mittelstand",
-  ["Dreizehn", "Antworten"],
-  "Man ruft an, weil ein Unternehmen übernommen wurde. Weil die Gründergeneration abtritt. Weil international mehr Umsatz her muss. Dreizehn echte Fragen, dreizehn unterschiedliche Lösungen."
-) }}
+{%- set hero = {
+  text: "Wirksam",
+  effect: "impact",
+  label: "Case Studies: Markenprojekte aus dem Mittelstand",
+  sub: "Man ruft an, weil ein Unternehmen übernommen wurde. Weil die Gründergeneration abtritt. Weil international mehr Umsatz her muss. Dreizehn echte Fragen, dreizehn unterschiedliche Lösungen.",
+  labelIsH1: true
+} %}
+{% include "hero-statement.njk" %}
 
 <section class="container" style="padding-block:4rem 5rem;">
   <div class="grid-3 case-grid" style="background:none;gap:clamp(2rem,3vw,3rem);">

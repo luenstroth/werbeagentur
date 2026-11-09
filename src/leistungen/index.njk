@@ -35,12 +35,14 @@ ogImageSrc: "img/Listungsgespraech.jpg"
 }
 </script>
 
-{% from "hero-type.njk" import heroType %}
-{{ heroType(
-  "Leistungen der Werbeagentur: sechs Anlässe",
-  ["Begehrt", "statt", "verglichen"],
-  "Listungsgespräch, Produkteinführung, Auslandsmarkt, neuer Auftritt: In jedem dieser Momente entscheidet sich, ob ein Angebot eines von vielen ist – oder das, auf das niemand verzichten will. Wir gestalten diese Momente so, dass es das Zweite wird."
-) }}
+{%- set hero = {
+  text: "Begehrt statt verglichen",
+  effect: "desire",
+  label: "Leistungen der Werbeagentur: sechs Anlässe",
+  sub: "Listungsgespräch, Produkteinführung, Auslandsmarkt, neuer Auftritt: In jedem dieser Momente entscheidet sich, ob ein Angebot eines von vielen ist – oder das, auf das niemand verzichten will. Wir gestalten diese Momente so, dass es das Zweite wird.",
+  labelIsH1: true
+} %}
+{% include "hero-statement.njk" %}
 
 <section class="container section-block section-block--close" style="max-width:1100px;">
   <div class="grid-2" style="background:none;gap:clamp(1.5rem,2.5vw,2.5rem);">

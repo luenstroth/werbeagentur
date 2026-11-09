@@ -32,12 +32,14 @@ breadcrumbName: "Case Studies"
 }
 </script>
 
-{% from "hero-type.njk" import heroType %}
-{{ heroType(
-  "Case studies: brand projects from mid-sized companies",
-  ["Thirteen", "answers"],
-  "People call because a company has been acquired. Because the founding generation is stepping down. Because international revenue has to grow. Thirteen real questions, thirteen different solutions."
-) }}
+{%- set hero = {
+  text: "Effective",
+  effect: "impact",
+  label: "Case studies: brand projects from mid-sized companies",
+  sub: "People call because a company has been acquired. Because the founding generation is stepping down. Because international revenue has to grow. Thirteen real questions, thirteen different solutions.",
+  labelIsH1: true
+} %}
+{% include "hero-statement.njk" %}
 
 <section class="container" style="padding-block:4rem 5rem;">
   <div class="grid-3 case-grid" style="background:none;gap:clamp(2rem,3vw,3rem);">
