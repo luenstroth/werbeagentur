@@ -632,6 +632,8 @@ img { display: block; max-width: 100%; }
 /* Auf Anthrazit: Medienlogos einheitlich hell wie die Logo-Wand */
 .media-logo img { filter: brightness(0) invert(.92); opacity: .85; transition: opacity .3s var(--ease); }
 .media-logo:hover img, .media-logo:focus-visible img { opacity: 1; }
+/* Logos mit eigener Fläche: umkehren statt einfärben, sonst bleibt nur ein heller Block */
+.media-logo img[src*="Kuechenplaner"], .media-logo img[src*="NW-Medienreport"] { filter: grayscale(1) invert(.9); mix-blend-mode: lighten; }
 
 /* Logowand — Ausgangszustand alle Logos farbig, großzügig (drei
    pro Reihe). Beim Hovern EINER Kachel werden alle übrigen grau
