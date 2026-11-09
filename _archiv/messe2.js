@@ -1,0 +1,4 @@
+﻿const fs=require('fs');const F=['gneuss','hella','piasten','werner-works'];let n=0;
+const R=[['"Messeauftritte: Konzeption, Gestaltung, Ausstattung und Betreuung der Messestände"','"Messeauftritte: Konzeption und Gestaltung"'],['Messeauftritten.</p>','Messekonzepten.</p>'],['Messeauftritte für','Messekonzepte für'],['"Trade fair presence: concept, design, fit-out and ongoing support for the exhibition stands"','"Trade fair presence: concept and design"'],['trade fair presence for','trade fair concepts for'],['trade fair presence.</p>','trade fair concepts.</p>']];
+for(const f of F)for(const p of ['src/case-studies/','src/en/case-studies/']){const x=p+f+'.njk';let s=fs.readFileSync(x,'utf8');for(const[a,b]of R){const c=s.split(a).length-1;n+=c;s=s.split(a).join(b);}fs.writeFileSync(x,s,'utf8');}
+console.log('Ersetzungen',n);
