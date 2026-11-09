@@ -10,7 +10,7 @@
   --paper-rgb:  31,29,27;      /* Anthrazit, Hintergrund (dunkles Schema seit 08.11.2026) */
   --shade-rgb:  17,15,14;      /* festes Dunkel für Bild-Überlagerungen, unabhängig vom Schema */
   --ink-rgb:    245,242,238;   /* Papierweiß, Haupttext */
-  --accent-rgb:   127,196,208;  /* helles Petrol: Akzent für Text und Linien auf Dunkel */
+  --accent-rgb:   201,195,186;  /* warmes Hellgrau: Akzent für Text und Linien auf Dunkel (keine Buntfarbe, 09.11.2026) */
   --white-rgb:  255,255,255;   /* reines Weiß, nur für Text auf Accent/Ink */
 
   /* Feste Farbwerte (Basis ohne Deckkraft-Variation) */
@@ -21,9 +21,9 @@
   --shade:      #110f0e;   /* festes Dunkel: Fußzeile, Bildbühnen */
   --light:      #f5f2ee;   /* helle Fläche für Logo-Musterkarten */
   --ink-2:      #d9d4cd;
-  --accent:       #7FC4D0;
-  --accent-deep:  #0D4F5C;   /* Petrol der Marke: Flächen, Buttons */
-  --accent-light: #A9D6DE;
+  --accent:       #C9C3BA;
+  --accent-deep:  #F5F2EE;   /* helle Fläche für Buttons, Schrift darauf dunkel */
+  --accent-light: #E4DFD8;
 
   /* Layout */
   --max:  1440px;
@@ -181,16 +181,16 @@ img { display: block; max-width: 100%; }
   padding: .85rem 1.75rem; text-decoration: none;
   transition: background .22s, color .22s;
 }
-.btn-primary:hover { background: var(--accent-deep); color: #fff; }
+.btn-primary:hover { background: var(--accent-deep); color: var(--shade); }
 
 .btn-fill {
   display: inline-flex; align-items: center; gap: .6rem;
   font-size: .72rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
-  color: #fff; background: var(--accent-deep); border: 1px solid var(--accent-deep);
+  color: var(--shade); background: var(--accent-deep); border: 1px solid var(--accent-deep);
   padding: .85rem 1.75rem; text-decoration: none;
   transition: background .22s, border-color .22s;
 }
-.btn-fill:hover { background: var(--ink); border-color: var(--ink); color: var(--shade); }
+.btn-fill:hover { background: var(--accent); border-color: var(--accent); color: var(--shade); }
 
 .btn-arrow {
   display: inline-flex; align-items: center; gap: .5rem;
@@ -221,7 +221,7 @@ img { display: block; max-width: 100%; }
 }
 .card-title { font-size: 1.3rem; font-weight: 600; margin-bottom: .75rem; }
 .card-desc { font-size: .9375rem; line-height: 1.7; color: rgba(var(--ink-rgb),.62); }
-.card-desc a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(13,79,92,.3); transition: border-color .2s; }
+.card-desc a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(var(--accent-rgb),.3); transition: border-color .2s; }
 .card-desc a:hover, .card-desc a:focus-visible { border-bottom-color: var(--accent); }
 /* Links in Karten-Überschriften folgen der Typografie, nicht dem Browser-Default. */
 .card-title a {
@@ -661,7 +661,7 @@ img { display: block; max-width: 100%; }
   position: absolute; left: 0; right: 0; bottom: 0; z-index: 2;
   display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
   height: auto; min-height: 42%; max-height: 100%; padding: .75rem 1.25rem; /* waechst mit dem Text, statt ihn abzuschneiden */
-  background: rgba(13,79,92,.94);
+  background: rgba(var(--shade-rgb),.94);
   backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
   opacity: 0;
   transition: opacity .65s var(--ease);
@@ -678,7 +678,7 @@ img { display: block; max-width: 100%; }
   display: flex; align-items: center; justify-content: center; gap: .4rem;
   margin-top: .65rem; padding: .35rem .85rem;
   font-size: .625rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
-  color: var(--accent-deep); background: #fff;
+  color: var(--shade); background: #fff;
   opacity: 0; transform: translateY(6px);
   transition: opacity .5s var(--ease) .32s, transform .5s var(--ease) .32s;
 }
@@ -951,7 +951,7 @@ img { display: block; max-width: 100%; }
 .case-img--logo, .case-img--square { background: var(--light) !important; }
 .logo-tile img { filter: brightness(0) invert(.92); opacity: .78; transition: opacity .3s var(--ease); }
 .logo-tile:hover img { opacity: 1; }
-::selection { background: var(--accent-deep); color: #fff; }
+::selection { background: var(--accent); color: var(--shade); }
 
 /* ── Startseite: Antworten auf den Wandel ──
    Bilder aus der Welt der Kunden; die Bildunterschrift trägt die Einsicht.
@@ -1076,3 +1076,6 @@ img { display: block; max-width: 100%; }
   .stmt-l, .stmt-dot, .stmt-label, .stmt-sub { animation: none !important; opacity: 1 !important; filter: none !important; transform: none !important; }
   .stmt-wrap .hero-inner, .stmt-w { animation: none !important; }
 }
+
+/* Ohne Buntfarbe: Links im Fließtext über Gewicht statt Farbe erkennbar */
+.body-lg a, .card-desc a, .faq-item a, main p a { font-weight: 600; text-decoration: none; }
