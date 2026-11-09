@@ -134,4 +134,7 @@ ErrorDocument 410 /404.html
 
 # Messe als Leistung entfernt (08.11.2026) – auf die Leistungsübersicht
 RewriteRule ^leistungen/messeauftritt/?$ /leistungen/ [R=301,L]
+# Case Study Kühlmann entfernt (09.11.2026)
+RewriteRule ^case-studies/kuehlmann/?$ /case-studies/ [R=301,L]
+RewriteRule ^en/case-studies/kuehlmann/?$ /en/case-studies/ [R=301,L]
 RewriteRule ^en/services/trade-fair/?$ /en/services/ [R=301,L]
