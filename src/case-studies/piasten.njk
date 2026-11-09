@@ -76,25 +76,6 @@ client: "Piasten"
   </div>
 </section>
 
-<section class="container" style="padding-block:1rem 4rem;max-width:1100px;">
-  <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Entwicklungen, die nicht ins Sortiment kamen</h2>
-  <p class="body-lg reveal" style="margin-bottom:1.5rem;max-width:760px;">Zwei Projekte umfassten neben Marke und Verpackung auch ein neues Produkt: <strong>Graf Zeppelin</strong> mit dem Packungsclaim „Die längste Praline der Welt“ und <strong>Character de Cipan</strong>, eine Marzipan-Confiserie, bei der Produkt und Verpackung dieselbe Pyramidenform haben.</p>
-  <p class="body-lg reveal reveal-delay-1" style="margin-bottom:2rem;max-width:760px;">Beide durchliefen die Testphase und wurden nicht ins Sortiment übernommen. Genau dafür ist der Test da: Die Entscheidung fiel vor den Investitionen in Produktionswerkzeuge, Linienumstellung und Listung. Dasselbe gilt für mehrere Markenentwicklungen, die als Vorrat für künftige Sortimente entstanden und bis heute nicht eingeführt wurden.</p>
-  <div class="grid-2 reveal reveal-delay-1" style="background:none;gap:clamp(1.5rem,2.5vw,2.5rem);">
-    {%- for p in [
-      {f:"food/graf-zeppelin.webp", c:"Graf Zeppelin – Edition de Luxe"},
-      {f:"food/pyramiden-packaging.webp", c:"Character de Cipan – Pyramidenverpackung"}
-    ] %}
-    <div>
-      <div class="case-img" style="aspect-ratio:4/3;background:var(--paper);margin-bottom:.75rem;">
-        <img src="/img/{{ p.f }}" alt="{{ p.c }}" loading="lazy" style="object-fit:contain;">
-      </div>
-      <p class="compare-text">{{ p.c }}</p>
-    </div>
-    {%- endfor %}
-  </div>
-</section>
-
 <section class="container" style="padding-block:1rem 3rem;max-width:760px;">
   <h2 class="display-md reveal" style="margin-bottom:1.5rem;">Leistungsumfang</h2>
   <ul class="check-list">
@@ -103,8 +84,7 @@ client: "Piasten"
       "Package Design für den deutschen Markt und für Exportmärkte",
       "Private-Label-Verpackungen für Handelspartner",
       "Prüfung von Markenrecht, Verwechslungsgefahr und Kennzeichnungspflichten",
-      "Abverkaufstest mit eigenen Verfahren vor Produktionsbeginn",
-      "Marke und Verpackung für Produkt-Neuentwicklungen bis zur Testphase"
+      "Abverkaufstest mit eigenen Verfahren vor Produktionsbeginn"
     ] %}
     <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
       <span class="check-icon"></span>
