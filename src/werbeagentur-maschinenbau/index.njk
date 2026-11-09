@@ -1,0 +1,88 @@
+---
+layout: base.njk
+title: "Werbeagentur Maschinenbau: Technologieführer sichtbar machen"
+description: "Weltmarktführer in der Nische, außerhalb der Fachwelt kaum bekannt: Markenauftritt, Website und Video für Maschinenbau und Industrietechnik."
+permalink: /werbeagentur-maschinenbau/
+ogImageSrc: "img/gneuss-hero.jpg"
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Werbeagentur für Maschinenbau",
+    "serviceType": "Markenkommunikation für Maschinenbau und Industrietechnik",
+    "provider": { "@id": "https://luenstroth-werbeagentur.de/#organisation" },
+    "areaServed": "Worldwide"
+  }
+---
+{%- set hero = {
+  text: "Präzise erklärt",
+  effect: "write",
+  label: "Werbeagentur für Maschinenbau und Industrietechnik",
+  sub: "Technisch führend, nach außen kaum sichtbar: Viele Maschinenbauer sind bekannter bei ihren Wettbewerbern als bei ihren künftigen Kunden.",
+  labelIsH1: true
+} %}
+{% include "hero-statement.njk" %}
+
+<!-- 01 — DIE LAGE -->
+<section class="container measure section-block section-block--tight">
+  <p class="label reveal" style="margin-bottom:1rem;">01 — Die Lage</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Weltmarktführer in der Nische – und unsichtbar</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Viele Maschinenbauer sind in ihrem Segment Technologie- oder Weltmarktführer. Nach außen ist das oft nicht annähernd so sichtbar, wie es die technische Bedeutung des Unternehmens rechtfertigen würde. Der Auftritt zeigt noch die Erfindung, mit der alles begann, während das Portfolio längst weit darüber hinausgewachsen ist.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Gekauft wird eine Maschine selten von einer Person. Der Ingenieur prüft die Technik, der Einkauf Preis und Lieferfähigkeit, die Geschäftsführung das Risiko. Gekauft wird eine Technologie – und das Unternehmen, das in zehn Jahren noch dahintersteht. Erklärungsbedürftige Produkte sind dabei kein Nachteil: Richtig erklärt sind sie überaus begehrenswert.</p>
+  <p class="pull-quote reveal reveal-delay-2">Ein technischer Vorteil wird erst zum Grund, wenn jemand übersetzt, was er für den jeweiligen Entscheider bedeutet.</p>
+</section>
+
+<!-- 02 — WAS ENTSTEHT -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">02 — Was dafür entsteht</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.5rem;">Vom Logo bis zum Datenblatt</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "Eine Markenausrichtung, die das heutige Portfolio zeigt und nicht nur die Herkunft",
+      "Logo-Korrektur oder Logo-Relaunch – so tief wie nötig, so behutsam wie möglich",
+      "Websites mit einer Struktur nach den Fragen von Ingenieur, Einkauf und Geschäftsführung",
+      "Texte, die technische Vorteile in den Nutzen übersetzen, der für die jeweilige Zielgruppe zählt",
+      "Imagevideo und Bildwelt aus der eigenen Produktion",
+      "Mehrsprachige Kommunikation für internationale Märkte, vorab sprachlich, kulturell und markenrechtlich geprüft"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<!-- 03 — BELEGE -->
+<section class="container section-block" style="max-width:1100px;">
+  <p class="label reveal" style="margin-bottom:1rem;">03 — Belege</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:2rem;max-width:760px;">Aus Maschinenbau und Industrietechnik</h2>
+  <div class="grid-3" style="background:none;gap:clamp(1.5rem,2.5vw,2.5rem);">
+    <a href="/case-studies/gneuss/" class="card reveal">
+      <div class="card-num">A</div>
+      <h3 class="card-title">Gneuss</h3>
+      <p class="card-desc">Technologieführer in der Kunststoffverarbeitung, familiengeführt, im Generationswechsel: Das Signet entfiel, die Wortmarke blieb.</p>
+    </a>
+    <a href="/case-studies/meco/" class="card reveal reveal-delay-1">
+      <div class="card-num">B</div>
+      <h3 class="card-title">Meco</h3>
+      <p class="card-desc">Tiefes Know-how im Flüssigkeitstransport, im alten Auftritt kaum erkennbar. Neue Website, angepasstes Logo, eigenes Imagevideo.</p>
+    </a>
+    <a href="/case-studies/cobiax/" class="card reveal reveal-delay-2">
+      <div class="card-num">C</div>
+      <h3 class="card-title">Cobiax</h3>
+      <p class="card-desc">Bautechnik für internationale Märkte: ein Auftritt, der größer gedacht ist als der Heimatmarkt.</p>
+    </a>
+  </div>
+</section>
+
+<!-- 04 — ANLÄSSE -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">04 — Anlässe</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Wann Maschinenbauer die Agentur holen</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Wenn die Gründergeneration übergibt oder das Portfolio der Marke davongewachsen ist: <a href="/leistungen/markenrelaunch/" style="color:var(--accent);">Markenrelaunch</a>. Wenn eine neue Maschine oder Technologie auf den Markt kommt: <a href="/leistungen/produkteinfuehrung/" style="color:var(--accent);">Produkteinführung</a>. Wenn der Export wachsen soll: <a href="/leistungen/auslandsmaerkte/" style="color:var(--accent);">Auslandsmärkte</a>.</p>
+</section>
+
+<section class="container measure" style="padding-block:1rem 7rem;">
+  <a href="/kontakt/" class="btn-fill reveal">Projekt anfragen</a>
+</section>

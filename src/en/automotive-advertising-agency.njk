@@ -1,0 +1,84 @@
+---
+title: "Automotive advertising agency: communication for suppliers and the aftermarket"
+description: "The brand rarely reaches the vehicle owner directly: workshops, trade and franchise partners have a say. Automotive communication across every level and market."
+permalink: /en/automotive-advertising-agency/
+key: /werbeagentur-automotive/
+ogImageSrc: "img/hella-hero.jpg"
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Automotive advertising agency",
+    "serviceType": "Brand communication for automotive suppliers and the aftermarket",
+    "inLanguage": "en",
+    "provider": { "@id": "https://luenstroth-werbeagentur.de/#organisation" },
+    "areaServed": "Worldwide"
+  }
+---
+{%- set hero = {
+  text: "Down to the workshop",
+  effect: "shelve",
+  label: "Automotive advertising agency: suppliers and the aftermarket",
+  sub: "Between manufacturer and vehicle owner stand workshops, trade and franchise partners. Each of these levels has a say – by its own criteria.",
+  labelIsH1: true
+} %}
+{% include "hero-statement.njk" %}
+
+<!-- 01 — THE SITUATION -->
+<section class="container measure section-block section-block--tight">
+  <p class="label reveal" style="margin-bottom:1rem;">01 — The situation</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">One brand, several levels, one end customer at the end</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">An automotive supplier almost never reaches the vehicle owner directly. In between are independent workshops, trade, franchise chains and – in the original equipment business – the vehicle manufacturers themselves. Each of these levels judges the same brand by its own criteria: the workshop asks about availability, fitting and service, the trade about margin and demand, the vehicle owner about safety and trust.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Then there is the international dimension. What counts as premium quality in one market is already average in a technologically more advanced one. Price structures, labelling requirements and trademark law differ from country to country.</p>
+  <p class="pull-quote reveal reveal-delay-2">In this business, communication for everyone reaches no one properly.</p>
+</section>
+
+<!-- 02 — WHAT IS CREATED -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">02 — What is created</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.5rem;">Thought through level by level, delivered market by market</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "A distinct but consistent approach for end customers, workshops, trade and specialist partners",
+      "Online service portals and microsites for workshops",
+      "Brand design and naming for partner and franchise concepts",
+      "Multilingual moving image on a shared visual base, with lettering per language",
+      "Brand execution that holds up legally across markets with different quality and price levels",
+      "Websites that give engineers, purchasing and management each their own reason"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<!-- 03 — EVIDENCE -->
+<section class="container section-block" style="max-width:1100px;">
+  <p class="label reveal" style="margin-bottom:1rem;">03 — Evidence</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:2rem;max-width:760px;">From vehicle technology</h2>
+  <div class="grid-2" style="background:none;gap:clamp(1.5rem,2.5vw,2.5rem);">
+    <a href="/en/case-studies/hella/" class="card reveal">
+      <div class="card-num">A</div>
+      <h3 class="card-title">Hella</h3>
+      <p class="card-desc">One brand for workshops, trade, franchise partners and end customers – international, but not uniform. Plus a channel of its own for small-series vehicle manufacturers.</p>
+    </a>
+    <a href="/en/case-studies/meco/" class="card reveal reveal-delay-1">
+      <div class="card-num">B</div>
+      <h3 class="card-title">Meco</h3>
+      <p class="card-desc">From carburettor manufacturer to specialist in transferring refrigerant, fuel and coolant – with a website, an adapted logo and an image film.</p>
+    </a>
+  </div>
+</section>
+
+<!-- 04 — OCCASIONS -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">04 — Occasions</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">When automotive companies bring in the agency</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">When the company has changed and its brand presence has to follow: <a href="/en/services/brand-relaunch/" style="color:var(--accent);">brand relaunch</a>. When a new product has to convince every level: <a href="/en/services/product-launch/" style="color:var(--accent);">product launch</a>. When the same brand has to hold its own in countries with different rules: <a href="/en/services/international-markets/" style="color:var(--accent);">international markets</a>.</p>
+</section>
+
+<section class="container measure" style="padding-block:1rem 7rem;">
+  <a href="/en/contact/" class="btn-fill reveal">Start a project</a>
+</section>

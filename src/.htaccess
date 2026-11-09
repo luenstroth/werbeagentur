@@ -137,4 +137,11 @@ RewriteRule ^leistungen/messeauftritt/?$ /leistungen/ [R=301,L]
 # Case Study Kühlmann entfernt (09.11.2026)
 RewriteRule ^case-studies/kuehlmann/?$ /case-studies/ [R=301,L]
 RewriteRule ^en/case-studies/kuehlmann/?$ /en/case-studies/ [R=301,L]
+# Leistungsstruktur 09.11.2026: Website und Rollout im Markenrelaunch, Listung entfällt
+RewriteRule ^leistungen/website-b2b/?$ /leistungen/markenrelaunch/ [R=301,L]
+RewriteRule ^leistungen/rollout/?$ /leistungen/markenrelaunch/ [R=301,L]
+RewriteRule ^leistungen/listungsgespraech-handel/?$ /leistungen/ [R=301,L]
+RewriteRule ^en/services/b2b-website/?$ /en/services/brand-relaunch/ [R=301,L]
+RewriteRule ^en/services/brand-rollout/?$ /en/services/brand-relaunch/ [R=301,L]
+RewriteRule ^en/services/retail-listing/?$ /en/services/ [R=301,L]
 RewriteRule ^en/services/trade-fair/?$ /en/services/ [R=301,L]

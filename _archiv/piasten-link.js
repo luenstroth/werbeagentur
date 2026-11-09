@@ -1,0 +1,3 @@
+﻿const fs=require('fs');
+for(const[f,re,b]of[['src/case-studies/piasten.njk',/<a href="\/leistungen\/listungsgespraech-handel\/" style="color:var\(--accent\);">Mehr zum Listungsgespräch beim Handel ([^<]*)<\/a>/,'<a href="/leistungen/auslandsmaerkte/" style="color:var(--accent);">Mehr zu Auslandsmärkten $1</a>'],['src/en/case-studies/piasten.njk',/<a href="\/en\/services\/retail-listing\/" style="color:var\(--accent\);">More on the retail listing meeting ([^<]*)<\/a>/,'<a href="/en/services/international-markets/" style="color:var(--accent);">More on international markets $1</a>']]){let s=fs.readFileSync(f,'utf8');if(!re.test(s))throw new Error(f);fs.writeFileSync(f,s.replace(re,b),'utf8');}
+console.log('OK');

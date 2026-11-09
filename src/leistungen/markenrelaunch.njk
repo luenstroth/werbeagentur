@@ -1,0 +1,136 @@
+---
+layout: base.njk
+title: "Markenrelaunch nach Übernahme, Fusion oder Generationswechsel"
+description: "Das Unternehmen hat sich verändert, der Auftritt noch nicht. Markenrelaunch mit Corporate Design, Website und Rollout – erneuert, ohne die Wiedererkennung zu verlieren."
+permalink: /leistungen/markenrelaunch/
+tags: ["anlass"]
+anlassOrder: 1
+anlassName: "Das Unternehmen hat sich verändert – der Auftritt noch nicht"
+anlassTeaser: "Übernahme, Fusion, Generationswechsel, ein neues Geschäftsfeld: Der Auftritt muss folgen, ohne dass Kunden die Marke verlieren."
+ogImageSrc: "img/Rollout.jpg"
+heroAlt: "Zwei Hände legen geometrische Papierformen auf eine weiße Fläche"
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Markenrelaunch",
+    "serviceType": "Markenrelaunch, Corporate Design, Website-Relaunch, Corporate-Design-Rollout",
+    "provider": { "@id": "https://luenstroth-werbeagentur.de/#organisation" },
+    "areaServed": "Worldwide"
+  }
+---
+{%- set hero = {
+  text: "Erneuert, wiedererkannt",
+  effect: "align",
+  label: "Markenrelaunch nach Übernahme, Fusion oder Generationswechsel",
+  sub: "Ein Unternehmen, das sich verändert hat, braucht einen Auftritt, der das zeigt – und Kunden, die es trotzdem auf den ersten Blick wiedererkennen.",
+  labelIsH1: true
+} %}
+{% include "hero-statement.njk" %}
+
+<!-- 01 — DIE LAGE -->
+<section class="container measure section-block section-block--tight">
+  <p class="label reveal" style="margin-bottom:1rem;">01 — Die Lage</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Das Geschäft ist weitergezogen, der Auftritt nicht</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Ein Unternehmen wird übernommen oder übernimmt selbst. Die Gründergeneration übergibt. Aus einem Produkt ist ein Portfolio geworden, aus einem Inlandsgeschäft ein internationales. Neue Produkte, neue Märkte, ein anderer Schwerpunkt – und ein Auftritt, der noch das Unternehmen von vor fünf Jahren zeigt. Interessenten merken das, bevor sie anrufen. Manche rufen dann nicht an.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Gleichzeitig ist der bestehende Auftritt ein Wert: Kunden, Händler und Mitarbeiter erkennen ihn. Wer ihn leichtfertig ersetzt, verliert genau das Vertrauen, das über Jahre aufgebaut wurde.</p>
+  <p class="pull-quote reveal reveal-delay-2">Ein Relaunch muss zwei Dinge zugleich leisten: zeigen, was neu ist, und behalten, was erkannt wird.</p>
+</section>
+
+<!-- 02 — EINGRIFFSTIEFE -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">02 — Nur, was sich ändert</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Wiedererkennung ist ein Wert, der mitgenommen wird</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Nicht jeder Relaunch ist ein Neuanfang. Oft bleibt das Meiste, und nur ein Teil ändert sich: ein Signet entfällt, eine Hierarchie wird neu geordnet, ein Zusatz kommt hinzu. Manchmal ist dagegen ein vollständig neues Logo die richtige Antwort. Welche Eingriffstiefe trägt, zeigt erst die Analyse – nicht der Wunsch nach etwas Neuem.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Dann besteht die Kunst darin, das Neue sichtbar zu machen, ohne das Vertraute zu verlieren – und keine Anwendung zu übersehen, die noch den alten Stand zeigt.</p>
+</section>
+
+<!-- 03 — WAS ENTSTEHT -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">03 — Was dafür entsteht</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.5rem;">Vom Logo bis zur letzten Anwendung</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "Eine Analyse, welche Teile des bestehenden Auftritts Wiedererkennung tragen und welche der neuen Ausrichtung im Weg stehen",
+      "Logo-Korrektur oder Logo-Relaunch, Corporate Design mit Typografie, Farben, Bildsprache und Rastern, das auch ohne Agentur angewendet werden kann",
+      "Eine Website mit einer Struktur nach den Fragen der Besucher, nicht nach dem Organigramm des Unternehmens",
+      "Texte, die technische Vorteile in den Nutzen übersetzen, der für die jeweilige Zielgruppe zählt",
+      "Imagevideo und Bildwelt aus der eigenen Produktion",
+      "Eine Bestandsaufnahme aller Anwendungen und eine Reihenfolge nach Sichtbarkeit – was Kunden zuerst sehen, wird zuerst umgestellt",
+      "Vorlagen für den Alltag: Präsentation, Geschäftsausstattung, Formulare, Signaturen",
+      "Regeln für Ton und Begriffe, so dokumentiert, dass auch die KI-Systeme des Unternehmens sie einhalten können"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<!-- 04 — DIE WEBSITE -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">04 — Die Website</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Mehrere Besucher, mehrere Fragen – und ein KI-Assistent</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Meist zeigt sich ein veralteter Auftritt zuerst auf der Website. Nicht, weil sie veraltet aussieht, sondern weil sie ein Unternehmen beschreibt, das es so nicht mehr gibt. Im B2B-Geschäft besucht sie nicht eine Person, sondern mehrere, mit verschiedenen Fragen. Der Ingenieur sucht Daten und Belege. Der Einkauf sucht Lieferfähigkeit und einen Ansprechpartner. Die Geschäftsführung will wissen, ob das Unternehmen in zehn Jahren noch dahintersteht.</p>
+  <p class="pull-quote reveal reveal-delay-2">Eine Website, die alle drei gleich anspricht, spricht keinen von ihnen richtig an.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Immer mehr Recherchen beginnen außerdem nicht mehr in der Suchmaschine, sondern mit einer Frage an einen KI-Assistenten. Der empfiehlt Anbieter, ohne zu verlinken – und nur die, deren Website er eindeutig verstehen kann. Dafür braucht es keine Tricks, sondern Klarheit: wer das Unternehmen ist, was es anbietet, für wen und mit welchen Belegen – in einer Form, die Maschinen genauso lesen können wie Menschen. Dazu gehört Technik, die schnell lädt und ohne Agentur gepflegt werden kann, auf Wunsch einschließlich des laufenden Betriebs.</p>
+</section>
+
+<!-- 05 — DER ROLLOUT -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">05 — Der Rollout</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Hunderte Anwendungen, ein Stichtag</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Ein neuer Auftritt wird einmal entschieden und tausendfach angewendet: auf Schildern und Fahrzeugen, auf Produkten, in Präsentationen, Formularen, Signaturen, auf der Website und in jedem Video. Wird das nicht geordnet ausgerollt, lebt das Alte noch lange neben dem Neuen weiter. Kunden sehen dann zwei Absender – und fragen sich, welcher gilt. Genau das, was die Entscheidung beenden sollte.</p>
+  <p class="pull-quote reveal reveal-delay-2">Ein Auftritt, der nur im Handbuch konsistent ist, ist nicht konsistent.</p>
+</section>
+
+<!-- 06 — BELEGE -->
+<section class="container section-block" style="max-width:1100px;">
+  <p class="label reveal" style="margin-bottom:1rem;">06 — Belege</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:2rem;max-width:760px;">Sechs Relaunches, sechs Eingriffstiefen</h2>
+  <div class="grid-2" style="background:none;gap:clamp(1.5rem,2.5vw,2.5rem);">
+    <a href="/case-studies/gneuss/" class="card reveal">
+      <div class="card-num">A</div>
+      <h3 class="card-title">Gneuss</h3>
+      <p class="card-desc">Generationswechsel beim Technologieführer: Nur das Signet entfiel, die Wortmarke blieb. Die Produkte tragen heute das korrigierte Logo.</p>
+    </a>
+    <a href="/case-studies/meco/" class="card reveal reveal-delay-1">
+      <div class="card-num">B</div>
+      <h3 class="card-title">Meco</h3>
+      <p class="card-desc">Vom Vergaser-Hersteller zum Spezialisten für Flüssigkeitstransport. Die neue Website zeigt das Know-how, das vorher kaum sichtbar war – mit angepasstem Logo und eigenem Imagevideo.</p>
+    </a>
+    <a href="/case-studies/volksbank-phd/" class="card reveal">
+      <div class="card-num">C</div>
+      <h3 class="card-title">Volksbank PHD</h3>
+      <p class="card-desc">Nach der Übernahme blieb die Ortsmarke, die Dachmarke kam als Zusatz dazu – am Gebäude bis heute sichtbar, inzwischen in der dritten Fassung des Zusatzes.</p>
+    </a>
+    <a href="/case-studies/werner-works/" class="card reveal reveal-delay-1">
+      <div class="card-num">D</div>
+      <h3 class="card-title">werner works</h3>
+      <p class="card-desc">Neue Firmierung, neue Wortmarke: ein vollständiges Gestaltungssystem, umgesetzt bis in die Unternehmensbroschüre.</p>
+    </a>
+    <a href="/case-studies/albatros/" class="card reveal">
+      <div class="card-num">E</div>
+      <h3 class="card-title">Albatros</h3>
+      <p class="card-desc">Brand Relaunch mit neuer Positionierung, neuem Logo und dem Claim „Powered by Function“ – von der Handelsmarke zur Industriemarke.</p>
+    </a>
+    <a href="/case-studies/arminia-bielefeld/" class="card reveal reveal-delay-1">
+      <div class="card-num">F</div>
+      <h3 class="card-title">DSC Arminia Bielefeld</h3>
+      <p class="card-desc">Ein vollständiger Logo-Relaunch und eine eigene, lizenzkostenfreie Hausschrift für tausende Anwendungen – bis zu den Videowänden im Stadion.</p>
+    </a>
+  </div>
+</section>
+
+<!-- 07 — VORGELAGERT -->
+<section class="container measure" style="padding-block:1rem 3rem;">
+  <div style="background:var(--paper-2);padding:2rem 2.25rem;border-left:2px solid var(--accent);">
+    <p class="label" style="margin-bottom:.75rem;">Ist die Entscheidung noch offen?</p>
+    <p style="font-size:.9375rem;line-height:1.8;">Wofür das Unternehmen künftig steht, ob umfirmiert wird, welcher Name bleibt und wie die Marken einer Gruppe nach einer Übernahme zueinander stehen, entscheidet die <a href="https://luenstroth.com/de/markenberatung/" style="color:var(--accent);">Lünstroth Markenberatung</a>. Der Relaunch setzt diese Entscheidung um.</p>
+  </div>
+</section>
+
+<section class="container measure" style="padding-block:1rem 7rem;">
+  <a href="/kontakt/" class="btn-fill reveal">Projekt anfragen</a>
+</section>

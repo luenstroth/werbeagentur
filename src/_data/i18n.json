@@ -65,12 +65,8 @@
       "servicesHeading": "Leistungen",
       "services": [
         {
-          "url": "/leistungen/listungsgespraech-handel/",
-          "label": "Listungsgespräch beim Handel"
-        },
-        {
-          "url": "/leistungen/website-b2b/",
-          "label": "Website-Relaunch"
+          "url": "/leistungen/markenrelaunch/",
+          "label": "Markenrelaunch"
         },
         {
           "url": "/leistungen/produkteinfuehrung/",
@@ -81,8 +77,12 @@
           "label": "Material für Auslandsmärkte"
         },
         {
-          "url": "/leistungen/rollout/",
-          "label": "Rollout des neuen Auftritts"
+          "url": "/werbeagentur-automotive/",
+          "label": "Automotive"
+        },
+        {
+          "url": "/werbeagentur-maschinenbau/",
+          "label": "Maschinenbau"
         },
         {
           "url": "https://luenstroth.com/de/markenberatung/",
@@ -111,6 +111,8 @@
       "ki-einsatz": "KI-Einsatz",
       "vorgehensweise-der-agentur": "Arbeitsweise",
       "werbeagentur-fuer-den-mittelstand": "Mittelstand",
+      "werbeagentur-automotive": "Automotive",
+      "werbeagentur-maschinenbau": "Maschinenbau",
       "impressum": "Impressum",
       "datenschutz": "Datenschutz"
     }
@@ -181,12 +183,8 @@
       "servicesHeading": "Services",
       "services": [
         {
-          "url": "/en/services/retail-listing/",
-          "label": "Retail listing meeting"
-        },
-        {
-          "url": "/en/services/b2b-website/",
-          "label": "Website relaunch"
+          "url": "/en/services/brand-relaunch/",
+          "label": "Brand relaunch"
         },
         {
           "url": "/en/services/product-launch/",
@@ -197,8 +195,12 @@
           "label": "International markets"
         },
         {
-          "url": "/en/services/brand-rollout/",
-          "label": "Brand rollout"
+          "url": "/en/automotive-advertising-agency/",
+          "label": "Automotive"
+        },
+        {
+          "url": "/en/mechanical-engineering-advertising-agency/",
+          "label": "Mechanical engineering"
         },
         {
           "url": "https://luenstroth.com/en/brand-consultancy/",
@@ -227,6 +229,8 @@
       "use-of-ai": "Use of AI",
       "approach": "Approach",
       "mid-sized-companies": "Mid-sized companies",
+      "automotive-advertising-agency": "Automotive",
+      "mechanical-engineering-advertising-agency": "Mechanical engineering",
       "legal-notice": "Legal notice",
       "privacy": "Privacy"
     }

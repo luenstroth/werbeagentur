@@ -1,0 +1,83 @@
+---
+layout: base.njk
+title: "Werbeagentur Automotive: Kommunikation für Zulieferer und Aftermarket"
+description: "Die Marke erreicht den Fahrzeughalter selten direkt: Werkstatt, Handel und Franchise-Partner entscheiden mit. Automotive-Kommunikation über alle Ebenen und Märkte."
+permalink: /werbeagentur-automotive/
+ogImageSrc: "img/hella-hero.jpg"
+pageSchema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Werbeagentur für Automotive",
+    "serviceType": "Markenkommunikation für Automobilzulieferer und Aftermarket",
+    "provider": { "@id": "https://luenstroth-werbeagentur.de/#organisation" },
+    "areaServed": "Worldwide"
+  }
+---
+{%- set hero = {
+  text: "Bis zur Werkstatt",
+  effect: "shelve",
+  label: "Werbeagentur für Automotive: Zulieferer und Aftermarket",
+  sub: "Zwischen Hersteller und Fahrzeughalter stehen Werkstatt, Handel und Franchise-Partner. Jede dieser Ebenen entscheidet mit – nach eigenen Kriterien.",
+  labelIsH1: true
+} %}
+{% include "hero-statement.njk" %}
+
+<!-- 01 — DIE LAGE -->
+<section class="container measure section-block section-block--tight">
+  <p class="label reveal" style="margin-bottom:1rem;">01 — Die Lage</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Eine Marke, mehrere Ebenen, ein Endkunde am Ende</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Ein Automobilzulieferer erreicht den Fahrzeughalter fast nie direkt. Dazwischen liegen freie Werkstätten, Handel, Franchise-Ketten und – im Erstausrüstungsgeschäft – die Fahrzeughersteller selbst. Jede dieser Ebenen bewertet dieselbe Marke nach eigenen Kriterien: Die Werkstatt fragt nach Verfügbarkeit, Einbau und Service, der Handel nach Marge und Nachfrage, der Fahrzeughalter nach Sicherheit und Vertrauen.</p>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Hinzu kommt die internationale Dimension. Was in einem Markt als Premium-Qualität gilt, ist in einem technologisch weiter entwickelten Markt bereits Mittelmaß. Preisgefüge, Kennzeichnungspflichten und Markenrecht unterscheiden sich von Land zu Land.</p>
+  <p class="pull-quote reveal reveal-delay-2">Eine Kommunikation für alle erreicht in diesem Geschäft niemanden richtig.</p>
+</section>
+
+<!-- 02 — WAS ENTSTEHT -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">02 — Was dafür entsteht</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.5rem;">Ebene für Ebene gedacht, Markt für Markt umgesetzt</h2>
+  <ul class="check-list">
+    {%- for item in [
+      "Eine eigene, aber konsistente Ansprache für Endkunde, Werkstatt, Handel und Fachpartner",
+      "Online-Service-Portale und Microsites für Werkstätten",
+      "Brand Design und Namensfindung für Partner- und Franchise-Konzepte",
+      "Mehrsprachiges Bewegtbild auf gemeinsamer Bildbasis, mit Lettering je Sprache",
+      "Markenumsetzung, die über unterschiedliche Qualitäts- und Preismärkte hinweg rechtlich hält",
+      "Websites, die Ingenieur, Einkauf und Geschäftsführung jeweils ihren Grund geben"
+    ] %}
+    <li class="check-item reveal reveal-delay-{{ loop.index0 % 3 }}">
+      <span class="check-icon"></span>
+      <span>{{ item }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<!-- 03 — BELEGE -->
+<section class="container section-block" style="max-width:1100px;">
+  <p class="label reveal" style="margin-bottom:1rem;">03 — Belege</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:2rem;max-width:760px;">Aus der Fahrzeugtechnik</h2>
+  <div class="grid-2" style="background:none;gap:clamp(1.5rem,2.5vw,2.5rem);">
+    <a href="/case-studies/hella/" class="card reveal">
+      <div class="card-num">A</div>
+      <h3 class="card-title">Hella</h3>
+      <p class="card-desc">Eine Marke für Werkstatt, Handel, Franchise-Partner und Endkunde – international, aber nicht uniform. Dazu ein eigener Kanal für Kleinserien-Fahrzeughersteller.</p>
+    </a>
+    <a href="/case-studies/meco/" class="card reveal reveal-delay-1">
+      <div class="card-num">B</div>
+      <h3 class="card-title">Meco</h3>
+      <p class="card-desc">Vom Vergaser-Hersteller zum Spezialisten für den Transport von Klimamittel, Treibstoff und Kühlflüssigkeit – mit Website, angepasstem Logo und Imagevideo.</p>
+    </a>
+  </div>
+</section>
+
+<!-- 04 — ANLÄSSE -->
+<section class="container measure section-block">
+  <p class="label reveal" style="margin-bottom:1rem;">04 — Anlässe</p>
+  <h2 class="display-md reveal reveal-delay-1" style="margin-bottom:1.25rem;">Wann Automotive-Unternehmen die Agentur holen</h2>
+  <p class="body-lg reveal reveal-delay-2" style="margin-bottom:1.5rem;">Wenn sich das Unternehmen verändert hat und der Auftritt folgen muss: <a href="/leistungen/markenrelaunch/" style="color:var(--accent);">Markenrelaunch</a>. Wenn ein neues Produkt jede Ebene überzeugen muss: <a href="/leistungen/produkteinfuehrung/" style="color:var(--accent);">Produkteinführung</a>. Wenn dieselbe Marke in Ländern mit anderen Regeln bestehen muss: <a href="/leistungen/auslandsmaerkte/" style="color:var(--accent);">Auslandsmärkte</a>.</p>
+</section>
+
+<section class="container measure" style="padding-block:1rem 7rem;">
+  <a href="/kontakt/" class="btn-fill reveal">Projekt anfragen</a>
+</section>
