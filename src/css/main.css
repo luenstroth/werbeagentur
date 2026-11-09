@@ -1052,12 +1052,9 @@ img { display: block; max-width: 100%; }
 @keyframes stmt-sketch-in { to { opacity: 1; } }
 @keyframes stmt-sketch-fill { to { color: var(--ink); -webkit-text-stroke-color: transparent; } }
 
-/* impact  "Wirksam": Buchstaben setzen kurz und bestimmt auf, danach zieht eine feine Akzentlinie die Spur der Wirkung */
-.stmt--impact .stmt-w { position: relative; }
+/* impact  "Wirksam": Buchstaben setzen kurz und bestimmt auf, ohne Beiwerk */
 .stmt--impact .stmt-l { opacity: 0; transform: translateY(-.18em) scale(1.12); filter: blur(6px); animation: stmt-impact .55s cubic-bezier(.2,1.4,.4,1) forwards; animation-delay: calc(var(--i) * 40ms + .25s); }
 @keyframes stmt-impact { to { opacity: 1; transform: none; filter: none; } }
-.stmt--impact .stmt-w::after { content: ""; position: absolute; left: 0; right: 0; bottom: .02em; height: .04em; background: var(--accent); transform: scaleX(0); transform-origin: left; animation: stmt-trace 1.1s var(--ease) forwards; animation-delay: calc(var(--n) * 40ms + .7s); }
-@keyframes stmt-trace { to { transform: scaleX(1); } }
 
 /* desire  "Begehrt statt verglichen": der Satz erscheint ruhig, dann tritt das Verglichene zurück und das Begehrte bleibt im Licht */
 .stmt--desire .stmt-l { opacity: 0; animation: stmt-fade .7s var(--ease) forwards; animation-delay: calc(var(--i) * 28ms + .2s); }
@@ -1078,5 +1075,4 @@ img { display: block; max-width: 100%; }
 @media (prefers-reduced-motion: reduce) {
   .stmt-l, .stmt-dot, .stmt-label, .stmt-sub { animation: none !important; opacity: 1 !important; filter: none !important; transform: none !important; }
   .stmt-wrap .hero-inner, .stmt-w { animation: none !important; }
-  .stmt--impact .stmt-w::after { animation: none !important; transform: none !important; }
 }
