@@ -629,6 +629,9 @@ img { display: block; max-width: 100%; }
 .media-strip { display: flex; flex-wrap: wrap; align-items: center; gap: clamp(1.5rem,2.5vw,2.25rem); }
 .media-logo { height: 84px; display: block; }
 .media-logo img { height: 100%; width: auto; object-fit: contain; }
+/* Auf Anthrazit: Medienlogos einheitlich hell wie die Logo-Wand */
+.media-logo img { filter: brightness(0) invert(.92); opacity: .85; transition: opacity .3s var(--ease); }
+.media-logo:hover img, .media-logo:focus-visible img { opacity: 1; }
 
 /* Logowand — Ausgangszustand alle Logos farbig, großzügig (drei
    pro Reihe). Beim Hovern EINER Kachel werden alle übrigen grau
